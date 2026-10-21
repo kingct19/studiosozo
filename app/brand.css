@@ -1,0 +1,39 @@
+.brand-mesh-ink {
+  display: inline-block;
+  white-space: nowrap;
+  padding-inline: 0.08em;
+  padding-block: 0.16em;
+  margin-inline: -0.08em;
+  margin-block: -0.16em;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: #474ed7;
+}
+
+.brand-mesh-ink[data-mesh-ready] {
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.brand-mesh-ink[data-mesh-scale="small"],
+.brand-mesh-ink[data-mesh-scale="small"] * {
+  background-image: none;
+  background-clip: border-box;
+  -webkit-background-clip: border-box;
+  color: #635bff;
+  -webkit-text-fill-color: #635bff;
+}
+
+.brand-mesh-ink * {
+  background-image: inherit;
+  background-repeat: inherit;
+  background-position: inherit;
+  background-size: inherit;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: inherit;
+  -webkit-text-fill-color: inherit;
+}
