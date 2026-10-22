@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
+import { ArrowUpRight01Icon, Mail01Icon } from "hugeicons-react";
 
 import { MeshInk } from "@/components/brand-mesh";
 import { ContactInquiryForm } from "@/components/contact-inquiry-form";
+import { LitUpButton } from "@/components/lit-up-button";
 import { FadeInItem, FadeInSection } from "@/components/page-motion";
 import Container from "@/components/watermelon/templates/landing-01/landing/container";
 import Footer from "@/components/watermelon/templates/landing-01/landing/footer";
@@ -61,13 +64,15 @@ export default function ContactPage() {
             </FadeInItem>
           </FadeInSection>
 
-          <FadeInSection className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-3">
-            <FadeInItem className="lg:col-span-2">
+          <FadeInSection className="mx-auto max-w-6xl">
+            <FadeInItem>
               <ContactInquiryForm />
             </FadeInItem>
+          </FadeInSection>
 
-            <FadeInItem className="flex flex-col gap-6">
-              <div className="relative border border-[#e3e8ee] bg-white p-6 backdrop-blur-md">
+          <FadeInSection className="mx-auto mt-10 grid max-w-6xl gap-8 md:grid-cols-2">
+            <FadeInItem>
+              <div className="relative h-full border border-[#e3e8ee] bg-white p-6 backdrop-blur-md">
                 <div className="absolute top-0 left-0 h-2 w-2 border-t border-l border-[#635bff]/35" />
                 <div className="absolute top-0 right-0 h-2 w-2 border-t border-r border-[#635bff]/35" />
                 <div className="absolute bottom-0 left-0 h-2 w-2 border-b border-l border-[#635bff]/35" />
@@ -88,8 +93,10 @@ export default function ContactPage() {
                   ))}
                 </ul>
               </div>
+            </FadeInItem>
 
-              <div className="relative border border-[#e3e8ee] bg-white p-6 backdrop-blur-md">
+            <FadeInItem>
+              <div className="relative h-full border border-[#e3e8ee] bg-white p-6 backdrop-blur-md">
                 <div className="absolute top-0 left-0 h-2 w-2 border-t border-l border-[#635bff]/35" />
                 <div className="absolute top-0 right-0 h-2 w-2 border-t border-r border-[#635bff]/35" />
                 <div className="absolute bottom-0 left-0 h-2 w-2 border-b border-l border-[#635bff]/35" />
@@ -130,6 +137,102 @@ export default function ContactPage() {
                   <p className="border-t border-[#e3e8ee] pt-4 text-[11px] leading-relaxed text-[#6b7c93]">
                     {serviceLocations.disclaimer}
                   </p>
+                </div>
+              </div>
+            </FadeInItem>
+          </FadeInSection>
+
+          {/* Direct Founder Contact Section */}
+          <FadeInSection className="mx-auto mt-16 max-w-6xl">
+            <FadeInItem>
+              <div className="relative border border-[#e3e8ee] bg-[#f8fafc] p-8 shadow-[0_2px_12px_rgba(10,37,64,0.04)] md:p-12">
+                <div className="absolute top-0 left-0 h-2.5 w-2.5 border-t border-l border-[#635bff]/50" />
+                <div className="absolute top-0 right-0 h-2.5 w-2.5 border-t border-r border-[#635bff]/50" />
+                <div className="absolute bottom-0 left-0 h-2.5 w-2.5 border-b border-l border-[#635bff]/50" />
+                <div className="absolute right-0 bottom-0 h-2.5 w-2.5 border-r border-b border-[#635bff]/50" />
+
+                <div className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:items-center">
+                  <div className="lg:col-span-7">
+                    <div className="text-brand mb-3 inline-flex items-center gap-2 text-xs font-bold tracking-widest uppercase">
+                      <span className="h-2 w-2 rounded-full bg-[#635bff]" />
+                      <MeshInk>{"//"} DIRECT FOUNDER ACCESS</MeshInk>
+                    </div>
+
+                    <div className="mt-2 flex flex-wrap items-center gap-5">
+                      <div className="relative h-20 w-20 shrink-0 overflow-hidden border border-[#e3e8ee] bg-white shadow-[0_2px_8px_rgba(10,37,64,0.08)] sm:h-24 sm:w-24">
+                        <Image
+                          src={siteConfig.founder.avatar}
+                          alt={siteConfig.founder.name}
+                          fill
+                          sizes="96px"
+                          className="object-cover object-[50%_38%] grayscale contrast-105"
+                        />
+                      </div>
+                      <div>
+                        <h2 className="font-sans text-2xl font-bold tracking-tight text-[#0a2540] md:text-3xl">
+                          {siteConfig.founder.name}
+                        </h2>
+                        <p className="mt-1 text-xs font-bold tracking-widest text-[#635bff] uppercase">
+                          {siteConfig.founder.role} &bull; {siteConfig.name}
+                        </p>
+                      </div>
+                    </div>
+
+                    <p className="mt-6 max-w-2xl font-sans text-base leading-relaxed text-[#425466]">
+                      When you work with Studio Sozo, there are no layers of
+                      non-technical account managers or handoffs. You work
+                      directly with me from initial architecture and workflow
+                      discovery through weekly staging releases and 100%
+                      repository handover.
+                    </p>
+
+                    <div className="mt-6 flex flex-wrap gap-3 text-[11px] font-bold tracking-wider text-[#425466] uppercase">
+                      <span className="border border-[#e3e8ee] bg-white px-3 py-1.5">
+                        Direct Architecture Review
+                      </span>
+                      <span className="border border-[#e3e8ee] bg-white px-3 py-1.5">
+                        No Account Manager Layers
+                      </span>
+                      <span className="border border-[#e3e8ee] bg-white px-3 py-1.5">
+                        100% Owned Software
+                      </span>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-col justify-between gap-6 border-t border-[#e3e8ee] pt-8 lg:col-span-5 lg:border-t-0 lg:border-l lg:pt-0 lg:pl-10">
+                    <div>
+                      <div className="text-brand mb-2 text-xs font-bold tracking-widest uppercase">
+                        <MeshInk>{"//"} PREFER DIRECT EMAIL?</MeshInk>
+                      </div>
+                      <p className="font-sans text-sm leading-relaxed text-[#425466]">
+                        Skip the form and email me directly with your project
+                        goals, current tool stack, or questions.
+                      </p>
+
+                      <a
+                        href={`mailto:${siteConfig.founder.email}?subject=Project%20Inquiry%20%E2%80%94%20Studio%20Sozo`}
+                        className="mt-4 flex items-center justify-between gap-3 border border-[#e3e8ee] bg-white px-4 py-3.5 font-mono text-xs font-bold tracking-wider text-[#0a2540] transition-colors hover:border-[#635bff] hover:text-[#635bff] sm:text-sm"
+                      >
+                        <span className="flex items-center gap-2.5 truncate">
+                          <Mail01Icon className="h-4 w-4 shrink-0 text-[#635bff]" />
+                          <span className="truncate">
+                            {siteConfig.founder.email}
+                          </span>
+                        </span>
+                        <ArrowUpRight01Icon className="h-4 w-4 shrink-0" />
+                      </a>
+                    </div>
+
+                    <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
+                      <LitUpButton
+                        href={`mailto:${siteConfig.founder.email}?subject=Project%20Inquiry%20%E2%80%94%20Studio%20Sozo`}
+                        className="w-full justify-center font-mono text-xs font-bold tracking-widest uppercase sm:w-auto"
+                      >
+                        Email Chandler Directly
+                        <ArrowUpRight01Icon className="h-4 w-4" />
+                      </LitUpButton>
+                    </div>
+                  </div>
                 </div>
               </div>
             </FadeInItem>

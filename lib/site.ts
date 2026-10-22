@@ -3,6 +3,12 @@ export const siteConfig = {
   wordmark: "studio sozo.",
   legalName: "Sozo Tech Enterprise LLC",
   url: "https://studiosozo.dev",
+  founder: {
+    name: "Chandler King",
+    role: "Founder & Principal Engineer",
+    email: "chandler@studiosozo.com",
+    avatar: "/chandler-king.jpg",
+  },
   headline: "Your Business Is Unique. Your Software Should Be Too.",
   description:
     "We design and build custom software that replaces disconnected tools, automates workflows, and gives your business greater control over its technology.",
