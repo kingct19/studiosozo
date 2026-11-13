@@ -35,362 +35,260 @@ export const CAPABILITY_BLUEPRINTS: Record<
   SoftwareCapabilityOption,
   CapabilityBlueprintProfile
 > = {
-  "Custom Software Development": {
-    capability: "Custom Software Development",
-    code: "SYS-CORE // 01",
-    shortTitle: "Bespoke Platform",
+  "Custom Websites & Redesigns": {
+    capability: "Custom Websites & Redesigns",
+    code: "WEB-SITE // 01",
+    shortTitle: "Custom Business Website",
     tagline:
-      "Replace rigid templates and spreadsheets with an end-to-end platform engineered around your exact operations.",
+      "1–5 page custom website or Wix/WordPress redesign ($800–$1,000 in 1–2 weeks) with $0 monthly platform fees.",
     deliverableSummary:
-      "Multi-role operational web platform + PostgreSQL core + automated state machine",
+      "1–5 page mobile-first custom website + direct inbox lead form + local Google SEO + 100% code ownership",
     architectureNodes: [
       {
-        id: "intake-portal",
+        id: "site-pages",
         tier: "INTAKE",
-        label: "Role-Based Command Portal",
-        sublabel: "Unified operator, field & client workspace",
-        status: "SSR / LIVE",
+        label: "Custom 1–5 Page Mobile-First Site",
+        sublabel: "Tailored design for services, work & local trust",
+        status: "1–2 WEEKS",
       },
       {
-        id: "rule-engine",
+        id: "lead-form",
         tier: "LOGIC",
-        label: "Custom Business Rule Engine",
-        sublabel: "Approvals, pricing logic & margin guardrails",
-        status: "DETERMINISTIC",
+        label: "Direct Inbox Lead & Quote Form",
+        sublabel: "Instant email alerts & client confirmation",
+        status: "WIRED",
       },
       {
-        id: "audit-bus",
+        id: "local-seo",
         tier: "LOGIC",
-        label: "Event Queue & Audit Ledger",
-        sublabel: "Real-time notifications & immutable history",
-        status: "DURABLE",
+        label: "Google Search & Speed Setup",
+        sublabel: "Metadata, sitemap, OpenGraph & fast mobile load",
+        status: "SEO READY",
       },
       {
-        id: "pg-core",
+        id: "owned-code",
         tier: "DATA",
-        label: "Dedicated PostgreSQL Core",
-        sublabel: "Row-level security & 100% owned schema",
-        status: "OWNED DB",
+        label: "Domain Launch & 100% Code Ownership",
+        sublabel: "SSL configured with $0 monthly platform rent",
+        status: "100% OWNED",
       },
     ],
     apiBridges: [
-      { name: "STRIPE BILLING", protocol: "WEBHOOK", latency: "14ms" },
-      { name: "QUICKBOOKS SYNC", protocol: "REST / OAUTH", latency: "22ms" },
-      { name: "TWILIO / EMAIL", protocol: "EVENT BUS", latency: "18ms" },
+      { name: "DIRECT LEAD EMAIL", protocol: "RESEND", latency: "19ms" },
+      { name: "GOOGLE SEO SCHEMA", protocol: "JSON-LD", latency: "8ms" },
+      { name: "CUSTOM DOMAIN + SSL", protocol: "EDGE CDN", latency: "11ms" },
     ],
     promptChips: [
-      "Replacing disconnected spreadsheets & SaaS tools",
-      "Custom quoting, scheduling, or dispatch workflow",
-      "Role-based permissions for office & field teams",
-      "Eliminating recurring per-seat licensing fees",
+      "Build a brand-new 1–5 page business website",
+      "Redesign / replace our outdated Wix, WordPress, or Squarespace site",
+      "Add a clean quote / contact form & local Google SEO",
+      "Make our site load fast and look sharp on phones",
     ],
-    roles: ["EXEC ADMIN", "OPERATIONS", "FIELD / CLIENT"],
+    roles: ["VISITORS", "LOCAL SEARCH", "BUSINESS OWNER"],
   },
-  "CRM & Business Systems": {
-    capability: "CRM & Business Systems",
-    code: "SYS-CRM // 02",
-    shortTitle: "Custom CRM & ERP",
+  "Web Apps & Customer Portals": {
+    capability: "Web Apps & Customer Portals",
+    code: "SYS-WEB // 02",
+    shortTitle: "Web App & Client Portal",
     tagline:
-      "Tailored pipelines, quoting engines, commission tracking, and job management without per-user SaaS bloat.",
+      "Online booking, custom quoting, checkout flows, and client login portals tailored to how your business runs.",
     deliverableSummary:
-      "Custom pipeline & deal desk + automated quoting + live P&L executive telemetry",
-    architectureNodes: [
-      {
-        id: "lead-router",
-        tier: "INTAKE",
-        label: "Omnichannel Lead & Deal Intake",
-        sublabel: "Web forms, call routing & instant territory assignment",
-        status: "AUTO-ROUTED",
-      },
-      {
-        id: "quote-desk",
-        tier: "LOGIC",
-        label: "Dynamic Quote & Margin Builder",
-        sublabel: "Live line-item pricing, approvals & e-sign trigger",
-        status: "GUARDED",
-      },
-      {
-        id: "commission-engine",
-        tier: "LOGIC",
-        label: "Pipeline & Commission Automation",
-        sublabel: "Stage transitions, splits & automated follow-ups",
-        status: "SYNCED",
-      },
-      {
-        id: "crm-warehouse",
-        tier: "DATA",
-        label: "Unified Customer & Job Graph",
-        sublabel: "Zero duplicate records across sales & fulfillment",
-        status: "SINGLE TRUTH",
-      },
-    ],
-    apiBridges: [
-      { name: "DOCUSIGN / E-SIGN", protocol: "WEBHOOK", latency: "19ms" },
-      { name: "QUICKBOOKS LEDGER", protocol: "2-WAY SYNC", latency: "24ms" },
-      { name: "TWILIO SMS / CALLS", protocol: "STREAM", latency: "15ms" },
-    ],
-    promptChips: [
-      "Outgrowing HubSpot, Salesforce, or Jobber",
-      "Automated quoting & contract handoff to fulfillment",
-      "Real-time sales commissions & job margin tracking",
-      "Single view of customer from lead to invoice",
-    ],
-    roles: ["SALES REP", "ESTIMATOR", "DISPATCHER", "OWNER"],
-  },
-  "AI & Automation": {
-    capability: "AI & Automation",
-    code: "SYS-AI // 03",
-    shortTitle: "AI Agents & Workflows",
-    tagline:
-      "Eliminate manual copy-pasting, parse documents automatically, and run durable AI workflows across your stack.",
-    deliverableSummary:
-      "Autonomous ingestion pipeline + structured LLM extraction + human-in-the-loop review",
-    architectureNodes: [
-      {
-        id: "doc-ingest",
-        tier: "INTAKE",
-        label: "Multi-Source Document & Inbox Stream",
-        sublabel: "PDFs, emails, voice notes & webhook payloads",
-        status: "INGESTING",
-      },
-      {
-        id: "ai-extractor",
-        tier: "LOGIC",
-        label: "Structured AI Extraction & Classification",
-        sublabel: "Schema-validated LLM parsing with confidence checks",
-        status: "AI VERIFIED",
-      },
-      {
-        id: "hitl-gate",
-        tier: "LOGIC",
-        label: "Exception Guardrail & Approval Queue",
-        sublabel: "Auto-executes high-confidence tasks, flags edge cases",
-        status: "99.4% AUTO",
-      },
-      {
-        id: "vector-pg",
-        tier: "DATA",
-        label: "Knowledge Base & Execution Log",
-        sublabel: "Full trace auditability & zero data training leaks",
-        status: "PRIVATE AI",
-      },
-    ],
-    apiBridges: [
-      { name: "OPENAI / CLAUDE", protocol: "STRUCTURED", latency: "310ms" },
-      { name: "EMAIL / PDF PARSER", protocol: "PIPELINE", latency: "42ms" },
-      { name: "ERP / CRM WRITEBACK", protocol: "IDEMPOTENT", latency: "17ms" },
-    ],
-    promptChips: [
-      "Eliminate manual data entry from PDFs or emails",
-      "Automated customer intake, triage, or scheduling",
-      "Internal AI assistant trained on company SOPs",
-      "Replacing fragile Zapier / Make chains with code",
-    ],
-    roles: ["AI ORCHESTRATOR", "REVIEWER", "OPS ADMIN"],
-  },
-  "Web Applications": {
-    capability: "Web Applications",
-    code: "SYS-WEB // 04",
-    shortTitle: "Client & Partner Portal",
-    tagline:
-      "High-speed, modern web applications for customer self-service, partner ordering, or multi-tenant SaaS.",
-    deliverableSummary:
-      "Next.js App Router platform + sub-second edge delivery + real-time customer portal",
+      "Custom Next.js web application + Stripe payments/booking + secure customer & staff portals",
     architectureNodes: [
       {
         id: "client-gateway",
         tier: "INTAKE",
-        label: "Branded Client & Partner Portal",
-        sublabel: "SSO/magic-link auth, live status & self-serve actions",
-        status: "99.99% SLA",
+        label: "Branded Client & Booking Portal",
+        sublabel: "Secure logins, live status & self-serve actions",
+        status: "LIVE WEB",
       },
       {
         id: "checkout-flow",
         tier: "LOGIC",
-        label: "Order, Booking & Billing Engine",
-        sublabel: "Custom pricing tiers, subscriptions & instant receipts",
+        label: "Booking, Quoting & Payment Flow",
+        sublabel: "Custom pricing rules, deposits & instant receipts",
         status: "REAL-TIME",
       },
       {
         id: "tenant-rbac",
         tier: "LOGIC",
-        label: "Multi-Tenant Organization Isolation",
-        sublabel: "Granular team seats, permissions & audit trails",
-        status: "ISOLATED",
+        label: "Staff & Customer Permissions",
+        sublabel: "Simple admin dashboard for managing orders & content",
+        status: "ROLE-SAFE",
       },
       {
         id: "cloud-db",
         tier: "DATA",
-        label: "High-Availability Cloud Database",
-        sublabel: "Automated backups, read replicas & full ownership",
-        status: "SCALABLE",
+        label: "Owned Cloud Database",
+        sublabel: "Automated backups & $0 third-party commissions",
+        status: "100% OWNED",
       },
     ],
     apiBridges: [
-      { name: "STRIPE CONNECT", protocol: "WEBHOOK", latency: "12ms" },
-      { name: "CLERK / AUTH CORE", protocol: "JWT / SSO", latency: "8ms" },
-      { name: "RESEND / NOTIFY", protocol: "TRANSACTIONAL", latency: "19ms" },
+      { name: "STRIPE PAYMENTS", protocol: "WEBHOOK", latency: "12ms" },
+      { name: "USER AUTH / LOGIN", protocol: "SECURE", latency: "8ms" },
+      { name: "EMAIL / SMS ALERTS", protocol: "INSTANT", latency: "19ms" },
     ],
     promptChips: [
-      "Customer self-service portal for orders & invoices",
-      "Multi-tenant B2B platform or commercial SaaS product",
-      "Ditching slow WordPress/Wix plugins for custom Next.js",
-      "Interactive configurator, booking, or quoting flow",
+      "Online booking, scheduling, or rental checkout flow",
+      "Customer login portal to check status, sign, or pay invoices",
+      "Launching a custom SaaS product or marketplace",
+      "Interactive price estimator or custom quote builder",
     ],
-    roles: ["CUSTOMER", "PARTNER ORG", "INTERNAL ADMIN"],
+    roles: ["CUSTOMERS", "PARTNERS", "STAFF ADMIN"],
   },
-  "Mobile App Development": {
-    capability: "Mobile App Development",
-    code: "SYS-MOB // 05",
-    shortTitle: "iOS & Android Field App",
+  "Mobile Apps (iOS & Android)": {
+    capability: "Mobile Apps (iOS & Android)",
+    code: "SYS-MOB // 03",
+    shortTitle: "iOS & Android App",
     tagline:
-      "Native-grade mobile experiences for field technicians, drivers, and customers with offline-first sync.",
+      "Custom iPhone and Android apps for your customers or field crews—complete with photos, push alerts, and live sync.",
     deliverableSummary:
-      "iOS & Android application + offline-first sync queue + live HQ dispatch dashboard",
+      "iPhone & Android native app + offline photo/checklist sync + App Store & Google Play launch",
     architectureNodes: [
       {
         id: "field-app",
         tier: "INTAKE",
-        label: "iOS & Android Field Client",
-        sublabel: "GPS check-in, photo capture, barcode & digital sign-off",
-        status: "OFFLINE-READY",
+        label: "iPhone & Android Mobile App",
+        sublabel: "Photos, GPS check-in, signatures & clean navigation",
+        status: "IOS + ANDROID",
       },
       {
         id: "sync-engine",
         tier: "LOGIC",
-        label: "Delta Sync & Conflict Resolver",
-        sublabel: "Queues actions in dead zones, syncs on reconnect",
+        label: "Offline-Ready Sync",
+        sublabel: "Saves work in weak cell zones & syncs automatically",
         status: "RESILIENT",
       },
       {
         id: "push-dispatch",
         tier: "LOGIC",
-        label: "Real-Time Push & Route Dispatch",
-        sublabel: "Instant schedule updates & customer ETA alerts",
+        label: "Push Notifications & Alerts",
+        sublabel: "Instant customer updates & crew schedule changes",
         status: "LIVE PUSH",
       },
       {
         id: "hq-cloud",
         tier: "DATA",
-        label: "Centralized HQ Command Database",
-        sublabel: "Shared backend for mobile crews & office admins",
+        label: "Synced Web Admin Dashboard",
+        sublabel: "Shared live database for mobile users & office staff",
         status: "UNIFIED",
       },
     ],
     apiBridges: [
-      { name: "APNS / FCM PUSH", protocol: "NATIVE", latency: "21ms" },
-      { name: "GPS / MAPS SDK", protocol: "TELEMETRY", latency: "16ms" },
-      { name: "S3 MEDIA VAULT", protocol: "DIRECT PUT", latency: "28ms" },
+      { name: "APPLE + GOOGLE PUSH", protocol: "NATIVE", latency: "21ms" },
+      { name: "CAMERA & GPS", protocol: "MOBILE", latency: "16ms" },
+      { name: "CLOUD MEDIA SYNC", protocol: "DIRECT", latency: "28ms" },
     ],
     promptChips: [
-      "Field technician app for checklists, photos & signatures",
-      "Offline-capable mobile app that syncs with office CRM",
-      "Customer-facing iOS & Android app with push alerts",
-      "Replacing paper clipboards and text-message dispatch",
+      "Customer-facing iPhone & Android mobile app",
+      "Field crew app for job checklists, photos & signatures",
+      "Offline-capable mobile app synced with an office dashboard",
+      "Publishing a new app to the App Store & Google Play",
     ],
-    roles: ["FIELD TECH", "DISPATCH HQ", "END CUSTOMER"],
+    roles: ["MOBILE USERS", "FIELD CREW", "OFFICE HQ"],
   },
-  "Systems Integration": {
-    capability: "Systems Integration",
-    code: "SYS-INT // 06",
-    shortTitle: "API & Data Bridge",
+  "Custom CRMs & AI Automation": {
+    capability: "Custom CRMs & AI Automation",
+    code: "SYS-CRM // 04",
+    shortTitle: "Custom CRM & Automation",
     tagline:
-      "Unify your ERP, accounting, CRM, and payment processors into one synchronized, fault-tolerant pipeline.",
+      "Internal dashboards, lead-to-invoice tracking, Stripe/QuickBooks sync, and AI tools with $0 per-user fees.",
     deliverableSummary:
-      "Bi-directional API middleware + dead-letter retry queues + unified executive reporting",
+      "Custom CRM dashboard + QuickBooks/Stripe two-way sync + AI busywork automation ($0/seat)",
     architectureNodes: [
       {
-        id: "webhook-gateway",
+        id: "lead-router",
         tier: "INTAKE",
-        label: "High-Throughput Webhook & Polling Gateway",
-        sublabel: "Ingests events from legacy ERPs, CRMs & payment rails",
-        status: "VERIFIED",
+        label: "Unified Lead & Job Dashboard",
+        sublabel: "Every lead, quote, schedule & note in one clean view",
+        status: "$0 / SEAT",
       },
       {
-        id: "transform-layer",
+        id: "quote-desk",
         tier: "LOGIC",
-        label: "Schema Normalization & Deduplication",
-        sublabel: "Maps mismatched IDs, currencies & customer records",
-        status: "IDEMPOTENT",
+        label: "Fast Quoting & Follow-Up Automation",
+        sublabel: "Instant SMS/email follow-up & e-sign estimates",
+        status: "AUTOMATED",
       },
       {
-        id: "retry-queue",
+        id: "ai-sync",
         tier: "LOGIC",
-        label: "Durable Queue & Auto-Recovery",
-        sublabel: "Exponential backoff, alerting & zero dropped payloads",
-        status: "ZERO-LOSS",
+        label: "AI Document Reading & Tool Sync",
+        sublabel: "Reads PDFs/emails & syncs QuickBooks/Stripe",
+        status: "2-WAY SYNC",
       },
       {
-        id: "warehouse-sync",
+        id: "crm-warehouse",
         tier: "DATA",
-        label: "Consolidated Reporting Warehouse",
-        sublabel: "Cross-platform revenue, inventory & ops telemetry",
-        status: "RECONCILED",
+        label: "Owned Company Database",
+        sublabel: "Unlimited team logins with zero monthly seat fees",
+        status: "100% OWNED",
       },
     ],
     apiBridges: [
-      { name: "QUICKBOOKS / NETSUITE", protocol: "2-WAY API", latency: "26ms" },
-      { name: "STRIPE / SQUARE", protocol: "WEBHOOK", latency: "13ms" },
-      { name: "CUSTOM REST / SQL", protocol: "BRIDGE", latency: "18ms" },
+      { name: "QUICKBOOKS SYNC", protocol: "2-WAY API", latency: "24ms" },
+      { name: "STRIPE BILLING", protocol: "WEBHOOK", latency: "14ms" },
+      { name: "AI + SMS FOLLOW-UP", protocol: "AUTOMATED", latency: "18ms" },
     ],
     promptChips: [
-      "Syncing CRM deals automatically with QuickBooks / accounting",
-      "Eliminating double data entry between 3+ platforms",
-      "Building a unified live dashboard across all tools",
-      "Replacing brittle Zapier webhooks that silently fail",
+      "Replacing messy spreadsheets or expensive HubSpot/Jobber seats",
+      "Connecting website leads, quoting, scheduling & QuickBooks",
+      "Automating repetitive copy-pasting from emails or PDFs",
+      "Building an internal dashboard with unlimited team logins",
     ],
-    roles: ["FINANCE", "OPERATIONS", "SYSTEMS ADMIN"],
+    roles: ["OWNER", "SALES / OFFICE", "FIELD TEAM"],
   },
-  "Other / Multiple Systems": {
-    capability: "Other / Multiple Systems",
-    code: "SYS-MULTI // 07",
-    shortTitle: "Full-Stack Ecosystem",
+  "Not Sure / Multiple Things": {
+    capability: "Not Sure / Multiple Things",
+    code: "SYS-MULTI // 05",
+    shortTitle: "Website + Custom App Plan",
     tagline:
-      "Combine custom CRM, mobile field apps, AI automation, and deep integrations into one cohesive architecture.",
+      "Need a website plus custom features, or not sure which tier fits? Tell us your goal and we'll map the simplest path.",
     deliverableSummary:
-      "Unified multi-surface platform (Web + Mobile + AI + Integrations) with 100% IP ownership",
+      "Tailored website & application plan with clear fixed milestones and 100% ownership",
     architectureNodes: [
       {
         id: "omni-surface",
         tier: "INTAKE",
-        label: "Multi-Surface Apps (Web + Mobile + Portal)",
-        sublabel: "Tailored interfaces for office, field & customers",
-        status: "UNIFIED UI",
+        label: "Website, Web App or Mobile App",
+        sublabel: "Right-sized interface for customers & your team",
+        status: "TAILORED",
       },
       {
         id: "core-orchestrator",
         tier: "LOGIC",
-        label: "Centralized Workflow & AI Orchestrator",
-        sublabel: "Automated routing, quoting, approvals & AI extraction",
-        status: "AUTONOMOUS",
+        label: "Custom Business Workflows",
+        sublabel: "Booking, quoting, logins, or AI automation",
+        status: "CLEAR SCOPE",
       },
       {
         id: "integration-mesh",
         tier: "LOGIC",
-        label: "Bi-Directional Accounting & Payment Mesh",
-        sublabel: "Real-time sync with Stripe, QuickBooks, SMS & APIs",
+        label: "Connected Payments & Tools",
+        sublabel: "Syncs cleanly with Stripe, QuickBooks, SMS & email",
         status: "CONNECTED",
       },
       {
         id: "sozo-foundation",
         tier: "DATA",
-        label: "100% Client-Owned Cloud & Database",
-        sublabel: "Full GitHub repository handover & zero per-seat tax",
+        label: "100% Owned Code & Hosting",
+        sublabel: "Full repository handover & $0 monthly platform rent",
         status: "100% OWNED",
       },
     ],
     apiBridges: [
-      { name: "STRIPE + QUICKBOOKS", protocol: "LEDGER SYNC", latency: "16ms" },
-      { name: "AI + TWILIO SMS", protocol: "AUTOMATION", latency: "24ms" },
-      { name: "WEB + MOBILE SDK", protocol: "REAL-TIME", latency: "11ms" },
+      { name: "WEBSITE + PORTAL", protocol: "NEXT.JS", latency: "11ms" },
+      { name: "STRIPE + QUICKBOOKS", protocol: "SYNC", latency: "16ms" },
+      { name: "EMAIL + SMS", protocol: "AUTOMATED", latency: "19ms" },
     ],
     promptChips: [
-      "Full operational overhaul (CRM + Customer Portal + Automation)",
-      "Not sure where to start — need an architecture roadmap",
-      "Consolidating 4+ SaaS subscriptions into one owned system",
-      "Phased rollout starting with our biggest workflow bottleneck",
+      "Need both a new website and online booking / portal features",
+      "Not sure which package fits — want a straightforward recommendation",
+      "Start with an $800–$1,000 website now and add custom features later",
+      "Replacing multiple monthly software subscriptions at once",
     ],
-    roles: ["EXECUTIVE", "OFFICE OPS", "FIELD CREW", "CUSTOMERS"],
+    roles: ["OWNER", "CUSTOMERS", "TEAM"],
   },
 };
 
@@ -401,7 +299,7 @@ export function getCapabilityBlueprint(
   if (key in CAPABILITY_BLUEPRINTS) {
     return CAPABILITY_BLUEPRINTS[key];
   }
-  return CAPABILITY_BLUEPRINTS["Custom Software Development"];
+  return CAPABILITY_BLUEPRINTS["Custom Websites & Redesigns"];
 }
 
 export type WizardStepId = "system" | "workflow" | "parameters" | "dispatch";
@@ -419,51 +317,51 @@ export const WIZARD_STEPS: readonly WizardStepMeta[] = [
   {
     id: "system",
     index: 0,
-    code: "01 // SYSTEM",
-    label: "Capability",
-    headline: "Select the core system you want to engineer",
+    code: "01 // PROJECT TYPE",
+    label: "What You Need",
+    headline: "What can we build or update for you?",
     subtitle:
-      "Choose a primary architecture profile. Watch your live system blueprint assemble on the right.",
+      "From $800–$1,000 business websites to full custom web & mobile apps.",
   },
   {
     id: "workflow",
     index: 1,
-    code: "02 // WORKFLOW",
-    label: "Workflow Scope",
-    headline: "Map the manual workflows & tools we are replacing",
+    code: "02 // DETAILS",
+    label: "Project Details",
+    headline: "Tell us a little about your project",
     subtitle:
-      "Tap any quick-scope tags that apply or describe how your team operates today.",
+      "Tap any quick-add goals below or write a couple sentences in your own words.",
   },
   {
     id: "parameters",
     index: 2,
-    code: "03 // PARAMETERS",
-    label: "Scope & Timeline",
-    headline: "Calibrate your target timeline, budget & service area",
+    code: "03 // BUDGET & TIMELINE",
+    label: "Budget & Timeline",
+    headline: "What budget and timeline are you aiming for?",
     subtitle:
-      "Every build ships in weekly staging releases with 100% source-code ownership.",
+      "Clear flat/milestone pricing, fast turnaround, and 100% ownership on every build.",
   },
   {
     id: "dispatch",
     index: 3,
-    code: "04 // DISPATCH",
-    label: "Launch Brief",
-    headline: "Where should Chandler send your architecture review?",
+    code: "04 // CONTACT INFO",
+    label: "Your Info",
+    headline: "Where should Chandler send your quote & plan?",
     subtitle:
-      "Direct principal-engineer review—no sales reps or account manager layers.",
+      "You work directly with the founder—no sales reps or account manager layers.",
   },
 ] as const;
 
 export function getStepFocusSummary(stepId: WizardStepId): string {
   switch (stepId) {
     case "system":
-      return "TOPOLOGY // SELECTING CORE CAPABILITY NODES";
+      return "STEP 01 // SELECTING WEBSITE OR APP PACKAGE";
     case "workflow":
-      return "PIPELINE // WIRING WORKFLOWS & API BRIDGES";
+      return "STEP 02 // MAPPING GOALS & FEATURES";
     case "parameters":
-      return "CADENCE // CALIBRATING DELIVERY & OWNERSHIP SPEC";
+      return "STEP 03 // SETTING BUDGET & LAUNCH TIMELINE";
     case "dispatch":
-      return "DISPATCH // READY FOR PRINCIPAL ARCHITECT REVIEW";
+      return "STEP 04 // SENDING DIRECTLY TO CHANDLER";
     default: {
       const _exhaustive: never = stepId;
       return _exhaustive;

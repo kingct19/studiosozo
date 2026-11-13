@@ -15,16 +15,16 @@ import { flatServiceLocations, serviceLocations } from "@/lib/locations";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Discuss Your Project",
+  title: "Start Your Website or App Project",
   description:
-    "Start a conversation with Studio Sozo about custom software development, custom CRM systems, AI automation, web applications, mobile apps, or systems integration.",
+    "Get a straightforward quote from Studio Sozo for an $800–$1,000 custom website or redesign, custom web app, iPhone/Android mobile app, or CRM & automation.",
   alternates: {
     canonical: "/contact",
   },
   openGraph: {
-    title: `Discuss Your Project | ${siteConfig.name}`,
+    title: `Start Your Website or App Project | ${siteConfig.name}`,
     description:
-      "Tell Studio Sozo about the software, CRM, or workflow automation your business needs.",
+      "Need an $800–$1,000 business website, a redesign, or a custom web/mobile app? Tell Studio Sozo what you want to build.",
     url: `${siteConfig.url}/contact`,
   },
 };
@@ -56,10 +56,10 @@ export default function ContactPage() {
             <FadeInItem>
               <p className="mt-6 max-w-3xl text-pretty font-sans text-xl font-bold leading-snug tracking-tight text-[#8898aa] md:text-2xl">
                 <span className="text-[#0a2540]">
-                  Tell us about the disconnected tools you want to replace.
+                  Need an $800–$1,000 business website or a full custom app?
                 </span>{" "}
-                The workflows you want to automate, or the custom platform your
-                business needs to build.
+                Tell us what you want to build or update and get a clear quote
+                directly from Chandler.
               </p>
             </FadeInItem>
           </FadeInSection>

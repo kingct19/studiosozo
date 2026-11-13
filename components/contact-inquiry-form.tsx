@@ -10,7 +10,7 @@ import {
   Sparkles,
 } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Controller, useForm, useWatch, type Resolver } from "react-hook-form";
 
 import { submitProjectInquiry } from "@/app/contact/actions";
@@ -176,6 +176,71 @@ export function ContactInquiryForm() {
   };
 
   const activeBlueprint = getCapabilityBlueprint(liveValues.softwareType);
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const pkg = params.get("package")?.toLowerCase();
+    const svc = params.get("service")?.toLowerCase();
+
+    if (pkg === "website" || svc === "custom-websites") {
+      setValue("softwareType", "Custom Websites & Redesigns", {
+        shouldDirty: true,
+      });
+      setValue("estimatedBudget", "$800 – $1,000 (Website Build / Update)", {
+        shouldDirty: true,
+      });
+      setActiveStep("workflow");
+      return;
+    }
+    if (
+      pkg === "automation" ||
+      svc === "ai-and-automation" ||
+      svc === "systems-integration"
+    ) {
+      setValue("softwareType", "Custom CRMs & AI Automation", {
+        shouldDirty: true,
+      });
+      setValue("estimatedBudget", "$2,000 – $5,000", { shouldDirty: true });
+      setActiveStep("workflow");
+      return;
+    }
+    if (pkg === "app" || svc === "web-applications") {
+      setValue("softwareType", "Web Apps & Customer Portals", {
+        shouldDirty: true,
+      });
+      setValue("estimatedBudget", "$5,000 – $10,000", { shouldDirty: true });
+      setActiveStep("workflow");
+      return;
+    }
+    if (svc === "mobile-app-development") {
+      setValue("softwareType", "Mobile Apps (iOS & Android)", {
+        shouldDirty: true,
+      });
+      setValue("estimatedBudget", "$5,000 – $10,000", { shouldDirty: true });
+      setActiveStep("workflow");
+      return;
+    }
+    if (
+      svc === "crm-and-business-systems" ||
+      svc === "custom-software-development"
+    ) {
+      setValue("softwareType", "Custom CRMs & AI Automation", {
+        shouldDirty: true,
+      });
+      setValue("estimatedBudget", "$5,000 – $10,000", { shouldDirty: true });
+      setActiveStep("workflow");
+      return;
+    }
+    if (pkg === "custom") {
+      setValue("softwareType", "Not Sure / Multiple Things", {
+        shouldDirty: true,
+      });
+      setValue("estimatedBudget", "$25,000+ / Custom Scope", {
+        shouldDirty: true,
+      });
+      setActiveStep("workflow");
+    }
+  }, [setValue]);
   const currentStepIndex = WIZARD_STEPS.findIndex((s) => s.id === activeStep);
   const currentStepMeta = WIZARD_STEPS[currentStepIndex] ?? WIZARD_STEPS[0];
   const progressPercent = Math.round(
@@ -447,7 +512,7 @@ export function ContactInquiryForm() {
                       render={({ field }) => (
                         <Field data-invalid={!!errors.softwareType}>
                           <FieldLabel>
-                            What type of system do you need?
+                            What would you like us to build or update?
                           </FieldLabel>
                           <div className="mt-2 grid grid-cols-1 gap-2.5 sm:grid-cols-2">
                             {softwareTypeOptions.map((option) => {
@@ -464,7 +529,7 @@ export function ContactInquiryForm() {
                                   onClick={() => field.onChange(option)}
                                   className={cn(
                                     "group relative flex flex-col justify-between border p-3.5 text-left transition-all",
-                                    option === "Other / Multiple Systems" &&
+                                    option === "Not Sure / Multiple Things" &&
                                       "sm:col-span-2",
                                     isSelected
                                       ? "border-[#635bff] bg-[#635bff]/6 shadow-[0_4px_16px_rgba(99,91,255,0.08)]"
@@ -571,13 +636,13 @@ export function ContactInquiryForm() {
                       <Textarea
                         id="projectDescription"
                         rows={5}
-                        placeholder="Tell us what tools or spreadsheets you are replacing, how your team currently works, and what you want the new system to handle..."
+                        placeholder="Tell us about your business, your current website or tools (if any), and what you want us to build or update..."
                         aria-invalid={!!errors.projectDescription}
                         {...register("projectDescription")}
                       />
                       <FieldDescription>
-                        Include any existing platforms, APIs, or manual
-                        workflows you want to connect or replace.
+                        Share a link to your current site if this is a redesign,
+                        or list the main pages/features you have in mind.
                       </FieldDescription>
                       <FieldError errors={[errors.projectDescription]} />
                     </Field>
@@ -610,8 +675,10 @@ export function ContactInquiryForm() {
                                   onClick={() => field.onChange(option)}
                                   className={cn(
                                     "flex items-center justify-between border px-3.5 py-2.5 text-left font-mono text-xs transition-colors",
-                                    option ===
-                                      "Exploring Scope / Needs Assessment" &&
+                                    (option ===
+                                      "$800 – $1,000 (Website Build / Update)" ||
+                                      option ===
+                                        "Not sure yet — help me scope it") &&
                                       "sm:col-span-2",
                                     isSelected
                                       ? "border-[#635bff] bg-[#635bff]/8 font-bold text-[#0a2540]"

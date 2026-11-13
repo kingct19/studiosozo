@@ -280,6 +280,7 @@ export const caseStudiesData: CaseStudy[] = [
       { value: "100%", label: "Pre-Arrival Symptom Context" },
     ],
     serviceSlugs: [
+      "custom-websites",
       "web-applications",
       "ai-and-automation",
       "systems-integration",
@@ -343,6 +344,7 @@ export const caseStudiesData: CaseStudy[] = [
       { value: "100%", label: "Digital Pre-Arrival Check-In" },
     ],
     serviceSlugs: [
+      "custom-websites",
       "web-applications",
       "custom-software-development",
       "mobile-app-development",
@@ -406,6 +408,7 @@ export const caseStudiesData: CaseStudy[] = [
       { value: "Native", label: "Bundle & Cart Engine" },
     ],
     serviceSlugs: [
+      "custom-websites",
       "web-applications",
       "systems-integration",
       "custom-software-development",

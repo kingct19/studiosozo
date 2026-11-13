@@ -4,15 +4,16 @@ import { siteConfig } from "@/lib/site";
 
 export const softwareTypeOptions = [
   ...siteConfig.services.map((service) => service.title),
-  "Other / Multiple Systems",
+  "Not Sure / Multiple Things",
 ] as const;
 
 export const budgetRangeOptions = [
-  "Exploring Scope / Needs Assessment",
+  "$800 – $1,000 (Website Build / Update)",
   "$2,000 – $5,000",
   "$5,000 – $10,000",
   "$10,000 – $25,000",
   "$25,000+ / Custom Scope",
+  "Not sure yet — help me scope it",
 ] as const;
 
 export const timelineOptions = [
@@ -46,13 +47,13 @@ export const inquirySchema = z.object({
   softwareType: z
     .string()
     .trim()
-    .min(1, "Please select the type of software needed."),
+    .min(1, "Please select what you want to build."),
   projectDescription: z
     .string()
     .trim()
     .min(
       20,
-      "Please share at least 20 characters describing your current workflow or software goals.",
+      "Please share at least 20 characters describing your website or app goals.",
     ),
   estimatedBudget: z
     .string()

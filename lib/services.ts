@@ -28,6 +28,7 @@ export interface ServiceDetail {
   number: string;
   title: string;
   shortTitle: string;
+  priceBadge: string;
   eyebrow: string;
   headline: string;
   highlightWord: string;
@@ -47,743 +48,884 @@ export interface ServiceDetail {
 
 export const SERVICE_PAIN_DIAGNOSTICS = [
   {
-    code: "PAIN // 01",
-    bottleneck: "Spreadsheet & Tab Chaos",
+    code: "PROBLEM // 01",
+    bottleneck: "Outdated or Rented Websites",
     symptom:
-      "Critical quotes, job statuses, and customer history live across 14 Google Sheets, text threads, and disconnected SaaS tabs.",
+      "Your current Wix, WordPress, or DIY site looks dated on phones, loads slowly, and charges monthly fees without bringing in steady leads.",
     solution:
-      "One unified system of record engineered around your exact team roles, approval gates, and daily operations.",
+      "A fast, custom-designed 1–5 page website ($800–$1,000) built to rank locally, capture leads, and belong 100% to your business.",
   },
   {
-    code: "PAIN // 02",
-    bottleneck: "Per-Seat SaaS Tax & Feature Bloat",
+    code: "PROBLEM // 02",
+    bottleneck: "Clunky Booking, Quoting & Customer Follow-Up",
     symptom:
-      "You pay thousands every month for enterprise software where your team only uses 15% of the features—and still needs workarounds.",
+      "Customers have to call or wait a day for a quote because your website cannot take bookings, deposits, or status checks online.",
     solution:
-      "100% owned custom software with zero per-seat licensing penalties and every screen built for how your people actually work.",
+      "Custom web apps and client portals where customers book, sign, pay, and check status in seconds from any device.",
   },
   {
-    code: "PAIN // 03",
-    bottleneck: "Manual Double-Entry & Human Error",
+    code: "PROBLEM // 03",
+    bottleneck: "Spreadsheet Chaos & Double Data Entry",
     symptom:
-      "Office staff copy-paste data from intake forms into the CRM, then into scheduling, then into invoicing—dropping details at every handoff.",
+      "Your team re-types the same customer and job details across emails, Google Sheets, scheduling apps, and QuickBooks.",
     solution:
-      "Automated event-driven pipelines and direct API integrations that sync data across sales, field ops, and accounting in real time.",
+      "One clean internal dashboard and automated tool sync that connects sales, field crews, and invoicing automatically.",
   },
   {
-    code: "PAIN // 04",
-    bottleneck: "Blind Spots Between Field & Office",
+    code: "PROBLEM // 04",
+    bottleneck: "Rising Per-User Software Bills",
     symptom:
-      "Leadership cannot see real-time margin, technician capacity, or pipeline velocity without asking someone to pull a manual report.",
+      "Off-the-shelf CRMs and SaaS tools charge hundreds or thousands every month—and raise the bill every time you hire.",
     solution:
-      "Live operational dashboards, mobile field apps, and automated alerts that surface exceptions before they cost money.",
+      "Custom software built once around your exact workflow, with $0 per-seat fees forever and 100% ownership.",
   },
 ] as const;
 
 export const servicesData: ServiceDetail[] = [
   {
-    slug: "custom-software-development",
+    slug: "custom-websites",
     number: "01",
-    title: "Custom Software Development",
-    shortTitle: "Custom Software",
-    eyebrow: "CAPABILITY // 01 — BESPOKE PLATFORMS",
-    headline: "Custom Software Built Around How You",
-    highlightWord: "Operate",
+    title: "Custom Websites & Redesigns",
+    shortTitle: "Custom Websites",
+    priceBadge: "$800 – $1,000 • 1–2 Weeks",
+    eyebrow: "SERVICE // 01 — CUSTOM WEBSITES & UPDATES ($800–$1,000)",
+    headline: "Fast, Modern Business Websites You",
+    highlightWord: "Own",
     seoTitle:
-      "Custom Software Development | Replace Disconnected Tools with Software You Own",
+      "Custom Business Websites & Redesigns ($800–$1,000) | Ditch Wix & WordPress",
     seoDescription:
-      "Studio Sozo designs and builds custom business software that replaces spreadsheets and rigid SaaS tools. 100% client ownership across Louisiana, Texas, Missouri, and nationwide.",
+      "Get a custom 1–5 page business website or Wix/WordPress redesign built in 1–2 weeks for $800–$1,000. Mobile-first, local Google SEO, direct lead forms, and $0 monthly platform fees.",
     summary:
-      "Bespoke platforms built around business processes rather than rigid off-the-shelf templates.",
+      "Fast, modern 1–5 page business websites or Wix/WordPress redesigns built to bring in leads—with $0 monthly platform fees.",
     leadBold:
-      "Off-the-shelf software forces your business to bend to someone else's template.",
+      "You shouldn't have to pay monthly website rent forever or settle for a slow, cookie-cutter template.",
     leadBody:
-      "We architect and engineer proprietary software systems tailored to your exact workflows, pricing rules, and team permissions—giving you a durable operational advantage you own outright.",
+      "Whether you need a brand-new 1–5 page website or want to replace an outdated Wix, WordPress, or Squarespace site, we design and build a sharp, mobile-first website in 1–2 weeks for $800–$1,000—and you own 100% of it.",
     idealFor: [
-      "Companies outgrowing spreadsheets and cobbled-together SaaS tools",
-      "Operations with proprietary quoting, dispatch, or fulfillment logic",
-      "Leadership teams tired of paying rising per-seat licensing fees",
-      "Businesses building a flagship software product or customer portal",
+      "Local service businesses, contractors, clinics, and professional firms",
+      "Companies replacing an outdated, slow Wix, WordPress, or Squarespace site",
+      "New businesses needing a credible, lead-generating website fast (1–2 weeks)",
+      "Owners tired of paying $35–$150/month forever just to keep a basic site online",
     ],
     painPoints: [
       {
-        code: "BOTTLENECK // 01",
-        title: "Forcing Unique Workflows into Rigid Templates",
+        code: "PROBLEM // 01",
+        title: "Paying Monthly Rent for a Site You Don't Own",
         symptom:
-          "Your team maintains side-spreadsheets and sticky notes because your current software cannot represent your actual pricing, stages, or approvals.",
+          "Website builders and agency retainers charge you every single month—and if you ever cancel, your entire website disappears.",
         rootCause:
-          "Generic SaaS platforms are built for the lowest common denominator across thousands of unrelated businesses.",
+          "Hosted page builders lock your design and content inside their proprietary subscription.",
       },
       {
-        code: "BOTTLENECK // 02",
-        title: "Runaway Per-User Licensing Costs",
+        code: "PROBLEM // 02",
+        title: "Slow Mobile Pages That Lose Local Customers",
         symptom:
-          "Adding field techs, contractors, or support staff triggers expensive tier upgrades, so people share logins or work outside the system.",
+          "Visitors click your link on their phone, wait several seconds for bloated plugins to load, and bounce to a competitor.",
         rootCause:
-          "Rented software monetizes headcount growth rather than operational value.",
+          "Heavy WordPress themes and drag-and-drop builders ship megabytes of unnecessary scripts.",
       },
       {
-        code: "BOTTLENECK // 03",
-        title: "No Control Over Roadmap or Data",
+        code: "PROBLEM // 03",
+        title: "Outdated Design That Undersells Your Work",
         symptom:
-          "When a vendor changes their UI, deprecates a feature, or locks exports behind an enterprise plan, your operations stall.",
+          "Your real-world work is top-tier, but an old DIY website makes your company look smaller or less trustworthy than it is.",
         rootCause:
-          "You are renting access to a black box instead of owning your core operational infrastructure.",
+          "Generic templates aren't structured around clear trust signals, service clarity, and fast quote requests.",
       },
     ],
     comparison: {
-      beforeTitle: "BEFORE // FRAGMENTED RENTED STACK",
+      beforeTitle: "BEFORE // RENTED WIX OR WORDPRESS SITE",
       beforeSteps: [
-        "Intake happens in forms or email threads with no validation",
-        "Staff re-type customer data into a rigid SaaS tool and a separate spreadsheet",
-        "Approvals and handoffs happen over Slack, SMS, or hallway conversations",
-        "Reporting requires exporting CSVs and cleaning rows manually every Friday",
+        "Paying $35–$100+/month forever for builder subscriptions and plugin add-ons",
+        "Sluggish mobile load times and broken layouts when themes update",
+        "Generic template copy that doesn't clearly explain what you offer",
+        "Contact forms that land in spam or never notify your phone",
       ],
-      afterTitle: "AFTER // UNIFIED STUDIO SOZO PLATFORM",
+      afterTitle: "AFTER // $800–$1,000 STUDIO SOZO WEBSITE",
       afterSteps: [
-        "Structured intake validates rules, pricing, and availability automatically",
-        "One shared database powers sales, operations, fulfillment, and billing",
-        "Role-based queues and automated state transitions keep every job moving",
-        "Live executive dashboards show real-time margin, velocity, and bottlenecks",
+        "One-time $800–$1,000 build—you own 100% of your code and website forever",
+        "Instant-loading mobile-first pages engineered for strong Google rankings",
+        "Custom design tailored to your brand, services, photos, and service areas",
+        "Direct lead & quote form wired straight to your inbox with instant confirmation",
       ],
     },
     deliverables: [
       {
-        tag: "ARCHITECTURE",
-        title: "Domain-Modeled Database & API Core",
+        tag: "DESIGN & BUILD",
+        title: "Custom 1–5 Page Mobile-First Website",
         description:
-          "PostgreSQL schema, strict TypeScript domain logic, and audit-logged state machines modeled around your real business entities.",
+          "Home, Services, About, Work/Gallery, and Contact pages (or a high-converting single-page layout) custom-built around your business.",
       },
       {
-        tag: "INTERFACE",
-        title: "Role-Specific Operator Workspaces",
+        tag: "LEAD CAPTURE",
+        title: "Direct Inbox Contact & Quote Form",
         description:
-          "Fast, keyboard-friendly interfaces tailored to sales reps, dispatchers, technicians, and executives—with zero clutter.",
+          "Clean, spam-protected inquiry form that sends customer details straight to your email so you can reply with one tap.",
       },
       {
-        tag: "SECURITY",
-        title: "Granular Permissions & Audit Trails",
+        tag: "LOCAL SEO",
+        title: "Google Search & Speed Foundations",
         description:
-          "Role-based access control, secure authentication, and complete change history so you always know who approved what and when.",
+          "Proper page titles, meta descriptions, OpenGraph share cards, XML sitemap, and top mobile Core Web Vitals.",
       },
       {
-        tag: "OWNERSHIP",
-        title: "Full Source Code & Cloud Infrastructure Handover",
+        tag: "LAUNCH & HANDOVER",
+        title: "Domain Setup & 100% Code Ownership",
         description:
-          "Deployed to your own cloud accounts with automated CI/CD, backups, and zero vendor lock-in or per-seat fees.",
+          "Connected to your custom domain with SSL security, zero monthly platform rent, and full ownership of your codebase.",
       },
     ],
     architectureHighlights: [
-      "Next.js & TypeScript full-stack application architecture",
-      "Relational Postgres data modeling with row-level security",
-      "Automated background jobs, webhooks, and PDF/document generation",
-      "100% IP and repository ownership transferred to your company",
+      "$800 – $1,000 flat one-time package (50% kickoff / 50% at launch)",
+      "Fast 1 – 2 week turnaround from kickoff to live domain",
+      "Built on clean Next.js & TypeScript—easy to expand into a web app later",
+      "100% client ownership with $0 monthly Studio Sozo platform fees",
     ],
-    relatedCaseStudies: ["sozo-crm", "elevate-solar", "angler-iq"],
+    relatedCaseStudies: ["hr-hvac", "serene-commerce", "elevate-solar"],
     faqs: [
       {
-        question: "Do we actually own the source code and IP?",
+        question: "What determines whether my website is $800 or $1,000?",
         answer:
-          "Yes—100%. Unlike SaaS vendors or agencies that hold your platform hostage on proprietary frameworks, Studio Sozo builds on clean, industry-standard stacks and transfers full repository, database, and cloud ownership to your business.",
+          "A focused 1–2 page launch or straightforward refresh is $800, while a full 4–5 page custom website with dedicated service/gallery pages and full copy polish is $1,000. You get an exact flat number before we start—never surprise hourly bills.",
       },
       {
-        question: "How long does a custom software build take?",
+        question: "Can you redesign my existing website and keep my current domain name?",
         answer:
-          "Most production v1 systems launch in 6 to 12 weeks. We start by shipping the highest-leverage core workflow first so your team sees immediate relief, then iterate in structured milestones.",
+          "Yes. We build your new site on a private preview link first so your current website stays live while we work. Once you love it, we point your existing domain (.com, .dev, etc.) to the new site with zero downtime.",
       },
       {
-        question: "Can our custom platform connect to QuickBooks, Stripe, or existing tools?",
+        question: "What if I want to add online booking, logins, or a customer portal later?",
         answer:
-          "Absolutely. We keep the third-party systems that work well—like Stripe for payments or QuickBooks for accounting—and integrate them directly via webhooks and APIs so your team works inside one unified interface.",
-      },
-    ],
-  },
-  {
-    slug: "crm-and-business-systems",
-    number: "02",
-    title: "CRM & Business Systems",
-    shortTitle: "CRM & Operations",
-    eyebrow: "CAPABILITY // 02 — OPERATIONAL CRMS & ERPS",
-    headline: "Custom CRMs & Operational Systems Built for",
-    highlightWord: "Velocity",
-    seoTitle:
-      "Custom CRM Development & Business Systems | Replace Bloated Off-the-Shelf CRMs",
-    seoDescription:
-      "Custom CRM, quoting, dispatch, and operational management platforms engineered around how your sales and delivery teams actually work.",
-    summary:
-      "Custom CRMs, dashboards, and operational management platforms tailored to how your team works.",
-    leadBold:
-      "Most CRMs are built for generic software sales—not businesses that quote, schedule, dispatch, and fulfill real work.",
-    leadBody:
-      "We build custom CRMs and operational back-offices that connect lead capture, complex quoting, project handoff, field execution, and customer communication in a single seamless pipeline.",
-    idealFor: [
-      "Solar, HVAC, construction, and home-service operations",
-      "B2B and service companies with multi-step quoting or underwriting",
-      "Teams frustrated by HubSpot, Salesforce, or ServiceTitan complexity and cost",
-      "Multi-location businesses needing unified pipeline and job visibility",
-    ],
-    painPoints: [
-      {
-        code: "BOTTLENECK // 01",
-        title: "The Sales-to-Operations Handoff Gap",
-        symptom:
-          "Sales closes a deal in the CRM, and operations has to re-collect site photos, specs, and contract terms to actually deliver the job.",
-        rootCause:
-          "Standard CRMs stop at 'Closed Won' and have no concept of your fulfillment, permitting, or installation workflow.",
-      },
-      {
-        code: "BOTTLENECK // 02",
-        title: "Low Rep Adoption Due to Cluttered Screens",
-        symptom:
-          "Sales reps hate logging activity because every update requires clicking through 40 irrelevant fields and slow modal popups.",
-        rootCause:
-          "Bloated enterprise CRMs are overloaded with generic tabs instead of a focused pipeline tailored to your sales motion.",
-      },
-      {
-        code: "BOTTLENECK // 03",
-        title: "Slow, Inaccurate Quoting & Proposals",
-        symptom:
-          "Estimators spend hours building quotes in spreadsheets, risking margin errors and losing deals to faster competitors.",
-        rootCause:
-          "Pricing formulas, equipment catalogs, and financing options are not built into the CRM.",
-      },
-    ],
-    comparison: {
-      beforeTitle: "BEFORE // BLOATED GENERIC CRM",
-      beforeSteps: [
-        "Leads sit untouched because routing and follow-up reminders are manual",
-        "Reps calculate quotes in an external Excel sheet and attach a static PDF",
-        "Closed deals are emailed to ops, who create a duplicate record in a project tool",
-        "Leadership has no accurate view of true job profitability vs. original estimate",
-      ],
-      afterTitle: "AFTER // CUSTOM STUDIO SOZO CRM",
-      afterSteps: [
-        "Instant lead ingestion, automated SMS/email speed-to-lead, and smart territory routing",
-        "Interactive quoting engine with live margin guardrails and one-click e-signature",
-        "Closing a deal automatically provisions the job board, crew tasks, and customer portal",
-        "Real-time pipeline, commission tracking, and job-costing analytics in one view",
-      ],
-    },
-    deliverables: [
-      {
-        tag: "PIPELINE",
-        title: "Custom Lead-to-Cash Pipeline Engine",
-        description:
-          "Stages, required checklists, and automated triggers that match your exact sales and delivery lifecycle.",
-      },
-      {
-        tag: "QUOTING",
-        title: "Built-In Estimator & Proposal Generator",
-        description:
-          "Configure products, labor, financing, and add-ons with instant PDF/web proposals and embedded acceptance.",
-      },
-      {
-        tag: "OPERATIONS",
-        title: "Dispatch, Scheduling & Crew Portals",
-        description:
-          "Assign technicians, track site checklists, upload field photos, and trigger automated customer status updates.",
-      },
-      {
-        tag: "REPORTING",
-        title: "Executive Revenue & Rep Performance Dashboards",
-        description:
-          "Track close rates, lead source ROI, cycle times, commissions, and gross margin per job in real time.",
-      },
-    ],
-    architectureHighlights: [
-      "Unified data model spanning leads, quotes, jobs, invoices, and equipment",
-      "Twilio SMS/voice, email, and calendar sync built directly into contact timelines",
-      "Automated commission calculation and role-scoped rep views",
-      "Zero per-seat CRM licensing fees as your sales and field teams scale",
-    ],
-    relatedCaseStudies: ["sozo-crm", "elevate-solar", "hr-hvac"],
-    faqs: [
-      {
-        question: "Why build a custom CRM instead of customizing Salesforce or HubSpot?",
-        answer:
-          "Customizing enterprise CRMs often costs as much in consultants and add-on subscriptions as building a custom platform—yet you still pay steep monthly per-seat fees forever and fight their rigid data model. With a custom CRM, every screen is fast, purpose-built, and owned by you.",
-      },
-      {
-        question: "Can you migrate our existing contacts, deals, and historical notes?",
-        answer:
-          "Yes. We build deterministic migration scripts that clean, deduplicate, and import your historical accounts, contacts, pipeline history, and attachments with zero downtime.",
-      },
-      {
-        question: "Can customers log in to see their project or order status?",
-        answer:
-          "Yes. Because the CRM and customer portal share the same underlying database, you can expose real-time project milestones, documents, and payment links to customers automatically.",
-      },
-    ],
-  },
-  {
-    slug: "ai-and-automation",
-    number: "03",
-    title: "AI & Automation",
-    shortTitle: "AI & Automation",
-    eyebrow: "CAPABILITY // 03 — INTELLIGENT WORKFLOWS",
-    headline: "Eliminate Manual Busywork with Practical",
-    highlightWord: "AI Automation",
-    seoTitle:
-      "AI & Workflow Automation Development | Eliminate Manual Data Entry & Busywork",
-    seoDescription:
-      "Practical AI agents, document extraction, and workflow automation engineered to eliminate repetitive admin work and speed up operations.",
-    summary:
-      "Automate repetitive processes, eliminate manual data entry, and connect intelligent workflows.",
-    leadBold:
-      "Your highest-paid people shouldn't spend hours copying data, triaging inbox requests, or chasing status updates.",
-    leadBody:
-      "We engineer production-grade AI workflows and deterministic automations that read documents, qualify inbound requests, draft responses, and trigger actions across your software stack—with human-in-the-loop guardrails where they matter.",
-    idealFor: [
-      "Teams buried in PDFs, invoices, utility bills, or intake documents",
-      "Service businesses needing instant 24/7 lead qualification and booking",
-      "Operations relying on fragile Zapier chains that break silently",
-      "Companies wanting domain-specific AI assistants grounded in their own data",
-    ],
-    painPoints: [
-      {
-        code: "BOTTLENECK // 01",
-        title: "Hours Lost to Manual Document & Email Triage",
-        symptom:
-          "Staff open attachments, read utility bills or work orders, and manually key fields into your database one record at a time.",
-        rootCause:
-          "Unstructured inputs (emails, PDFs, photos, voice notes) aren't connected to structured operational pipelines.",
-      },
-      {
-        code: "BOTTLENECK // 02",
-        title: "Fragile No-Code Zapier Spaghetti",
-        symptom:
-          "You have dozens of multi-step Zaps that fail silently on edge cases, hit rate limits, and nobody knows how to debug.",
-        rootCause:
-          "Critical business logic outgrew glue-tools and needs code-level retries, validation, and observability.",
-      },
-      {
-        code: "BOTTLENECK // 03",
-        title: "Slow Response Times to Inbound Leads & Customers",
-        symptom:
-          "After-hours inquiries wait until the next morning, costing you high-intent bookings to competitors who respond first.",
-        rootCause:
-          "Lead qualification, FAQ handling, and appointment slot lookup depend entirely on manual human availability.",
-      },
-    ],
-    comparison: {
-      beforeTitle: "BEFORE // MANUAL ADMIN & FRAGILE ZAPS",
-      beforeSteps: [
-        "Coordinator downloads PDFs and types line items into the system by hand",
-        "Inbound leads wait hours for a call back to confirm basic service eligibility",
-        "Broken webhook or Zapier task drops records with no alert or retry queue",
-        "Team searches across folders and chats to answer routine policy questions",
-      ],
-      afterTitle: "AFTER // ENGINEERED AI & WORKFLOW PIPELINE",
-      afterSteps: [
-        "AI vision & document pipelines extract, validate, and populate records in seconds",
-        "Instant AI intake qualifies scope, checks territory, and books the calendar 24/7",
-        "Durable background workflows with dead-letter queues, audit logs, and retries",
-        "Domain-grounded AI copilot surfaces exact answers from your SOPs and live database",
-      ],
-    },
-    deliverables: [
-      {
-        tag: "EXTRACTION",
-        title: "Automated Document, PDF & Image Ingestion",
-        description:
-          "Structured extraction from invoices, contracts, utility bills, and field photos directly into validated database records.",
-      },
-      {
-        tag: "AGENTS",
-        title: "Customer-Facing & Internal AI Copilots",
-        description:
-          "RAG-powered assistants and tool-calling agents grounded in your real inventory, pricing, and company knowledge base.",
-      },
-      {
-        tag: "ORCHESTRATION",
-        title: "Durable Event-Driven Workflow Engine",
-        description:
-          "Code-level automations with schema validation, automatic retries, human approval gates, and error alerting.",
-      },
-      {
-        tag: "COMMUNICATION",
-        title: "Automated SMS, Email & Voice Follow-Up",
-        description:
-          "Intelligent speed-to-lead, appointment reminders, and status notifications triggered by real operational events.",
-      },
-    ],
-    architectureHighlights: [
-      "Structured LLM outputs with strict Zod schema validation",
-      "Retrieval-Augmented Generation (RAG) over your private operational data",
-      "Human-in-the-loop confidence thresholds for high-stakes approvals",
-      "Full token-cost monitoring, evaluation guardrails, and audit logging",
-    ],
-    relatedCaseStudies: ["angler-iq", "sozo-crm", "elevate-solar"],
-    faqs: [
-      {
-        question: "How do you prevent AI hallucinations in business-critical workflows?",
-        answer:
-          "We never let an LLM free-wheel on critical data. We combine deterministic code rules, strict JSON schema validation, citations against your database, and confidence thresholds that route uncertain items to a fast human approval queue.",
-      },
-      {
-        question: "Is our company data used to train public AI models?",
-        answer:
-          "No. We use enterprise API endpoints with zero data retention policies so your proprietary business data, customer records, and documents are never used to train third-party models.",
-      },
-      {
-        question: "Can you replace our expensive Zapier or Make workflows?",
-        answer:
-          "Yes. We regularly consolidate dozens of brittle no-code Zaps into a single version-controlled, observable workflow service with proper error handling and zero per-task surcharges.",
+          "Because we build your website on the exact same modern Next.js foundation we use for full web applications, we never have to throw your site away—we can bolt on booking, payments, or a client portal anytime your business is ready.",
       },
     ],
   },
   {
     slug: "web-applications",
-    number: "04",
-    title: "Web Applications",
-    shortTitle: "Web Applications",
-    eyebrow: "CAPABILITY // 04 — SCALABLE WEB PLATFORMS",
-    headline: "High-Performance Web Applications That Convert &",
-    highlightWord: "Scale",
+    number: "02",
+    title: "Web Apps & Customer Portals",
+    shortTitle: "Web Apps & Portals",
+    priceBadge: "Custom Portals • Booking • SaaS",
+    eyebrow: "SERVICE // 02 — WEB APPLICATIONS & PORTALS",
+    headline: "Custom Web Apps & Portals That Run Your",
+    highlightWord: "Business",
     seoTitle:
-      "Custom Web Application Development | Customer Portals, Booking & SaaS Platforms",
+      "Custom Web Application Development | Booking Engines, Client Portals & SaaS",
     seoDescription:
-      "Modern, fast web applications engineered by Studio Sozo—from self-serve booking and commerce platforms to customer portals and B2B SaaS products.",
+      "Modern, fast web applications built by Studio Sozo—from online booking and checkout flows to customer login portals and SaaS products.",
     summary:
-      "Modern, scalable web-based platforms for internal teams, partners, and customers.",
+      "Online booking, custom quoting, checkout flows, and client login portals tailored to how your business runs.",
     leadBold:
-      "When customers or partners interact with your business online, slow templates and clunky portals erode trust.",
+      "When your business needs more than a brochure site—like live booking, payments, or customer logins—templates fall apart.",
     leadBody:
-      "We build blazing-fast, responsive web applications—from interactive booking and rental engines to customer self-service portals and full SaaS products—engineered for conversion, SEO, and operational reliability.",
+      "We design and build fast, mobile-friendly web applications where customers can book, get instant quotes, sign waivers, pay invoices, or log into their own portal—all connected directly to your team.",
     idealFor: [
-      "Businesses needing custom booking, scheduling, or rental checkout flows",
-      "Companies launching a customer or partner self-service portal",
-      "Founders and operators building a commercial SaaS or marketplace platform",
-      "Brands outgrowing Shopify/WordPress plugins with custom pricing or logic",
+      "Businesses needing custom online booking, scheduling, or rental checkout",
+      "Companies launching a client or partner login portal for orders & invoices",
+      "Founders building a subscription SaaS product or online marketplace",
+      "Brands outgrowing clunky third-party booking widgets and WordPress plugins",
     ],
     painPoints: [
       {
-        code: "BOTTLENECK // 01",
-        title: "High Drop-Off in Clunky Booking or Checkout Flows",
+        code: "PROBLEM // 01",
+        title: "Customers Drop Off in Clunky Booking or Quote Forms",
         symptom:
-          "Customers abandon forms or call your office because your current website cannot show real-time availability, instant pricing, or smooth checkout.",
+          "Prospects abandon your form or call the office because your site can't show real availability, clear pricing, or smooth mobile checkout.",
         rootCause:
-          "Bolted-on third-party widgets and iframe embeds feel slow, disconnected, and frustrating on mobile.",
+          "Bolted-on third-party widgets feel slow, disconnected, and frustrating on phones.",
       },
       {
-        code: "BOTTLENECK // 02",
-        title: "Support Inbox Flooded with 'Where Is My Order/Job?'",
+        code: "PROBLEM // 02",
+        title: "Endless 'What's My Status?' Calls & Emails",
         symptom:
-          "Your team spends hours every day answering status calls, resending invoices, and collecting updated documents.",
+          "Your team spends hours every day answering status calls, resending PDFs, and chasing down signatures or payments.",
         rootCause:
-          "Customers have no self-service portal to view status, sign agreements, upload files, or pay balances.",
+          "Customers have no simple login portal to check progress, upload files, or pay balances themselves.",
       },
       {
-        code: "BOTTLENECK // 03",
-        title: "Plugin Bloat & Poor Core Web Vitals",
+        code: "PROBLEM // 03",
+        title: "Third-Party Booking Commissions Eating Your Margin",
         symptom:
-          "Your site loads slowly, ranks poorly in search, and breaks whenever a theme or plugin updates.",
+          "Rental and scheduling platforms take a percentage of every booking while still limiting how you price add-ons or deposits.",
         rootCause:
-          "Template builders and plugin stacks add megabytes of blocking scripts instead of clean, server-rendered code.",
+          "Marketplace widgets charge ongoing transaction fees instead of letting you process directly via Stripe.",
       },
     ],
     comparison: {
-      beforeTitle: "BEFORE // TEMPLATE + WIDGET PATCHWORK",
+      beforeTitle: "BEFORE // PATCHWORK WIDGETS & MANUAL EMAILS",
       beforeSteps: [
-        "Slow third-party booking iframe that doesn't match your brand or pricing rules",
+        "Slow third-party booking embed that doesn't match your brand or pricing rules",
         "Customers submit a 'Request a Quote' form and wait 24 hours for a manual reply",
         "Staff manually email PDF waivers, invoices, and payment links back and forth",
-        "Poor technical SEO structure and sluggish mobile performance hurt organic growth",
+        "Marketplace platforms take a cut of every reservation you worked to earn",
       ],
-      afterTitle: "AFTER // CUSTOM STUDIO SOZO WEB APPLICATION",
+      afterTitle: "AFTER // CUSTOM STUDIO SOZO WEB APP",
       afterSteps: [
-        "Native, sub-second interactive booking, configuration, or checkout experience",
-        "Real-time inventory, dynamic pricing, waivers, and Stripe payments in one flow",
-        "Authenticated customer portal with live status tracking, documents, and messaging",
-        "Server-rendered Next.js architecture with structured schema and top Core Web Vitals",
+        "Fast, custom-branded booking, quoting, or checkout flow built for phones",
+        "Live availability, custom add-ons, digital waivers, and Stripe payments in one step",
+        "Client login portal with live job status, documents, and one-click invoice pay",
+        "100% owned platform—you keep all your revenue with $0 platform commissions",
       ],
     },
     deliverables: [
       {
-        tag: "EXPERIENCE",
-        title: "Conversion-Engineered Customer Interfaces",
+        tag: "CUSTOMER FLOWS",
+        title: "Interactive Booking, Quoting & Checkout",
         description:
-          "Mobile-first, accessible web apps with instant feedback, clear pricing breakdowns, and frictionless checkout.",
+          "Mobile-first web interfaces with live pricing, calendar availability, deposits, and instant confirmation emails.",
       },
       {
-        tag: "PORTALS",
-        title: "Authenticated Client & Partner Portals",
+        tag: "CLIENT PORTALS",
+        title: "Secure Customer & Partner Login Portals",
         description:
-          "Secure logins where customers view live project stages, download deliverables, sign agreements, and pay invoices.",
+          "Dedicated accounts where clients view project progress, download files, sign agreements, and pay balances.",
       },
       {
-        tag: "COMMERCE",
-        title: "Booking, Rental & Custom Checkout Engines",
+        tag: "ADMIN CONTROL",
+        title: "Simple Staff Management Dashboard",
         description:
-          "Date/time slot inventory, fleet or resource scheduling, deposits, damage waivers, and automated confirmations.",
+          "Update pricing, availability, photos, orders, and customer records from a clean dashboard anyone on your team can use.",
       },
       {
         tag: "SEO & SPEED",
-        title: "Technical SEO & Sub-Second Edge Delivery",
+        title: "Fast Cloud Hosting & Google SEO",
         description:
-          "Semantic HTML, dynamic sitemaps, JSON-LD structured data, OpenGraph assets, and optimized Core Web Vitals.",
+          "Server-rendered Next.js pages, structured Google schema, and sub-second page loads.",
       },
     ],
     architectureHighlights: [
-      "Next.js App Router with Server Components and streaming rendering",
-      "Stripe payments, subscriptions, deposits, and automated invoicing",
-      "Real-time availability, booking locks, and calendar synchronization",
-      "Built-in analytics, conversion tracking, and SEO metadata architecture",
+      "Next.js & TypeScript full-stack web application",
+      "Direct Stripe payments, deposits, subscriptions, and invoicing",
+      "Secure magic-link or password login with role permissions",
+      "100% code and database ownership—zero monthly platform commissions",
     ],
     relatedCaseStudies: ["dash-lake-rentals", "hr-hvac", "serene-commerce"],
     faqs: [
       {
-        question: "How is a custom web application different from a standard marketing website?",
+        question: "Do I need the $800–$1,000 Website package or a Custom Web App?",
         answer:
-          "A marketing website is primarily static pages. A web application has live business logic, databases, user authentication, interactive quoting or booking, payment processing, and direct integration with your internal operations.",
+          "If you need 1–5 pages to showcase your business, rank on Google, and capture leads via a contact form, the $800–$1,000 Website package is the right fit. If you need user logins, live calendar/fleet availability, Stripe checkout, or an admin database, that's a Custom Web App.",
       },
       {
-        question: "Will our web application rank well on Google?",
+        question: "Can my team update prices, photos, and availability ourselves?",
         answer:
-          "Yes. We engineer every public-facing route with server-side rendering, clean URL hierarchies, canonical tags, JSON-LD schema markup, and fast Core Web Vitals so search engines can crawl and rank your pages effectively.",
+          "Yes. We build straightforward admin controls right into your app so you never need to call a developer just to update pricing, schedules, or content.",
       },
       {
-        question: "Can our team update content without needing a developer?",
+        question: "Will our public pages still rank well on Google?",
         answer:
-          "Yes. We build clean admin dashboards and structured content controls so your team can update pricing, availability, photos, FAQs, and promotions in seconds.",
+          "Yes. Every public page is server-rendered with clean URLs, fast mobile speed, and Google schema markup so customers find you organically.",
       },
     ],
   },
   {
     slug: "mobile-app-development",
-    number: "05",
-    title: "Mobile App Development",
+    number: "03",
+    title: "Mobile Apps (iOS & Android)",
     shortTitle: "Mobile Apps",
-    eyebrow: "CAPABILITY // 05 — IOS & ANDROID PLATFORMS",
-    headline: "Native-Grade Mobile Apps for Field Teams &",
-    highlightWord: "Customers",
+    priceBadge: "iPhone & Android Apps",
+    eyebrow: "SERVICE // 03 — IPHONE & ANDROID APPS",
+    headline: "iPhone & Android Apps for Customers &",
+    highlightWord: "Crews",
     seoTitle:
-      "Mobile App Development (iOS & Android) | Field Operations & Consumer Mobile Products",
+      "Mobile App Development (iOS & Android) | Customer & Field Apps You Own",
     seoDescription:
-      "Studio Sozo designs and builds iOS and Android mobile applications for field service crews, inspections, and consumer products.",
+      "Studio Sozo designs and builds custom iPhone (iOS) and Android mobile apps for businesses, field crews, and startup founders—with 100% ownership.",
     summary:
-      "iOS and Android applications that extend your operations into the field and to your customers.",
+      "Custom iPhone and Android apps for your customers or field crews—complete with photos, push alerts, and live sync.",
     leadBold:
-      "Real work happens on job sites, on the water, and in the field—not sitting behind a desktop monitor.",
+      "Whether your app is for paying customers or technicians in the field, it has to feel fast, simple, and reliable on a phone.",
     leadBody:
-      "We engineer iOS and Android applications that put your core system in the pocket of every technician, inspector, or customer—with offline resilience, GPS/camera workflows, push notifications, and instant sync back to headquarters.",
+      "We design and build custom iOS and Android apps from one unified codebase—complete with camera uploads, GPS, push notifications, offline support, and App Store + Google Play launch.",
     idealFor: [
-      "Field service, installation, and inspection teams working on-site",
-      "Founders launching an AI-enabled consumer or prosumer mobile product",
-      "Logistics, fleet, and equipment rental operations",
-      "Businesses needing push notifications, camera capture, or GPS workflows",
+      "Founders and businesses launching a customer-facing iPhone & Android app",
+      "Field service, inspection, and installation crews working on job sites",
+      "Rental, delivery, and fleet businesses needing mobile check-in & photos",
+      "Companies wanting push notifications, GPS, or offline mobile checklists",
     ],
     painPoints: [
       {
-        code: "BOTTLENECK // 01",
-        title: "Field Crews Texting Photos & Paper Notes to the Office",
+        code: "PROBLEM // 01",
+        title: "Field Crews Texting Job Photos & Paper Notes",
         symptom:
-          "Technicians text job-site photos into group chats and fill out paper checklists at the end of the day, losing critical documentation.",
+          "Technicians text site photos into group chats and fill out paper clipboards at night, losing important customer details.",
         rootCause:
-          "Desktop web tools are too clumsy to use on a phone in the sun with one hand.",
+          "Desktop software is too clumsy to use one-handed on a job site.",
       },
       {
-        code: "BOTTLENECK // 02",
-        title: "Apps That Break in Low-Signal Areas",
+        code: "PROBLEM // 02",
+        title: "Web Pages That Fail When Cell Signal Drops",
         symptom:
-          "When crews work in basements, rural sites, or on the water, web forms time out and lose 20 minutes of inspection data.",
+          "When crews work in rural areas, basements, or out on the water, browser forms time out and lose their work.",
         rootCause:
-          "Lack of local-first storage and background sync queues when connectivity drops.",
+          "Mobile web pages don't save work locally on the phone when signal is weak.",
       },
       {
-        code: "BOTTLENECK // 03",
-        title: "Maintaining Separate iOS, Android, and Web Codebases",
+        code: "PROBLEM // 03",
+        title: "Paying Twice to Build Separate iOS & Android Apps",
         symptom:
-          "Features take twice as long to ship and behave differently on iPhone, Android, and desktop.",
+          "Traditional agencies quote huge budgets because they maintain two completely separate teams for iPhone and Android.",
         rootCause:
-          "Fragmented engineering stacks without shared API contracts and unified design systems.",
+          "Outdated development workflows instead of a modern shared native codebase.",
       },
     ],
     comparison: {
-      beforeTitle: "BEFORE // GROUP TEXTS & CLIPBOARDS",
+      beforeTitle: "BEFORE // GROUP TEXTS & CLUNKY MOBILE BROWSERS",
       beforeSteps: [
-        "Crews screenshot daily schedules or call dispatch for job addresses",
-        "Site photos sit on personal camera rolls and never make it into the customer file",
-        "Offline or rural job sites cause form submissions to fail and disappear",
-        "Office staff spend evenings chasing techs for time logs and completion notes",
+        "Crews screenshot daily schedules or call the office for job addresses",
+        "Job photos stay trapped on personal camera rolls instead of the customer file",
+        "Weak cell service causes mobile web forms to spin and lose data",
+        "Customers have no app on their home screen for bookings, alerts, or repeat orders",
       ],
-      afterTitle: "AFTER // STUDIO SOZO MOBILE APPLICATION",
+      afterTitle: "AFTER // CUSTOM IPHONE & ANDROID APP",
       afterSteps: [
-        "One-tap daily route, job brief, equipment checklist, and turn-by-turn navigation",
-        "Guided photo capture, voice-to-note logging, and on-glass customer signatures",
-        "Offline-capable local queue that syncs automatically the moment signal returns",
-        "Instant push notifications and live job status synced directly to your central CRM",
+        "One-tap daily schedule, customer notes, checklists, and turn-by-turn directions",
+        "Guided photo capture, voice notes, and finger signatures saved straight to HQ",
+        "Offline-ready storage that syncs automatically as soon as signal returns",
+        "Published under your brand on both the Apple App Store and Google Play Store",
       ],
     },
     deliverables: [
       {
         tag: "IOS & ANDROID",
-        title: "Cross-Platform Native Mobile Apps",
+        title: "Native iPhone & Android Apps",
         description:
-          "Single-codebase iOS and Android apps with smooth 60fps navigation, native gestures, and biometric sign-in.",
+          "Smooth, fast mobile apps built for both Apple and Android devices from one clean, maintainable codebase.",
       },
       {
-        tag: "FIELD OPS",
-        title: "Offline-First Checklists, Camera & GPS Workflows",
+        tag: "MOBILE FEATURES",
+        title: "Camera, GPS, Signatures & Offline Sync",
         description:
-          "Capture geotagged photos, barcode scans, audio notes, and structured inspections even with spotty reception.",
+          "Snap job photos, scan codes, capture on-screen signatures, and keep working even in dead zones.",
       },
       {
-        tag: "ENGAGEMENT",
-        title: "Push Notifications & In-App Subscriptions",
+        tag: "NOTIFICATIONS",
+        title: "Push Alerts & In-App Purchases",
         description:
-          "Real-time dispatch alerts, status updates, and App Store / Google Play billing for commercial apps.",
+          "Instant push notifications for customers or crews, plus Stripe or App Store subscription billing when needed.",
       },
       {
-        tag: "RELEASE",
-        title: "App Store & Google Play Submission Pipeline",
+        tag: "APP STORES",
+        title: "App Store & Google Play Launch",
         description:
-          "End-to-end provisioning, review compliance, over-the-air updates, and crash telemetry.",
+          "We handle developer account setup, screenshots, review guidelines, and publishing under your company's name.",
       },
     ],
     architectureHighlights: [
-      "Shared TypeScript domain models across mobile app, web dashboard, and API",
-      "Offline-resilient state persistence and automatic background media upload",
-      "Camera, GPS location, push notification, and AI vision/voice integrations",
-      "Full App Store Connect and Google Play Console ownership under your account",
+      "Ships to both Apple App Store & Google Play from one shared codebase",
+      "Connects live to your web dashboard so office and mobile stay in sync",
+      "Offline-capable data saving with automatic background photo upload",
+      "100% owned under your own Apple & Google developer accounts",
     ],
     relatedCaseStudies: ["angler-iq", "dash-lake-rentals", "sozo-crm"],
     faqs: [
       {
-        question: "Do you build for both iPhone (iOS) and Android?",
+        question: "Do we get both an iPhone app and an Android app?",
         answer:
-          "Yes. We engineer unified cross-platform mobile applications that ship natively to both the Apple App Store and Google Play Store from a single shared codebase, cutting development and maintenance costs in half.",
+          "Yes. We build cross-platform native apps that run smoothly on both iOS and Android from one shared codebase—saving you roughly half the time and cost of building two separate apps.",
       },
       {
-        question: "Does the mobile app connect to our web dashboard in real time?",
+        question: "Does the mobile app sync with a web dashboard for our office?",
         answer:
-          "Yes. Your mobile app and web management portal talk to the exact same backend database and API, so a photo or status update logged in the field appears on the office dashboard immediately.",
+          "Yes. Your mobile app and web admin dashboard share the same live database, so a photo, order, or job update logged on a phone shows up at the office immediately.",
       },
       {
-        question: "Do you handle App Store and Google Play approval?",
+        question: "Do you handle getting the app approved by Apple and Google?",
         answer:
-          "Yes. We configure your Apple Developer and Google Play accounts, prepare store assets and privacy disclosures, and manage the submission and review process through launch.",
+          "Yes. We walk you through setting up your Apple and Google developer accounts (so you own the listings directly) and manage the entire submission and approval process.",
+      },
+    ],
+  },
+  {
+    slug: "crm-and-business-systems",
+    number: "04",
+    title: "Custom CRMs & AI Automation",
+    shortTitle: "CRMs & AI Automation",
+    priceBadge: "$0 Per-User Fees Forever",
+    eyebrow: "SERVICE // 04 — INTERNAL CRMS, DASHBOARDS & AI",
+    headline: "Custom CRMs & Automations With $0 Per-Seat",
+    highlightWord: "Fees",
+    seoTitle:
+      "Custom CRM Development & AI Workflow Automation | Replace Spreadsheets & SaaS",
+    seoDescription:
+      "Custom CRMs, quoting dashboards, QuickBooks/Stripe integrations, and practical AI automations built around how your team actually works—with $0 per-user fees.",
+    summary:
+      "Internal dashboards, lead-to-invoice tracking, Stripe/QuickBooks sync, and AI tools that cut manual busywork.",
+    leadBold:
+      "Your team shouldn't be fighting 10 spreadsheets or paying $150/seat every month for bloated software nobody likes using.",
+    leadBody:
+      "We build clean, custom CRMs, quoting tools, and AI automations designed around your exact steps—connecting leads, estimates, scheduling, field jobs, and QuickBooks/Stripe in one place.",
+    idealFor: [
+      "Solar, HVAC, construction, and home-service teams outgrowing spreadsheets",
+      "Companies frustrated by HubSpot, Salesforce, Jobber, or ServiceTitan bills",
+      "Offices wasting hours copying info between emails, PDFs, and QuickBooks",
+      "Growing teams that want unlimited employee logins with $0 per-seat fees",
+    ],
+    painPoints: [
+      {
+        code: "PROBLEM // 01",
+        title: "Details Dropped Between Sales and the Field",
+        symptom:
+          "Sales closes a job, and operations has to chase down photos, measurements, and notes across texts and emails to deliver it.",
+        rootCause:
+          "Generic CRMs stop at the sale and don't track your real fulfillment or install checklist.",
+      },
+      {
+        code: "PROBLEM // 02",
+        title: "Hours Wasted on Manual Copy-Pasting & Slow Quotes",
+        symptom:
+          "Staff build estimates in Excel and re-type customer info into scheduling and QuickBooks one row at a time.",
+        rootCause:
+          "Your pricing formulas, forms, and accounting tools aren't connected.",
+      },
+      {
+        code: "PROBLEM // 03",
+        title: "Expensive Per-User Subscriptions Every Month",
+        symptom:
+          "Adding new reps, techs, or office staff hikes your monthly software bill, so people share logins or avoid the tool.",
+        rootCause:
+          "Off-the-shelf SaaS charges you forever based on headcount.",
+      },
+    ],
+    comparison: {
+      beforeTitle: "BEFORE // SPREADSHEETS, ZAPIER & BLOATED SAAS",
+      beforeSteps: [
+        "Leads sit in email inboxes with no automatic follow-up or assignment",
+        "Estimators calculate quotes in spreadsheets and email static PDFs",
+        "Office staff re-type closed jobs into scheduling and QuickBooks by hand",
+        "Paying thousands per year for cluttered software where you use 15% of the tabs",
+      ],
+      afterTitle: "AFTER // CUSTOM STUDIO SOZO CRM & AUTOMATION",
+      afterSteps: [
+        "Instant lead capture, automatic text/email follow-up, and clear pipeline stages",
+        "Built-in quote builder with digital acceptance and automatic deposit collection",
+        "Two-way sync with QuickBooks, Stripe, calendars, and AI document reading",
+        "Unlimited users across office and field with $0 per-seat fees forever",
+      ],
+    },
+    deliverables: [
+      {
+        tag: "PIPELINE & OPS",
+        title: "Custom Lead-to-Invoice CRM",
+        description:
+          "Every lead, quote, scheduled job, photo, and commission tracked in one fast, clutter-free dashboard.",
+      },
+      {
+        tag: "QUOTING",
+        title: "Fast Estimate & Proposal Builder",
+        description:
+          "Build accurate quotes in minutes with your real pricing rules, e-signatures, and payment links.",
+      },
+      {
+        tag: "AI & SYNC",
+        title: "AI Busywork Removal & QuickBooks/Stripe Sync",
+        description:
+          "Automatically extract info from PDFs/emails and keep payments, invoices, and calendars synced without double entry.",
+      },
+      {
+        tag: "REPORTING",
+        title: "Live Owner & Revenue Dashboards",
+        description:
+          "See close rates, job margins, rep commissions, and open bottlenecks at a glance from your laptop or phone.",
+      },
+    ],
+    architectureHighlights: [
+      "Unlimited team logins—$0 per-seat CRM fees as you grow",
+      "Direct integrations with QuickBooks, Stripe, Twilio SMS, and email",
+      "Clean migration of your existing contacts, spreadsheets, and history",
+      "100% owned code and customer database under your company's control",
+    ],
+    relatedCaseStudies: ["sozo-crm", "elevate-solar", "hr-hvac"],
+    faqs: [
+      {
+        question: "Why build a custom CRM instead of paying for HubSpot or Salesforce?",
+        answer:
+          "Enterprise CRMs charge steep monthly per-user fees forever and still force your team through dozens of confusing tabs that don't match how you quote or fulfill work. A custom CRM gives your team only the exact screens they need, pays for itself in saved license fees, and belongs 100% to you.",
+      },
+      {
+        question: "Can you move our existing spreadsheets and customer list over?",
+        answer:
+          "Yes. We clean, deduplicate, and import your existing contacts, past jobs, notes, and files so your team starts on day one with all of their history intact.",
+      },
+      {
+        question: "Can we start with a smaller $2,000 automation before building a full CRM?",
+        answer:
+          "Absolutely. Many clients start with a 2–4 week Automation Sprint (connecting their website, forms, and QuickBooks/SMS) to save hours immediately, then expand into a full custom dashboard later.",
+      },
+    ],
+  },
+  {
+    slug: "custom-software-development",
+    number: "05",
+    title: "Custom Software Development",
+    shortTitle: "Custom Software",
+    priceBadge: "100% Owned Software",
+    eyebrow: "CAPABILITY // BESPOKE BUSINESS SOFTWARE",
+    headline: "Custom Business Software Built Around How You",
+    highlightWord: "Work",
+    seoTitle:
+      "Custom Software Development | Business Applications & Platforms You Own 100%",
+    seoDescription:
+      "Studio Sozo designs and builds custom websites, web applications, and business software tailored to your workflow—with 100% ownership across Louisiana, Texas, Missouri, and nationwide.",
+    summary:
+      "Tailored websites, portals, and operational applications built around your business instead of rigid templates.",
+    leadBold:
+      "Off-the-shelf software forces your business to bend around someone else's template.",
+    leadBody:
+      "We design and build custom software tailored to your exact workflows, pricing rules, and team roles—giving you fast, straightforward tools your company owns 100%.",
+    idealFor: [
+      "Companies outgrowing spreadsheets and disconnected monthly subscriptions",
+      "Service businesses with custom quoting, scheduling, or dispatch steps",
+      "Owners tired of paying rising per-user SaaS bills every year",
+      "Founders launching a commercial software product or client portal",
+    ],
+    painPoints: [
+      {
+        code: "PROBLEM // 01",
+        title: "Forcing Your Team Into Rigid Templates",
+        symptom:
+          "Your staff still keeps side-spreadsheets because your current software can't handle your real pricing, stages, or approvals.",
+        rootCause:
+          "Generic SaaS tools are built for thousands of unrelated industries rather than yours.",
+      },
+      {
+        code: "PROBLEM // 02",
+        title: "Rising Monthly Per-Seat Costs",
+        symptom:
+          "Adding field techs, contractors, or office staff triggers expensive tier upgrades every time your team grows.",
+        rootCause:
+          "Rented software charges you more forever as your headcount grows.",
+      },
+      {
+        code: "PROBLEM // 03",
+        title: "Zero Ownership Over Your Platform",
+        symptom:
+          "When a vendor raises prices, changes screens, or locks exports behind an enterprise tier, you have no leverage.",
+        rootCause:
+          "You are renting access instead of owning your core business software.",
+      },
+    ],
+    comparison: {
+      beforeTitle: "BEFORE // RENTED PATCHWORK OF TOOLS",
+      beforeSteps: [
+        "Customer inquiries arrive in emails or basic forms with missing info",
+        "Staff copy-paste details between spreadsheets and separate logins",
+        "Handoffs happen over text threads where things slip through the cracks",
+        "Pulling a weekly revenue or job report takes hours of manual cleanup",
+      ],
+      afterTitle: "AFTER // CUSTOM STUDIO SOZO SOFTWARE",
+      afterSteps: [
+        "Guided online forms validate details, pricing, and availability up front",
+        "One shared system powers sales, scheduling, field work, and billing",
+        "Clear role-based screens show every team member what to do next",
+        "Live dashboards show revenue, job status, and margins in real time",
+      ],
+    },
+    deliverables: [
+      {
+        tag: "CORE SYSTEM",
+        title: "Custom Database & Application Logic",
+        description:
+          "Clean PostgreSQL database and TypeScript business logic modeled around how your company actually operates.",
+      },
+      {
+        tag: "TEAM SCREENS",
+        title: "Fast, Easy-to-Use Workspaces",
+        description:
+          "Focused interfaces for admins, sales reps, field crews, and customers with zero confusing clutter.",
+      },
+      {
+        tag: "INTEGRATIONS",
+        title: "Connected Payments, Accounting & Messaging",
+        description:
+          "Built-in connections to Stripe, QuickBooks, SMS, and email so your data stays synced automatically.",
+      },
+      {
+        tag: "OWNERSHIP",
+        title: "Full Code & Cloud Handover",
+        description:
+          "Deployed to your own cloud accounts with 100% source code ownership and $0 per-seat fees.",
+      },
+    ],
+    architectureHighlights: [
+      "Modern Next.js, React, TypeScript & PostgreSQL stack",
+      "Secure logins and role-based permissions for staff & clients",
+      "Weekly live preview builds so you see progress every step of the way",
+      "100% IP and GitHub repository ownership transferred to you",
+    ],
+    relatedCaseStudies: ["sozo-crm", "elevate-solar", "angler-iq"],
+    faqs: [
+      {
+        question: "Do we really own 100% of the code?",
+        answer:
+          "Yes—100%. We build on clean, industry-standard technologies and hand over the complete GitHub repository, database, and cloud setup to your business.",
+      },
+      {
+        question: "How long does a custom software build take?",
+        answer:
+          "Standalone websites take 1–2 weeks ($800–$1,000), focused automations take 2–4 weeks ($2,000+), and full custom web/mobile apps or CRMs typically launch in 6–10 weeks.",
+      },
+      {
+        question: "Can it connect to QuickBooks or Stripe?",
+        answer:
+          "Yes. We keep the tools you already love—like Stripe for payments or QuickBooks for accounting—and connect them directly so nobody has to enter data twice.",
+      },
+    ],
+  },
+  {
+    slug: "ai-and-automation",
+    number: "06",
+    title: "AI & Workflow Automation",
+    shortTitle: "AI & Automation",
+    priceBadge: "Starting at $2,000",
+    eyebrow: "CAPABILITY // PRACTICAL AI & WORKFLOW AUTOMATION",
+    headline: "Cut Manual Busywork With Practical",
+    highlightWord: "Automation",
+    seoTitle:
+      "AI & Workflow Automation Development | Eliminate Manual Data Entry & Busywork",
+    seoDescription:
+      "Practical AI tools, document extraction, and automated workflows built by Studio Sozo to save your team hours every week.",
+    summary:
+      "Automate repetitive admin tasks, read documents automatically, and trigger instant lead follow-ups.",
+    leadBold:
+      "Your team shouldn't spend hours copying numbers out of PDFs, chasing status updates, or babysitting broken Zapier chains.",
+    leadBody:
+      "We build reliable automations and practical AI tools that read incoming documents, qualify leads 24/7, sync your software, and keep humans in control of final approvals.",
+    idealFor: [
+      "Teams spending hours typing info from PDFs, utility bills, or invoices",
+      "Service businesses wanting instant 24/7 lead response and scheduling",
+      "Companies whose fragile Zapier / Make workflows keep breaking",
+      "Teams wanting a private AI search assistant trained on company docs",
+    ],
+    painPoints: [
+      {
+        code: "PROBLEM // 01",
+        title: "Hours Lost Typing Info From Emails & PDFs",
+        symptom:
+          "Staff open attachments and manually key customer details or line items into your system one by one.",
+        rootCause:
+          "Incoming emails, forms, and PDFs aren't connected to your database.",
+      },
+      {
+        code: "PROBLEM // 02",
+        title: "Fragile Zapier Chains That Break Quietly",
+        symptom:
+          "Multi-step Zaps fail on edge cases or rack up monthly task bills without anyone noticing dropped leads.",
+        rootCause:
+          "Core business workflows outgrew basic no-code glue tools.",
+      },
+      {
+        code: "PROBLEM // 03",
+        title: "Slow After-Hours Lead Follow-Up",
+        symptom:
+          "Weekend and evening inquiries sit until Monday morning while faster competitors win the job.",
+        rootCause:
+          "Initial lead qualification and scheduling rely 100% on manual callbacks.",
+      },
+    ],
+    comparison: {
+      beforeTitle: "BEFORE // MANUAL DATA ENTRY & BROKEN ZAPS",
+      beforeSteps: [
+        "Coordinator downloads PDFs and types fields into spreadsheets by hand",
+        "After-hours website leads wait until the next day for a response",
+        "Broken Zapier steps silently drop customer records without warning",
+        "Staff dig through folders and old emails to find routine answers",
+      ],
+      afterTitle: "AFTER // ENGINEERED AUTOMATION & AI",
+      afterSteps: [
+        "AI extracts info from PDFs, photos, and emails into your system in seconds",
+        "Instant text/email follow-up qualifies leads and books appointments 24/7",
+        "Reliable code-based sync with automatic retries and error alerts",
+        "Private AI assistant answers team questions from your own company docs",
+      ],
+    },
+    deliverables: [
+      {
+        tag: "DOCUMENT AI",
+        title: "Automatic PDF, Invoice & Email Reading",
+        description:
+          "Pull structured customer and line-item data straight out of utility bills, work orders, and inbox attachments.",
+      },
+      {
+        tag: "SPEED TO LEAD",
+        title: "24/7 Lead Qualification & Follow-Up",
+        description:
+          "Instant SMS and email responses that answer common questions, gather job details, and book your calendar.",
+      },
+      {
+        tag: "RELIABLE SYNC",
+        title: "Code-Grade Workflow Automation",
+        description:
+          "Replace brittle Zapier chains with rock-solid automations that validate data, retry automatically, and alert on issues.",
+      },
+      {
+        tag: "COPILOTS",
+        title: "Private Company Knowledge Assistants",
+        description:
+          "Internal AI search grounded strictly in your SOPs, pricing sheets, and database—never training public models.",
+      },
+    ],
+    architectureHighlights: [
+      "Human-in-the-loop review queues for important approvals",
+      "Private API connections—your company data never trains public AI",
+      "Automatic retries and alerts so leads or invoices never drop",
+      "100% owned code with zero monthly per-Zap markup",
+    ],
+    relatedCaseStudies: ["angler-iq", "sozo-crm", "elevate-solar"],
+    faqs: [
+      {
+        question: "How do you keep AI accurate on important business numbers?",
+        answer:
+          "We never let AI guess blindly. Every output is checked against strict validation rules, and anything uncertain is flagged in a quick one-click review queue for your team.",
+      },
+      {
+        question: "Is our private business data shared with public AI models?",
+        answer:
+          "No. We use zero-retention business APIs so your customer records, pricing, and documents remain completely private.",
+      },
+      {
+        question: "How much does a typical automation sprint cost?",
+        answer:
+          "Focused workflow and AI automation builds start at $2,000 and typically ship in 2–4 weeks.",
       },
     ],
   },
   {
     slug: "systems-integration",
-    number: "06",
-    title: "Systems Integration",
-    shortTitle: "Systems Integration",
-    eyebrow: "CAPABILITY // 06 — UNIFIED DATA & APIS",
-    headline: "Connect Every Tool into One Reliable",
-    highlightWord: "Data Flow",
+    number: "07",
+    title: "Systems Integration & Tool Sync",
+    shortTitle: "Tool Integrations",
+    priceBadge: "Starting at $2,000",
+    eyebrow: "CAPABILITY // API & SOFTWARE INTEGRATIONS",
+    headline: "Make Your Existing Software Tools Talk to Each",
+    highlightWord: "Other",
     seoTitle:
-      "Systems Integration & API Development | Connect CRM, ERP, Accounting & Field Tools",
+      "Systems Integration & API Sync | Connect QuickBooks, Stripe, CRM & Scheduling",
     seoDescription:
-      "Studio Sozo connects disconnected software, accounting platforms, payment processors, and legacy databases into one reliable real-time flow.",
+      "Studio Sozo connects QuickBooks, Stripe, CRMs, calendars, and field software so your team stops entering the same data twice.",
     summary:
-      "Connect existing software, APIs, accounting platforms, and business tools into one reliable flow.",
+      "Connect QuickBooks, Stripe, CRMs, scheduling apps, and databases so everything stays in sync automatically.",
     leadBold:
-      "You don't always need to rip and replace every tool—sometimes your biggest bottleneck is that your systems refuse to talk to each other.",
+      "You don't always need to replace every tool you use—sometimes you just need them to stop acting like islands.",
     leadBody:
-      "We build rock-solid API bridges, webhook pipelines, and unified data layers that keep your CRM, accounting software, payment processor, inventory, and field tools continuously synchronized without manual CSV exports.",
+      "We build clean, reliable connections between your website, CRM, scheduling software, Stripe, and QuickBooks so customer records, jobs, and invoices sync automatically without CSV exports.",
     idealFor: [
-      "Companies re-keying invoices between operations software and QuickBooks/Xero",
-      "Businesses with mismatched customer or inventory counts across platforms",
-      "Teams needing a unified executive dashboard across multiple data sources",
-      "Organizations modernizing legacy databases without disrupting daily work",
+      "Businesses re-typing completed jobs into QuickBooks or Xero every week",
+      "Teams with mismatched customer lists across 3+ different tools",
+      "Owners wanting one live dashboard pulling numbers from all their systems",
+      "Companies connecting an existing CRM or database to a new website or portal",
     ],
     painPoints: [
       {
-        code: "BOTTLENECK // 01",
-        title: "Double & Triple Data Entry Across Departments",
+        code: "PROBLEM // 01",
+        title: "Entering the Same Customer Three Times",
         symptom:
-          "Sales enters the customer in one tool, ops creates the job in another, and accounting re-types the invoice in QuickBooks.",
+          "Sales types the customer into one app, dispatch types the job into another, and bookkeeping types the invoice into QuickBooks.",
         rootCause:
-          "No shared customer/job identifier or automated two-way sync between departmental tools.",
+          "Your tools have no automatic two-way connection.",
       },
       {
-        code: "BOTTLENECK // 02",
-        title: "Conflicting Numbers & 'Which Report Is Right?'",
+        code: "PROBLEM // 02",
+        title: "Conflicting Revenue & Job Numbers",
         symptom:
-          "The CRM says one revenue number, Stripe says another, and accounting reconciliations take days at month-end.",
+          "Stripe says one number, the CRM says another, and reconciling spreadsheets takes days at the end of every month.",
         rootCause:
-          "Point-to-point scripts lack idempotency, reconciliation logs, and a single source of truth.",
+          "Manual exports get out of sync whenever refunds, changes, or add-ons happen.",
       },
       {
-        code: "BOTTLENECK // 03",
-        title: "Vendor APIs With Rate Limits & Missing Features",
+        code: "PROBLEM // 03",
+        title: "Off-the-Shelf Connectors Missing Key Fields",
         symptom:
-          "Off-the-shelf connectors sync only 3 basic fields and fail whenever custom fields, line items, or refunds are involved.",
+          "Basic built-in plugins sync names and emails, but drop custom line items, tax rates, or job notes.",
         rootCause:
-          "Generic connectors aren't built for your custom fields, tax rules, or multi-entity accounting structure.",
+          "Generic connectors aren't built around your specific fields and rules.",
       },
     ],
     comparison: {
-      beforeTitle: "BEFORE // SILOED SOFTWARE & CSV EXPORTS",
+      beforeTitle: "BEFORE // DISCONNECTED TOOLS & CSV EXPORTS",
       beforeSteps: [
-        "Bookkeeper manually copies completed jobs into QuickBooks every week",
-        "Failed payments or refunds in Stripe aren't reflected in the operational portal",
-        "Inventory or calendar availability drifts out of sync across channels",
-        "No audit log when a sync fails—issues are only discovered when a customer complains",
+        "Bookkeeper manually copies finished jobs into QuickBooks every Friday",
+        "Stripe payments or refunds aren't reflected inside your job tracker",
+        "Calendar availability drifts out of sync across booking channels",
+        "Errors only get noticed weeks later when an invoice is wrong",
       ],
-      afterTitle: "AFTER // ENGINEERED INTEGRATION LAYER",
+      afterTitle: "AFTER // AUTOMATIC TWO-WAY SYNC",
       afterSteps: [
-        "Two-way webhook and API sync creates customers, invoices, and payments automatically",
-        "Idempotent event queues guarantee every transaction is processed exactly once",
-        "Central data warehouse and sync health monitor with instant Slack/email alerts",
-        "Every tool in your business reflects the exact same customer and job state in real time",
+        "Customers, jobs, invoices, and payments sync automatically in real time",
+        "Every transaction is checked so records are never duplicated or lost",
+        "One live dashboard shows clean numbers across all your connected tools",
+        "Instant email/SMS alert if an external provider ever needs attention",
       ],
     },
     deliverables: [
       {
-        tag: "CONNECTORS",
-        title: "Custom Two-Way API & Webhook Bridges",
+        tag: "TWO-WAY SYNC",
+        title: "QuickBooks, Stripe, CRM & Calendar Bridges",
         description:
-          "Direct integrations with QuickBooks, Stripe, Twilio, HubSpot, Google Workspace, ERP systems, and industry APIs.",
+          "Direct API connections tailored to your exact custom fields, line items, and workflows.",
       },
       {
-        tag: "RELIABILITY",
-        title: "Idempotent Sync Queues & Dead-Letter Recovery",
+        tag: "ZERO DROPS",
+        title: "Automatic Retries & Duplicate Prevention",
         description:
-          "Guaranteed delivery with automatic backoff retries, deduplication keys, and one-click replay if a third-party API goes down.",
+          "If QuickBooks or another vendor hiccups temporarily, your sync waits and retries cleanly without creating duplicates.",
       },
       {
-        tag: "WAREHOUSE",
-        title: "Unified Cross-System Reporting Database",
+        tag: "REPORTING",
+        title: "Unified Cross-Tool Dashboard",
         description:
-          "Mirror data from all your tools into a clean relational schema for instant cross-company KPIs and margin reporting.",
+          "Pull sales, payments, and job status from multiple tools into one clear owner view.",
       },
       {
-        tag: "OBSERVABILITY",
-        title: "Sync Health Dashboard & Exception Alerts",
+        tag: "MONITORING",
+        title: "Sync Status & Instant Alerts",
         description:
-          "Complete visibility into every synced payload, latency metric, and validation warning so nothing ever drops silently.",
+          "Clear visibility confirming your integrations are healthy and running smoothly 24/7.",
       },
     ],
     architectureHighlights: [
-      "Webhook signature verification, idempotency keys, and rate-limit queuing",
-      "Real-time bidirectional sync with conflict resolution rules",
-      "Legacy database adapters, CSV/SFTP ingestion, and modern REST/GraphQL APIs",
-      "Automated reconciliation checks between operational records and accounting ledgers",
+      "Direct API & webhook integrations starting at $2,000 (2–4 weeks)",
+      "Built-in duplicate protection and automatic outage recovery",
+      "Works with modern cloud APIs, webhooks, databases, and CSV/SFTP feeds",
+      "100% owned integration code with zero per-task Zapier fees",
     ],
     relatedCaseStudies: ["sozo-crm", "elevate-solar", "hr-hvac"],
     faqs: [
       {
-        question: "What happens if an external API like QuickBooks or Stripe goes down temporarily?",
+        question: "What happens if QuickBooks or another outside service goes down briefly?",
         answer:
-          "Our integration pipelines queue every event durably with idempotency keys. If an external provider experiences an outage or rate limit, the queue automatically retries with exponential backoff and processes the backlog without losing or duplicating a single record.",
+          "Our sync holds the update safely in a queue and retries automatically once the service is back online—so nothing is ever lost or double-charged.",
       },
       {
-        question: "Can you integrate with older or industry-specific software?",
+        question: "Can we connect our current tools first and build a custom app later?",
         answer:
-          "Yes. Whether your existing tool has a modern REST/GraphQL API, SOAP endpoints, webhook support, direct database access, or scheduled SFTP/CSV exports, we can build a clean bridge around it.",
+          "Yes—that's often the fastest win. Connecting your current tools stops manual double-entry in 2–4 weeks, and gives you a clean foundation if you ever decide to replace a tool later.",
       },
       {
-        question: "Can we start by integrating our current tools and replace them gradually later?",
+        question: "Can you connect an older or industry-specific software tool?",
         answer:
-          "That is one of the smartest paths. By putting a unified database and integration layer in the middle first, you stop the manual double-entry immediately and can phase out expensive legacy tools one module at a time without disrupting operations.",
+          "In almost all cases, yes. Whether your software has a modern API, webhooks, database access, or scheduled CSV exports, we can automate the bridge.",
       },
     ],
   },
 ];
+
+export const PRIMARY_SERVICE_SLUGS = [
+  "custom-websites",
+  "web-applications",
+  "mobile-app-development",
+  "crm-and-business-systems",
+] as const;
+
+export const primaryServicesData: ServiceDetail[] = PRIMARY_SERVICE_SLUGS.map(
+  (slug) => {
+    const found = servicesData.find((service) => service.slug === slug);
+    if (!found) {
+      throw new Error(`Missing primary service slug: ${slug}`);
+    }
+    return found;
+  },
+);
 
 export function getServiceBySlug(slug: string): ServiceDetail | undefined {
   return servicesData.find((service) => service.slug === slug);

@@ -693,7 +693,7 @@ export function ContactStringHeroPreview({
 }: ContactStringHeroPreviewProps) {
   const hasCapability = values.softwareType.trim().length > 0;
   const blueprint = getCapabilityBlueprint(
-    values.softwareType || "Custom Software Development",
+    values.softwareType || "Custom Websites & Redesigns",
   );
 
   const companySlug =
@@ -803,12 +803,12 @@ export function ContactStringHeroPreview({
             ? `${values.company.trim()} OS is ready!`
             : "Studio Sozo 4.5 is here!"
         }
-        subhead="Custom software & AI systems built for 100% ownership. Fill out the wizard on the left."
+        subhead="Custom websites & apps built for 100% ownership. Fill out the steps on the left."
       />
 
       {/* Tip Line */}
       <p className="font-mono text-[13px]" style={{ color: MUTED }}>
-        Tip: Use the wizard on the left to live-scaffold your custom platform.
+        Tip: Use the steps on the left to preview your project scope live.
       </p>
 
       {/* User Prompt */}
