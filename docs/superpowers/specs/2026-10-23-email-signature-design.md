@@ -22,7 +22,7 @@ All variants pull default metadata from `siteConfig` (`lib/site.ts`) and use abs
   - **Right Column:**
     - Technical eyebrow: `// STUDIO SOZO` in `#635bff` monospace (`10px`, uppercase, `0.14em` tracking).
     - Name & Role: **Chandler King** (`16px` bold `#0a2540`) and `Founder & Principal Engineer` (`13px` `#425466`).
-    - Contact Links: `chandler@studiosozo.com` and `studiosozo.dev` separated by a muted dot divider.
+    - Contact Links: `chandler@studiosozo.dev` and `studiosozo.dev` separated by a muted dot divider.
     - Optional phone number link if populated in workbench controls.
 - **Bottom Technical Strip:** `#f8fafc` background with `border-top: 1px solid #e3e8ee`, containing:
   - Left: Green/Indigo status dot + `CUSTOM SOFTWARE • CRM SYSTEMS • AI AUTOMATION` in `10px` uppercase monospace (`#425466`).
@@ -35,7 +35,7 @@ All variants pull default metadata from `siteConfig` (`lib/site.ts`) and use abs
 
 ### Variant 3: Minimalist Monospace Ledger (`minimal`)
 - **Structure:** Compact, borderless layout accented by a `2px solid #635bff` left border rule (`max-width: 480px`), tailored for fast back-and-forth reply threads.
-- **Content:** `48×48` avatar (optional), **Chandler King** • `Founder & Principal Engineer`, inline `chandler@studiosozo.com` • `studiosozo.dev` • `Discuss Your Project →`, and a subtle `// Custom Software • CRM Systems • AI Automation` monospace footer line.
+- **Content:** `48×48` avatar (optional), **Chandler King** • `Founder & Principal Engineer`, inline `chandler@studiosozo.dev` • `studiosozo.dev` • `Discuss Your Project →`, and a subtle `// Custom Software • CRM Systems • AI Automation` monospace footer line.
 
 ## 3. Architecture & File Breakdown
 

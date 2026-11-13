@@ -22,7 +22,6 @@ export type SubmitInquiryResult =
 
 const DEFAULT_FROM_CANDIDATES = [
   `${siteConfig.founder.name} — ${siteConfig.name} <chandler@studiosozo.dev>`,
-  `${siteConfig.founder.name} — ${siteConfig.name} <chandler@studiosozo.com>`,
   "Studio Sozo <onboarding@resend.dev>",
 ] as const;
 
@@ -159,7 +158,7 @@ export async function submitProjectInquiry(
       ok: false,
       message: lastErrorDetail
         ? `Unable to deliver project inquiry: ${lastErrorDetail}`
-        : "Unable to deliver your project inquiry right now. Please email chandler@studiosozo.com directly.",
+        : `Unable to deliver your project inquiry right now. Please email ${siteConfig.founder.email} directly.`,
     };
   }
 

@@ -6,7 +6,7 @@ export const siteConfig = {
   founder: {
     name: "Chandler King",
     role: "Founder & Principal Engineer",
-    email: "chandler@studiosozo.com",
+    email: "chandler@studiosozo.dev",
     avatar: "/chandler-king.jpg",
   },
   headline: "Your Business Is Unique. Your Software Should Be Too.",
