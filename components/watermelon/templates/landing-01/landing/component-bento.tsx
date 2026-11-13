@@ -57,11 +57,11 @@ function ComponentCard({
   );
 }
 
-function WorkflowBlueprintVisual() {
+function ScopeAndQuoteVisual() {
   const nodes = [
-    { step: "INTAKE", label: "Lead / Work Order", status: "VALIDATED" },
-    { step: "LOGIC", label: "Custom Pricing & Routing", status: "AUTOMATED" },
-    { step: "DISPATCH", label: "Crew & Portal Sync", status: "LIVE" },
+    { step: "GOAL", label: "Website Refresh or Custom App", status: "CLEAR FIT" },
+    { step: "SCOPE", label: "Pages, Features & Timeline", status: "UPFRONT" },
+    { step: "QUOTE", label: "Flat / Milestone Price ($800+)", status: "FIXED PRICE" },
   ];
 
   return (
@@ -93,38 +93,30 @@ function WorkflowBlueprintVisual() {
   );
 }
 
-function ApprovalMatrixVisual() {
-  const rules = [
-    { role: "FIELD TECH", scope: "Job Checklist + Photo Upload", active: true },
-    {
-      role: "SALES / ESTIMATOR",
-      scope: "Live Quote Builder + Margin Guardrail",
-      active: true,
-    },
-    {
-      role: "EXECUTIVE ADMIN",
-      scope: "P&L Margin, Commissions & Audit Log",
-      active: true,
-    },
+function DesignPreviewVisual() {
+  const previews = [
+    { surface: "MOBILE + DESKTOP", scope: "Clean, modern brand layout" },
+    { surface: "CUSTOMER JOURNEY", scope: "Clear calls-to-action & forms" },
+    { surface: "STAGING LINK", scope: "Click through live on your phone" },
   ];
 
   return (
     <div className="flex flex-col gap-2.5 rounded-lg border border-[#e3e8ee] bg-[#f8fafc] p-3.5">
-      {rules.map((r) => (
+      {previews.map((r) => (
         <div
-          key={r.role}
+          key={r.surface}
           className="flex items-center justify-between border border-[#e3e8ee] bg-white px-3 py-2"
         >
           <div>
             <span className="block font-mono text-[9px] font-bold tracking-widest text-[#6b7c93] uppercase">
-              ROLE // {r.role}
+              PREVIEW // {r.surface}
             </span>
             <span className="font-sans text-xs font-bold text-[#0a2540]">
               {r.scope}
             </span>
           </div>
           <span className="inline-flex items-center gap-1 border border-emerald-500/30 bg-emerald-500/10 px-2 py-0.5 font-mono text-[9px] font-bold tracking-widest text-emerald-700 uppercase">
-            RBAC OK
+            LIVE PREVIEW
           </span>
         </div>
       ))}
@@ -132,11 +124,11 @@ function ApprovalMatrixVisual() {
   );
 }
 
-function ApiIntegrationVisual() {
+function BuildAndConnectVisual() {
   const bridges = [
-    { left: "SOZO CORE DB", right: "STRIPE PAYMENTS", latency: "14ms" },
-    { left: "SOZO CORE DB", right: "QUICKBOOKS LEDGER", latency: "22ms" },
-    { left: "SOZO CORE DB", right: "TWILIO SMS / AI", latency: "19ms" },
+    { left: "YOUR WEBSITE / APP", right: "DIRECT INBOX LEADS", tag: "WIRED" },
+    { left: "YOUR WEBSITE / APP", right: "GOOGLE LOCAL SEO", tag: "MOBILE + SEO" },
+    { left: "YOUR WEBSITE / APP", right: "STRIPE / QUICKBOOKS", tag: "OPTIONAL" },
   ];
 
   return (
@@ -147,10 +139,10 @@ function ApiIntegrationVisual() {
           className="flex items-center justify-between border border-[#e3e8ee] bg-white px-3 py-2 font-mono text-[10px]"
         >
           <span className="font-bold text-[#0a2540]">{b.left}</span>
-          <span className="text-[#635bff]">&lt;=== WEBHOOK ===&gt;</span>
+          <span className="text-[#635bff]">&rarr;</span>
           <span className="font-bold text-[#0a2540]">{b.right}</span>
           <span className="hidden border border-[#e3e8ee] bg-[#f8fafc] px-1.5 py-0.5 text-[9px] text-[#6b7c93] sm:inline">
-            {b.latency}
+            {b.tag}
           </span>
         </div>
       ))}
@@ -160,9 +152,9 @@ function ApiIntegrationVisual() {
 
 function OwnershipHandoverVisual() {
   const assets = [
-    { label: "GitHub Repository & Full Source Code", value: "100% CLIENT OWNED" },
-    { label: "PostgreSQL Database & Customer Data", value: "YOUR CLOUD ACCOUNT" },
-    { label: "Recurring Per-Seat Licensing Tax", value: "$0 / USER FOREVER" },
+    { label: "Full Website / App Source Code", value: "100% YOURS" },
+    { label: "Custom Domain & Cloud Hosting", value: "YOUR ACCOUNT" },
+    { label: "Monthly Platform or Per-Seat Rent", value: "$0 FOREVER" },
   ];
 
   return (
@@ -228,7 +220,7 @@ export default function ComponentsBento() {
           >
             <MeshInk>
               <span className="mr-3 block opacity-70 md:hidden">{"//"}</span>
-              DEVELOPMENT PROCESS &amp; OWNERSHIP
+              SIMPLE 4-STEP PROCESS
               <span className="ml-3 hidden opacity-70 md:block">{"//"}</span>
             </MeshInk>
           </motion.div>
@@ -238,11 +230,10 @@ export default function ComponentsBento() {
               variant="big"
               className="text-foreground font-sans text-left text-balance md:text-right"
             >
-              How we{" "}
+              How we take your project{" "}
               <span className="text-brand">
-                <MeshInk>engineer</MeshInk>
-              </span>{" "}
-              your system
+                <MeshInk>live</MeshInk>
+              </span>
             </Heading>
           </motion.div>
           <motion.p
@@ -250,11 +241,10 @@ export default function ComponentsBento() {
             className="mt-6 max-w-3xl text-pretty font-sans text-xl font-bold leading-snug tracking-tight text-[#8898aa] md:text-2xl"
           >
             <span className="text-[#0a2540]">
-              From mapping your real operational workflows to launching a
-              cohesive platform.
+              Work directly with the engineer building your website or app.
             </span>{" "}
-            Built for internal teams, field operations, and customer
-            management.
+            Websites launch in 1–2 weeks; custom apps ship in clear weekly
+            milestones.
           </motion.p>
         </motion.div>
 
@@ -267,39 +257,39 @@ export default function ComponentsBento() {
         >
           {/* Step 1 */}
           <ComponentCard
-            title="[ 01 // DISCOVERY & WORKFLOW MAPPING ]"
-            subtitle="WEEK 1–2"
-            description="We shadow how your sales, dispatch, and field teams work today and replace spreadsheet bottlenecks with a clean system blueprint."
+            title="[ 01 // QUICK CALL & FIXED QUOTE ]"
+            subtitle="DAY 1–2"
+            description="Tell us what you need—whether it's an $800–$1,000 business website refresh or a custom app—and get a clear flat or milestone price upfront."
             variants={itemVariants}
           >
-            <WorkflowBlueprintVisual />
+            <ScopeAndQuoteVisual />
           </ComponentCard>
 
           {/* Step 2 */}
           <ComponentCard
-            title="[ 02 // ARCHITECTURE & APPROVAL RULES ]"
-            subtitle="WEEK 2–4"
-            description="Role-specific workspaces, database schemas, and margin guardrails so every operator sees only what they need to execute."
+            title="[ 02 // DESIGN & LIVE PREVIEW ]"
+            subtitle="WEEK 1"
+            description="We put a real, clickable preview link in your hands early so you can test the look and flow on your phone and laptop before launch."
             variants={itemVariants}
           >
-            <ApprovalMatrixVisual />
+            <DesignPreviewVisual />
           </ComponentCard>
 
           {/* Step 3 */}
           <ComponentCard
-            title="[ 03 // CUSTOM BUILD & API INTEGRATION ]"
-            subtitle="WEEK 4–8"
-            description="Two-way webhooks and durable queues connect Stripe, QuickBooks, Twilio, and AI pipelines into one real-time source of truth."
+            title="[ 03 // FAST BUILD & WEEKLY UPDATES ]"
+            subtitle="1–2 WKS (WEB) • 4–10 WKS (APPS)"
+            description="We wire up your lead forms, Google SEO, mobile responsiveness, and any booking, Stripe, or QuickBooks connections with zero guesswork."
             variants={itemVariants}
           >
-            <ApiIntegrationVisual />
+            <BuildAndConnectVisual />
           </ComponentCard>
 
           {/* Step 4 */}
           <ComponentCard
-            title="[ 04 // DEPLOYMENT & FULL OWNERSHIP ]"
-            subtitle="LAUNCH"
-            description="Deployed to your cloud with 100% source code ownership, zero per-seat SaaS fees, and full team onboarding."
+            title="[ 04 // LAUNCH & 100% HANDOVER ]"
+            subtitle="LAUNCH DAY"
+            description="We connect your custom domain, take you live, and hand over 100% ownership of your code and accounts—with $0 monthly platform rent."
             variants={itemVariants}
           >
             <OwnershipHandoverVisual />
@@ -311,14 +301,14 @@ export default function ComponentsBento() {
             href="/process"
             className="inline-flex items-center gap-2 border border-[#e3e8ee] bg-white px-5 py-3 text-xs font-bold tracking-widest text-[#0a2540] uppercase transition-colors hover:border-[#635bff] hover:text-[#635bff]"
           >
-            Explore Full 4-Phase Process{" "}
+            See Full Process{" "}
             <ArrowUpRight01Icon className="h-4 w-4" />
           </Link>
           <Link
             href="/pricing"
             className="inline-flex items-center gap-2 border border-[#0a2540] bg-[#0a2540] px-5 py-3 text-xs font-bold tracking-widest text-white uppercase transition-colors hover:border-[#635bff] hover:bg-[#635bff]"
           >
-            View Pricing &amp; Investment{" "}
+            See Pricing ($800+){" "}
             <ArrowUpRight01Icon className="h-4 w-4" />
           </Link>
         </div>

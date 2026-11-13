@@ -12,10 +12,10 @@ import { LitUpButton } from "@/components/lit-up-button";
 import { siteConfig } from "@/lib/site";
 
 const ROTATING_WORDS = [
-  "Should Be Too.",
-  "You Control.",
-  "Built to Own.",
-  "Tailored to You.",
+  "Custom Apps.",
+  "Web Portals.",
+  "Mobile Apps.",
+  "Tools You Own.",
 ] as const;
 
 const HERO_IMAGES = [
@@ -134,6 +134,17 @@ export default function Hero() {
           initial="hidden"
           animate="visible"
         >
+          {/* Eyebrow */}
+          <motion.div
+            variants={itemVariants}
+            className="text-brand mb-5 inline-flex items-center text-xs font-bold tracking-widest uppercase"
+          >
+            <MeshInk>
+              <span className="mr-2.5 opacity-70">{"//"}</span>
+              WEBSITES • WEB APPS • MOBILE APPS
+            </MeshInk>
+          </motion.div>
+
           {/* Main Heading */}
           <motion.div variants={itemVariants}>
             <Heading
@@ -141,7 +152,7 @@ export default function Hero() {
               variant="big"
               className="mb-8 flex flex-col items-center font-sans leading-[1.02]"
             >
-              <span className="text-foreground block">Your Software</span>
+              <span className="text-foreground block">We Build Websites &amp;</span>
               <span className="relative mt-1 flex h-[1.08em] items-center justify-center">
                 <AnimatePresence mode="wait">
                   <motion.span
@@ -168,11 +179,11 @@ export default function Hero() {
           <motion.div variants={itemVariants}>
             <p className="mb-12 max-w-3xl text-pretty font-sans text-xl font-bold leading-snug tracking-tight text-[#8898aa] md:text-2xl">
               <span className="text-[#0a2540]">
-                We design and build custom software that replaces disconnected
-                tools.
+                From $800–$1,000 business websites and redesigns to custom web
+                apps, mobile apps, and CRMs.
               </span>{" "}
-              It automates workflows and gives your business greater control
-              over its technology.
+              Built around your business—and owned 100% by you with $0 monthly
+              platform fees.
             </p>
           </motion.div>
 
@@ -219,9 +230,9 @@ export default function Hero() {
               }}
             >
               {[
-                "Custom CRMs & Portals",
-                "AI & Workflow Automation",
-                "100% Owned Software",
+                "Websites ($800–$1,000)",
+                "Custom Web & Mobile Apps",
+                "100% Owned • $0 Monthly Fees",
               ].map((stat) => (
                 <motion.div
                   key={stat}

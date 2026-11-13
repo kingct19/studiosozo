@@ -3,7 +3,7 @@ import Hero from './landing/hero';
 import Stats from './landing/stats';
 import { StudioSozoAdShowcase } from '@/components/studio-sozo-ad-showcase';
 import Features from './landing/features';
-import AnimatedBento from './landing/animated-bento';
+import { HomepagePricingSpotlight } from '@/components/homepage-pricing-spotlight';
 import ComponentsBento from './landing/component-bento';
 import TemplateBento from './landing/template-bento';
 import Testimonial from './landing/testimonial';
@@ -17,9 +17,9 @@ export default function Landing01Demo() {
       <Stats />
       <StudioSozoAdShowcase />
       <Features />
-      <AnimatedBento />
-      <ComponentsBento />
+      <HomepagePricingSpotlight />
       <TemplateBento />
+      <ComponentsBento />
       <Testimonial />
       <Footer />
     </main>

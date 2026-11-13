@@ -144,7 +144,7 @@ export default function Navbar() {
 
                           <div className="mb-3 flex items-center justify-between border-b border-[#e3e8ee] pb-2.5">
                             <span className="text-[10px] font-bold tracking-widest text-[#635bff] uppercase">
-                              {"//"} 06 CORE CAPABILITIES
+                              {"//"} 04 CORE SERVICES
                             </span>
                             <Link
                               href="/services"
@@ -187,6 +187,23 @@ export default function Navbar() {
                                 </Link>
                               );
                             })}
+                          </div>
+
+                          <div className="mt-3 flex items-center justify-between border-t border-[#e3e8ee] pt-3">
+                            <span className="font-sans text-xs font-semibold text-[#425466]">
+                              Standalone 1–5 page websites:{" "}
+                              <strong className="text-[#0a2540]">
+                                $800 – $1,000
+                              </strong>
+                            </span>
+                            <Link
+                              href="/contact?package=website"
+                              onClick={() => setOpenDropdown(null)}
+                              className="inline-flex items-center gap-1 text-[10px] font-bold tracking-widest text-[#635bff] uppercase hover:text-[#0a2540]"
+                            >
+                              Start Website{" "}
+                              <ArrowUpRight01Icon className="h-3 w-3" />
+                            </Link>
                           </div>
                         </div>
                       </motion.div>

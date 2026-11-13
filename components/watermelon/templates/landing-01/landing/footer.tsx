@@ -94,16 +94,15 @@ export default function Footer() {
               </MeshInk>
             </div>
             <h3 className="mb-6 max-w-xl font-sans text-3xl font-bold tracking-tight text-balance text-[#8898aa] md:text-5xl">
-              <span className="text-[#0a2540]">Your business is unique.</span>{" "}
-              Your software should be too.
+              <span className="text-[#0a2540]">Custom websites &amp; apps.</span>{" "}
+              Owned 100% by you.
             </h3>
             <p className="mb-8 max-w-xl text-pretty font-sans text-xl font-bold leading-snug tracking-tight text-[#8898aa]">
               <span className="text-[#0a2540]">
-                We design and build custom software that replaces disconnected
-                tools.
+                From $800–$1,000 business websites to full custom web &amp;
+                mobile apps.
               </span>{" "}
-              It automates workflows and gives your business greater control
-              over its technology.
+              Built fast around your business with $0 monthly platform fees.
             </p>
 
             <LitUpButton
@@ -177,7 +176,7 @@ export default function Footer() {
               <div className="bg-primary h-2 w-2 animate-pulse rounded-full shadow-[0_0_8px_rgba(119,69,233,0.65)]" />
               <span className="text-brand font-mono text-xs tracking-widest uppercase">
                 <MeshInk>
-                  Custom Software &bull; CRM Systems &bull; AI Automation
+                  Custom Websites &bull; Web Apps &bull; Mobile Apps &bull; CRMs
                 </MeshInk>
               </span>
             </div>

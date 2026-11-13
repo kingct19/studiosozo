@@ -18,9 +18,9 @@ import { flatServiceLocations, serviceLocations } from "@/lib/locations";
 const statsData = [
   {
     id: 1,
-    value: "6",
-    label: "Core Capabilities",
-    icon: <CubeIcon className="text-primary h-6 w-6" />,
+    value: "$800",
+    label: "Website Builds Start At",
+    icon: <Layout01Icon className="text-primary h-6 w-6" />,
   },
   {
     id: 2,
@@ -30,15 +30,15 @@ const statsData = [
   },
   {
     id: 3,
-    value: "3",
-    label: "Regional States + Remote",
-    icon: <Layout01Icon className="text-primary h-6 w-6" />,
+    value: "$0",
+    label: "Monthly Platform Fees",
+    icon: <Copy01Icon className="text-primary h-6 w-6" />,
   },
   {
     id: 4,
-    value: "1",
-    label: "Unified System of Record",
-    icon: <Copy01Icon className="text-primary h-6 w-6" />,
+    value: "4",
+    label: "Clear Service Pillars",
+    icon: <CubeIcon className="text-primary h-6 w-6" />,
   },
 ];
 
@@ -46,9 +46,10 @@ function CountingNumber({ value }: { value: string }) {
   const ref = useRef<HTMLSpanElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-50px" });
 
-  const numMatch = value.match(/\d+/);
-  const number = numMatch ? parseInt(numMatch[0], 10) : 0;
-  const suffix = value.replace(/\d+/g, "");
+  const parsed = value.match(/^([^\d]*)(\d+)(.*)$/);
+  const prefix = parsed ? parsed[1] : "";
+  const number = parsed ? parseInt(parsed[2], 10) : 0;
+  const suffix = parsed ? parsed[3] : value;
 
   useEffect(() => {
     if (isInView && ref.current) {
@@ -67,6 +68,7 @@ function CountingNumber({ value }: { value: string }) {
 
   return (
     <span className="tabular-nums">
+      {prefix}
       <span ref={ref}>0</span>
       {suffix}
     </span>
@@ -182,7 +184,7 @@ export default function Stats() {
           >
             <MeshInk>
               <span className="mr-3 opacity-70">{"//"}</span>
-              WHY CUSTOM SOFTWARE
+              OUR MISSION
             </MeshInk>
           </motion.div>
           <motion.div variants={itemVariants}>
@@ -191,8 +193,11 @@ export default function Stats() {
               variant="big"
               className="text-foreground font-sans text-balance"
             >
-              Replace disconnected tools <br />
-              with software <span className="text-brand"><MeshInk>you own</MeshInk></span>
+              Websites and apps built to{" "}
+              <span className="text-brand">
+                <MeshInk>own</MeshInk>
+              </span>{" "}
+              — not rent
             </Heading>
           </motion.div>
           <motion.p
@@ -200,11 +205,10 @@ export default function Stats() {
             className="mt-6 max-w-3xl text-pretty font-sans text-xl font-bold leading-snug tracking-tight text-[#8898aa] md:text-2xl"
           >
             <span className="text-[#0a2540]">
-              Stop renting a patchwork of expensive third-party apps that do not
-              talk to each other.
+              Whether you need a sharp 5-page business website in two weeks or a
+              custom app to run daily operations.
             </span>{" "}
-            Studio Sozo engineers unified systems built around your exact
-            operations.
+            You pay once to build it and own your code 100%.
           </motion.p>
         </motion.div>
 

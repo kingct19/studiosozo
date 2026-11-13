@@ -157,7 +157,7 @@ export default function TemplateBento() {
           >
             <MeshInk>
               <span className="mr-3 opacity-70">{"//"}</span>
-              FEATURED PROJECTS &amp; PLATFORMS
+              SHIPPED WEBSITES &amp; APPS
             </MeshInk>
           </motion.div>
           <motion.div variants={itemVariants}>
@@ -166,7 +166,10 @@ export default function TemplateBento() {
               variant="big"
               className="text-balance text-foreground font-sans"
             >
-              Systems we&apos;ve <span className="text-brand"><MeshInk>shipped</MeshInk></span>
+              Websites &amp; apps we&apos;ve{" "}
+              <span className="text-brand">
+                <MeshInk>built</MeshInk>
+              </span>
             </Heading>
           </motion.div>
           <motion.p
@@ -174,10 +177,10 @@ export default function TemplateBento() {
             className="mt-6 max-w-3xl text-pretty font-sans text-xl font-bold leading-snug tracking-tight text-[#8898aa] md:text-2xl"
           >
             <span className="text-[#0a2540]">
-              Real custom CRMs, AI-powered mobile products, and booking
-              platforms.
+              Real business websites, online booking platforms, mobile apps, and
+              custom CRMs.
             </span>{" "}
-            Digital experiences engineered by Studio Sozo.
+            Designed and built from scratch by Studio Sozo.
           </motion.p>
         </motion.div>
 

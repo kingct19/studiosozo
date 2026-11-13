@@ -61,53 +61,53 @@ const outcomeItems: OutcomeCardItem[] = [
   {
     id: 1,
     content:
-      "Replace overlapping third-party subscriptions and spreadsheets with one cohesive platform designed around your business, without recurring per-seat fees climbing as you hire.",
-    title: "One System Instead of Many Subscriptions",
-    subtitle: "SYS.01 // CONSOLIDATION",
+      "Need a clean, modern business website or want to replace an outdated Wix/WordPress site? Our 1–5 page Standalone Website package is $800–$1,000 flat and launches in 1–2 weeks.",
+    title: "$800–$1,000 Standalone Websites",
+    subtitle: "WEB.01 // 1–2 WEEK TURNAROUND",
     badgeCode: "01",
-    category: "ownership",
+    category: "faq",
   },
   {
     id: 2,
     content:
-      "Off-the-shelf software forces your team into generic templates and manual workarounds. Custom software mirrors your exact intake, approval, dispatch, and reporting rules.",
-    title: "Software That Follows Your Real Workflow",
-    subtitle: "SYS.02 // OPERATIONAL FIT",
+      "Stop paying Wix, Squarespace, or agency retainers $50–$150 every month just to keep your website online. Pay once to build it and own your code and design 100%.",
+    title: "Ditch Monthly Website Rent",
+    subtitle: "OWN.01 // $0 PLATFORM FEES",
     badgeCode: "02",
     category: "ownership",
   },
   {
     id: 3,
     content:
-      "When your business adds a service line, changes pricing logic, or expands to a new market, you evolve the software on your schedule without waiting on a vendor roadmap.",
-    title: "Changes Are Not Gated by a Vendor",
-    subtitle: "SYS.03 // AGILITY & CONTROL",
+      "Need online booking, deposits, customer logins, or an iPhone & Android app? We build custom web and mobile apps tailored around your exact business rules.",
+    title: "Custom Web & Mobile Applications",
+    subtitle: "APP.02 // BUILT FOR CUSTOMERS & CREWS",
     badgeCode: "03",
     category: "ownership",
   },
   {
     id: 4,
     content:
-      "Your business owns the application architecture, custom logic, and operational data outright — eliminating vendor lock-in across your most critical workflows.",
-    title: "Your Business Owns What It Runs",
-    subtitle: "SYS.04 // DIRECT OWNERSHIP",
+      "Replace messy spreadsheets and expensive per-user CRMs with one clean internal dashboard that connects leads, quotes, scheduling, and QuickBooks—with $0 per-seat fees.",
+    title: "Custom CRMs & Automations",
+    subtitle: "PAIN.01 // UNLIMITED TEAM USERS",
     badgeCode: "04",
-    category: "ownership",
+    category: "painpoint",
   },
   {
     id: 5,
     content:
-      "Customer records, quotes, schedules, and invoices no longer sit trapped in separate logins. Systems integration connects your existing APIs and accounting into one source of truth.",
-    title: "Eliminate Disconnected Data Silos",
-    subtitle: "PAIN.01 // UNIFIED DATA",
+      "Because your $800–$1,000 website is built on modern Next.js & TypeScript, you never have to throw it away—we can add booking, payments, or a portal whenever you grow.",
+    title: "Grows With Your Business",
+    subtitle: "OWN.02 // FUTURE-PROOF STACK",
     badgeCode: "05",
-    category: "painpoint",
+    category: "ownership",
   },
   {
     id: 6,
     content:
       "We serve businesses across Louisiana (Shreveport, Benton), Texas (Marble Falls, Austin, Hughes Springs, Longview, Commerce), and Missouri (Kansas City), plus remote clients nationwide.",
-    title: "Regional Service Areas & Remote Delivery",
+    title: "Local Roots & Nationwide Delivery",
     subtitle: "FAQ.01 // WHERE WE WORK",
     badgeCode: "06",
     category: "faq",
@@ -115,18 +115,18 @@ const outcomeItems: OutcomeCardItem[] = [
   {
     id: 7,
     content:
-      "You do not need a formal technical specification to start. Bring a clear picture of how your team works today and which tools or spreadsheets are slowing you down.",
-    title: "How to Start a Project Inquiry",
-    subtitle: "FAQ.02 // GETTING STARTED",
+      "You don't need tech jargon or a spec doc to reach out. Just share your current website link or describe what you want to build, and Chandler will send a clear quote.",
+    title: "No Tech Jargon Required",
+    subtitle: "FAQ.02 // EASY TO START",
     badgeCode: "07",
     category: "faq",
   },
   {
     id: 8,
     content:
-      "Every engagement begins with workflow mapping and system definition before production engineering, ensuring clear scope and milestone delivery.",
-    title: "Structured Milestones From Day One",
-    subtitle: "FAQ.03 // DELIVERY PROCESS",
+      "You work directly with Chandler from first call to launch day—with live preview links every step of the way and zero non-technical account managers.",
+    title: "Direct Founder Communication",
+    subtitle: "FAQ.03 // ZERO MIDDLEMEN",
     badgeCode: "08",
     category: "faq",
   },
@@ -251,9 +251,9 @@ export default function Testimonial() {
             className="mt-6 max-w-3xl text-pretty font-sans text-xl font-bold leading-snug tracking-tight text-[#8898aa] md:text-2xl"
           >
             <span className="text-[#0a2540]">
-              Why growing businesses choose custom software they own.
+              Straight answers on websites, custom apps, and 100% ownership.
             </span>{" "}
-            Instead of disconnected third-party tools.
+            Built around your business with zero monthly platform rent.
           </motion.p>
         </motion.div>
       </Container>
