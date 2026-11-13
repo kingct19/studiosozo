@@ -15,133 +15,24 @@ import Container from "@/components/watermelon/templates/landing-01/landing/cont
 import Footer from "@/components/watermelon/templates/landing-01/landing/footer";
 import Heading from "@/components/watermelon/templates/landing-01/landing/heading";
 import Navbar from "@/components/watermelon/templates/landing-01/landing/navbar";
+import { OWNERSHIP_VS_SAAS, PRICING_FAQS, PRICING_TIERS } from "@/lib/pricing";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
   title:
-    "Custom Software Pricing & Investment | Own Your Platform vs. Renting SaaS",
+    "Website & Custom App Pricing ($800+) | Transparent Flat & Milestone Builds",
   description:
-    "Transparent engagement models and investment tiers for custom software development, CRM systems, and AI workflow automation at Studio Sozo. 100% code ownership, $0 per-seat fees.",
+    "Straightforward pricing at Studio Sozo: $800–$1,000 standalone business websites & redesigns, $2,000+ workflow automations, and $5,000–$10,000 custom web/mobile apps & CRMs. 100% owned.",
   alternates: {
     canonical: "/pricing",
   },
   openGraph: {
-    title: `Pricing & Engagement Models | ${siteConfig.name}`,
+    title: `Website & Custom App Pricing | ${siteConfig.name}`,
     description:
-      "Fixed-scope milestone builds and dedicated engineering partnerships with 100% code ownership and zero per-seat SaaS licensing fees.",
+      "Start with an $800–$1,000 custom website or build a full web/mobile application you own 100% with $0 monthly platform fees.",
     url: `${siteConfig.url}/pricing`,
   },
 };
-
-const PRICING_TIERS = [
-  {
-    code: "TIER // 01 — WORKFLOW & INTEGRATION SPRINT",
-    name: "Automation & Integration Build",
-    timeline: "2 – 4 Weeks",
-    priceLabel: "Starting at $2,000",
-    priceSubtext: "Fixed-scope milestone investment",
-    featured: false,
-    idealFor:
-      "Businesses losing hours to manual data entry, disconnected tools, or fragile Zapier chains that need a reliable bridge fast.",
-    painPointSolved:
-      "Eliminates double data entry between your website/intake, CRM, scheduling, and QuickBooks/Stripe.",
-    includes: [
-      "Workflow audit & systems integration blueprint",
-      "Custom two-way API & webhook sync (QuickBooks, Stripe, CRM, SMS)",
-      "AI document extraction or automated lead intake & routing pipeline",
-      "Idempotent retry queues, error alerting & sync health dashboard",
-      "100% source code ownership & production deployment",
-    ],
-    ctaText: "Scope an Automation Sprint",
-  },
-  {
-    code: "TIER // 02 — CORE CUSTOM PLATFORM",
-    name: "Custom CRM, Portal or Web/Mobile App",
-    timeline: "6 – 10 Weeks",
-    priceLabel: "$5,000 – $10,000",
-    priceSubtext: "Milestone-based fixed-scope build",
-    featured: true,
-    idealFor:
-      "Growing companies ready to replace spreadsheets and bloated off-the-shelf CRMs with a unified system built around their exact operations.",
-    painPointSolved:
-      "Replaces 4–6 disconnected subscriptions with one fast, role-specific platform your business owns 100%.",
-    includes: [
-      "Complete Phase 01 discovery, data modeling & clickable UI prototype",
-      "Custom CRM, quoting/booking engine, dispatch board, or customer portal",
-      "Role-based workspaces for admins, sales reps, field crews, and clients",
-      "Built-in Stripe payments, Twilio SMS/email notifications & reporting",
-      "Historical data migration from spreadsheets or legacy software",
-      "100% IP, GitHub repository & cloud infrastructure ownership ($0/seat)",
-    ],
-    ctaText: "Scope Your Custom Platform",
-  },
-  {
-    code: "TIER // 03 — ENTERPRISE & MULTI-PLATFORM",
-    name: "Full Ecosystem / Dedicated Engineering",
-    timeline: "10+ Weeks or Ongoing Retainer",
-    priceLabel: "Custom Scope",
-    priceSubtext: "Phased roadmap or monthly velocity partner",
-    featured: false,
-    idealFor:
-      "Multi-location operators or product founders shipping a flagship web + iOS/Android platform, AI copilot suite, or multi-department ERP.",
-    painPointSolved:
-      "Gives you a senior full-stack product & AI engineering team without the $400k+/yr overhead of hiring in-house.",
-    includes: [
-      "Unified Web Application + Native iOS & Android Mobile Apps",
-      "Custom AI agents, RAG knowledge bases, and vision/voice workflows",
-      "Multi-branch / multi-tenant permissions, audit logs & analytics warehouse",
-      "App Store & Google Play submission and release management",
-      "Dedicated weekly sprint velocity and priority SLAs",
-    ],
-    ctaText: "Discuss Enterprise Scope",
-  },
-] as const;
-
-const OWNERSHIP_VS_SAAS = [
-  {
-    dimension: "Per-User / Per-Seat Fees",
-    rentedSaas: "$75–$250/user/mo forever—penalizes you every time you hire",
-    studioSozo: "$0 per seat forever—add unlimited reps, techs, and contractors",
-  },
-  {
-    dimension: "Workflow Fit",
-    rentedSaas: "Rigid generic templates that force side-spreadsheets and workarounds",
-    studioSozo: "Engineered around your exact quoting, stages, approvals, and field ops",
-  },
-  {
-    dimension: "Intellectual Property & Data",
-    rentedSaas: "Vendor owns the platform; your data is locked inside their schema",
-    studioSozo: "You own 100% of the code, database, and cloud infrastructure",
-  },
-  {
-    dimension: "3-Year Total Cost (25-Person Team)",
-    rentedSaas: "$90,000 – $180,000+ in recurring licenses & add-on tiers",
-    studioSozo: "One-time build investment + ~$50–$150/mo direct cloud hosting",
-  },
-] as const;
-
-const PRICING_FAQS = [
-  {
-    question: "How are payments structured during a build?",
-    answer:
-      "We never ask for 100% upfront. Projects are structured around clear, verifiable milestones—typically 30% at kickoff, 40% at interactive staging approval, and 30% upon production launch and handover.",
-  },
-  {
-    question: "What are our ongoing costs after the software launches?",
-    answer:
-      "Because you own the software, there are zero licensing or per-user fees paid to Studio Sozo. Your only required ongoing cost is your direct cloud hosting and third-party usage (e.g., Vercel, Supabase/Postgres, Twilio, or OpenAI APIs), which typically runs $40–$150/month for most businesses.",
-  },
-  {
-    question: "Do you offer ongoing support and feature development after launch?",
-    answer:
-      "Yes. Every build includes a post-launch stabilization window at no extra charge. After that, you can either run the system independently, request on-demand enhancements, or partner with us on a monthly engineering retainer to continuously ship phase-2 capabilities.",
-  },
-  {
-    question: "What if we aren't sure which tier our project falls into?",
-    answer:
-      "Send us a short note on our contact page describing what tools you want to replace or automate. On our first call, we will give you a straightforward ballpark range and recommend the fastest path to ROI.",
-  },
-];
 
 export default function PricingPage() {
   const breadcrumbs = [
@@ -161,13 +52,16 @@ export default function PricingPage() {
 
       <PageHeader
         breadcrumbs={breadcrumbs}
-        eyebrow="TRANSPARENT INVESTMENT // ZERO PER-SEAT TAX"
-        headline="Stop Renting Software. Invest in a System You"
+        eyebrow="TRANSPARENT PRICING // $800 WEBSITES TO FULL CUSTOM APPS"
+        headline="Straightforward Pricing for Websites & Apps You"
         highlightWord="Own"
-        leadBold="SaaS companies charge you every month forever—and charge you more every time your team grows."
-        leadBody="Studio Sozo builds custom software on fixed, milestone-backed scopes where you own 100% of the code and pay $0 in per-seat licensing fees."
-        primaryCta={{ text: "Get a Custom Project Quote", href: "/contact" }}
-        secondaryCta={{ text: "See Our 4-Phase Process", href: "/process" }}
+        leadBold="Stop paying monthly website builder rent or climbing per-user software bills."
+        leadBody="Whether you need an $800–$1,000 custom business website in two weeks or a full web/mobile application for your team, you get clear upfront pricing and 100% ownership."
+        primaryCta={{
+          text: "Start My Website ($800–$1k)",
+          href: "/contact?package=website",
+        }}
+        secondaryCta={{ text: "Get a Custom App Quote", href: "/contact" }}
       />
 
       {/* Pricing Tiers */}
@@ -175,7 +69,7 @@ export default function PricingPage() {
         <Container className="relative z-10 mx-auto">
           <FadeInSection className="mb-14 max-w-3xl">
             <FadeInItem className="text-brand mb-4 text-xs font-bold tracking-widest uppercase">
-              <MeshInk>{"//"} ENGAGEMENT MODELS &amp; INVESTMENT TIERS</MeshInk>
+              <MeshInk>{"//"} 04 CLEAR INVESTMENT TIERS</MeshInk>
             </FadeInItem>
             <FadeInItem>
               <Heading
@@ -183,32 +77,32 @@ export default function PricingPage() {
                 variant="big"
                 className="text-foreground font-sans text-balance"
               >
-                Clear scope. Fixed milestones.{" "}
+                Pick what fits right now.{" "}
                 <span className="text-brand">
-                  <MeshInk>100% ownership.</MeshInk>
+                  <MeshInk>Own it 100%.</MeshInk>
                 </span>
               </Heading>
             </FadeInItem>
           </FadeInSection>
 
-          <FadeInSection className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+          <FadeInSection className="grid grid-cols-1 gap-8 lg:grid-cols-2">
             {PRICING_TIERS.map((tier) => (
               <FadeInItem
-                key={tier.name}
+                key={tier.id}
                 className={
-                  tier.featured
-                    ? "relative flex flex-col justify-between border-2 border-[#635bff] bg-white p-8 shadow-[0_18px_50px_rgba(10,37,64,0.1)] md:p-10"
+                  tier.highlightAccent
+                    ? "relative flex flex-col justify-between border-2 border-[#635bff] bg-white p-8 shadow-[0_18px_50px_rgba(10,37,64,0.08)] md:p-10"
                     : "relative flex flex-col justify-between border border-[#e3e8ee] bg-white p-8 shadow-[0_2px_8px_rgba(10,37,64,0.04)] md:p-10"
                 }
               >
                 <div>
-                  <div className="mb-4 flex items-center justify-between gap-2">
+                  <div className="mb-4 flex flex-wrap items-center justify-between gap-2">
                     <span className="text-brand text-[11px] font-bold tracking-widest uppercase">
                       <MeshInk>{tier.code}</MeshInk>
                     </span>
-                    {tier.featured && (
+                    {tier.badge && (
                       <span className="border border-[#635bff]/30 bg-[#635bff]/10 px-2.5 py-0.5 text-[10px] font-bold tracking-widest text-[#635bff] uppercase">
-                        Most Popular
+                        {tier.badge}
                       </span>
                     )}
                   </div>
@@ -235,7 +129,7 @@ export default function PricingPage() {
 
                   <div className="mb-6 border-l-2 border-[#635bff] bg-[#f6f9fc] p-3.5">
                     <span className="block text-[10px] font-bold tracking-widest text-[#6b7c93] uppercase">
-                      PAIN POINT ELIMINATED:
+                      WHY CLIENTS CHOOSE THIS:
                     </span>
                     <p className="mt-1 font-sans text-xs font-bold text-[#0a2540]">
                       {tier.painPointSolved}
@@ -262,16 +156,16 @@ export default function PricingPage() {
                   </div>
                 </div>
 
-                {tier.featured ? (
+                {tier.highlightAccent ? (
                   <LitUpButton
-                    href="/contact"
+                    href={tier.ctaHref}
                     className="w-full justify-center text-xs font-bold tracking-widest uppercase"
                   >
                     {tier.ctaText} <ArrowUpRight01Icon className="h-4 w-4" />
                   </LitUpButton>
                 ) : (
                   <Link
-                    href="/contact"
+                    href={tier.ctaHref}
                     className="inline-flex w-full items-center justify-center gap-2 border border-[#0a2540] bg-[#0a2540] px-6 py-3 text-xs font-bold tracking-widest text-white uppercase transition-colors hover:border-[#635bff] hover:bg-[#635bff]"
                   >
                     {tier.ctaText} <ArrowUpRight01Icon className="h-4 w-4" />
@@ -288,7 +182,7 @@ export default function PricingPage() {
         <Container className="relative z-10 mx-auto">
           <div className="mb-14 max-w-3xl">
             <div className="text-brand mb-4 text-xs font-bold tracking-widest uppercase">
-              <MeshInk>{"//"} THE ECONOMICS OF SOFTWARE OWNERSHIP</MeshInk>
+              <MeshInk>{"//"} OWNERSHIP VS. MONTHLY SUBSCRIPTIONS</MeshInk>
             </div>
             <Heading
               as="h2"
@@ -297,19 +191,19 @@ export default function PricingPage() {
             >
               Why owning beats{" "}
               <span className="text-brand">
-                <MeshInk>renting SaaS</MeshInk>
+                <MeshInk>monthly rent</MeshInk>
               </span>
             </Heading>
           </div>
 
           <div className="overflow-hidden border border-[#e3e8ee]">
             <div className="grid grid-cols-1 border-b border-[#e3e8ee] bg-[#f6f9fc] text-xs font-bold tracking-widest uppercase md:grid-cols-12">
-              <div className="p-5 text-[#6b7c93] md:col-span-3">Dimension</div>
+              <div className="p-5 text-[#6b7c93] md:col-span-3">Comparison</div>
               <div className="border-t border-[#e3e8ee] p-5 text-[#6b7c93] md:col-span-4 md:border-t-0 md:border-l">
-                Rented Off-the-Shelf SaaS Stack
+                Rented Builders &amp; Per-Seat SaaS
               </div>
               <div className="text-brand border-t border-[#e3e8ee] bg-white p-5 md:col-span-5 md:border-t-0 md:border-l">
-                <MeshInk>Studio Sozo Custom Platform (100% Owned)</MeshInk>
+                <MeshInk>Studio Sozo (100% Owned)</MeshInk>
               </div>
             </div>
 
@@ -353,7 +247,7 @@ export default function PricingPage() {
             >
               Common questions on{" "}
               <span className="text-brand">
-                <MeshInk>investment</MeshInk>
+                <MeshInk>pricing</MeshInk>
               </span>
             </Heading>
 
@@ -386,20 +280,30 @@ export default function PricingPage() {
         <Container className="mx-auto text-center">
           <div className="mx-auto max-w-3xl border border-[#e3e8ee] bg-[#f6f9fc] p-10 md:p-14">
             <div className="text-brand mb-4 text-xs font-bold tracking-widest uppercase">
-              <MeshInk>{"//"} GET A CLEAR SCOPE &amp; ESTIMATE</MeshInk>
+              <MeshInk>{"//"} GET A CLEAR QUOTE</MeshInk>
             </div>
             <h2 className="mb-4 font-sans text-3xl font-bold tracking-tight text-[#0a2540] md:text-5xl">
-              Tell us what you want to build or replace.
+              Tell us what you want to build or update.
             </h2>
             <p className="mx-auto mb-8 max-w-xl font-sans text-base font-medium text-[#425466] md:text-lg">
-              We will review your workflow, recommend the right tier, and give you a transparent milestone breakdown.
+              Whether it&apos;s an $800–$1,000 website refresh or a custom app
+              for your team, Chandler will reply personally with a clear plan.
             </p>
-            <LitUpButton
-              href="/contact"
-              className="mx-auto w-fit text-xs font-bold tracking-widest uppercase"
-            >
-              Discuss Your Project <ArrowUpRight01Icon className="h-4 w-4" />
-            </LitUpButton>
+            <div className="flex flex-wrap items-center justify-center gap-4">
+              <LitUpButton
+                href="/contact?package=website"
+                className="w-fit text-xs font-bold tracking-widest uppercase"
+              >
+                Start an $800–$1k Website{" "}
+                <ArrowUpRight01Icon className="h-4 w-4" />
+              </LitUpButton>
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-2 border border-[#0a2540] bg-white px-6 py-3 text-xs font-bold tracking-widest text-[#0a2540] uppercase transition-colors hover:border-[#635bff] hover:text-[#635bff]"
+              >
+                Scope a Custom App <ArrowUpRight01Icon className="h-4 w-4" />
+              </Link>
+            </div>
           </div>
         </Container>
       </section>

@@ -179,10 +179,10 @@ export default function Hero() {
           <motion.div variants={itemVariants}>
             <p className="mb-12 max-w-3xl text-pretty font-sans text-xl font-bold leading-snug tracking-tight text-[#8898aa] md:text-2xl">
               <span className="text-[#0a2540]">
-                From $800–$1,000 business websites and redesigns to custom web
+                From $800-$1,000 business websites and redesigns to custom web
                 apps, mobile apps, and CRMs.
               </span>{" "}
-              Built around your business—and owned 100% by you with $0 monthly
+              Built around your business and owned 100% by you with $0 monthly
               platform fees.
             </p>
           </motion.div>

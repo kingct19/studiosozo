@@ -258,8 +258,8 @@ export default function ComponentsBento() {
           {/* Step 1 */}
           <ComponentCard
             title="[ 01 // QUICK CALL & FIXED QUOTE ]"
-            subtitle="DAY 1–2"
-            description="Tell us what you need—whether it's an $800–$1,000 business website refresh or a custom app—and get a clear flat or milestone price upfront."
+            subtitle="DAY 1-2"
+            description="Tell us what you need, whether it is an $800-$1,000 business website refresh or a custom app, and get a clear flat or milestone price upfront."
             variants={itemVariants}
           >
             <ScopeAndQuoteVisual />
@@ -289,7 +289,7 @@ export default function ComponentsBento() {
           <ComponentCard
             title="[ 04 // LAUNCH & 100% HANDOVER ]"
             subtitle="LAUNCH DAY"
-            description="We connect your custom domain, take you live, and hand over 100% ownership of your code and accounts—with $0 monthly platform rent."
+            description="We connect your custom domain, take you live, and hand over 100% ownership of your code and accounts with $0 monthly platform rent."
             variants={itemVariants}
           >
             <OwnershipHandoverVisual />

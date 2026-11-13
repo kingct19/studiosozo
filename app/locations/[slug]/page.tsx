@@ -23,7 +23,7 @@ import {
   getLocationBySlug,
   serviceLocations,
 } from "@/lib/locations";
-import { servicesData } from "@/lib/services";
+import { primaryServicesData } from "@/lib/services";
 import { siteConfig } from "@/lib/site";
 
 export function generateStaticParams() {
@@ -97,7 +97,7 @@ export default async function LocationDetailPage({
       <PageHeader
         breadcrumbs={breadcrumbs}
         eyebrow={location.regionTag}
-        headline={`Custom Software, CRM & AI Automation in ${location.city},`}
+        headline={`Custom Websites, Apps & Software in ${location.city},`}
         highlightWord={location.abbreviation}
         leadBold={location.summary}
         leadBody={location.localContext}
@@ -105,7 +105,7 @@ export default async function LocationDetailPage({
           text: `Start a ${location.city} Project`,
           href: "/contact",
         }}
-        secondaryCta={{ text: "Explore All Services", href: "/services" }}
+        secondaryCta={{ text: "See Pricing ($800+)", href: "/pricing" }}
       />
 
       {/* Regional Pain Points We Solve */}
@@ -196,8 +196,8 @@ export default async function LocationDetailPage({
             </Heading>
           </div>
 
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {servicesData.map((service) => (
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+            {primaryServicesData.map((service) => (
               <Link
                 key={service.slug}
                 href={`/services/${service.slug}`}
@@ -205,7 +205,7 @@ export default async function LocationDetailPage({
               >
                 <div>
                   <div className="text-brand mb-2 text-xs font-bold tracking-widest uppercase">
-                    <MeshInk>CAPABILITY // {service.number}</MeshInk>
+                    <MeshInk>{service.priceBadge}</MeshInk>
                   </div>
                   <h3 className="mb-3 font-sans text-xl font-bold text-[#0a2540] group-hover:text-[#635bff]">
                     {service.title}

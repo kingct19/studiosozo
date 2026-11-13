@@ -101,7 +101,7 @@ const CITY_DETAILS: Record<
       {
         title: "Paying High Monthly Per-User Fees for Rigid SaaS",
         description:
-          "Off-the-shelf CRMs penalize you every time you add technicians, sales reps, or office staff—without fitting your actual workflow.",
+          "Off-the-shelf CRMs penalize you every time you add technicians, sales reps, or office staff without fitting your actual workflow.",
       },
       {
         title: "No Real-Time Visibility Into Job Margin or Pipeline",
@@ -115,7 +115,7 @@ const CITY_DETAILS: Record<
         question:
           "How does Studio Sozo work with businesses in Shreveport, LA?",
         answer:
-          "We partner directly with Shreveport and Ark-La-Tex business owners and operations leaders—mapping your real workflow, designing a clear system architecture, and shipping production software in structured milestones.",
+          "We partner directly with Shreveport and Ark-La-Tex business owners and operations leaders to map your goals, design a clear website or app, and launch in fast, structured milestones.",
       },
       {
         question:
@@ -170,7 +170,7 @@ const CITY_DETAILS: Record<
       {
         question: "Do we pay monthly per-user fees after launch?",
         answer:
-          "No. You own 100% of the custom software we build for your business—there are no per-seat licensing fees as your team grows.",
+          "No. You own 100% of the custom website or software we build for your business, with zero per-seat licensing fees as your team grows.",
       },
     ],
   },
@@ -234,7 +234,7 @@ const CITY_DETAILS: Record<
     summary:
       "Senior full-stack product engineering, AI workflow automation, and custom operational platforms for Austin businesses and founders who value speed, clean architecture, and 100% code ownership.",
     localContext:
-      "Austin operators and founders move fast—whether scaling a high-velocity service organization across Central Texas or shipping an AI-native SaaS or mobile product without the overhead of a bloated slow-moving agency.",
+      "Austin operators and founders move fast, whether scaling a high-velocity service company across Central Texas or shipping an AI-enabled SaaS or mobile product without the overhead of a slow-moving agency.",
     industriesServed: [
       "AI-Enabled SaaS & Consumer/Prosumer Mobile Products",
       "Solar, Clean Energy & Home-Service Operations",
@@ -250,7 +250,7 @@ const CITY_DETAILS: Record<
       {
         title: "Need Senior Engineering Velocity Without Agency Bloat",
         description:
-          "You need production-grade Next.js, TypeScript, mobile, and AI architecture shipped in weeks—not months of slide decks.",
+          "You need production-grade Next.js, TypeScript, mobile, and AI software shipped in weeks rather than months of slide decks.",
       },
       {
         title: "Generic AI Wrappers That Don't Connect to Real Operations",
@@ -264,7 +264,7 @@ const CITY_DETAILS: Record<
         question:
           "Can Studio Sozo build both internal operational software and commercial SaaS/mobile products?",
         answer:
-          "Yes. We build internal CRMs and automation engines for operating companies as well as commercial web and iOS/Android products like Angler IQ—using the same rigorous production architecture.",
+          "Yes. We build custom websites, internal CRMs, and automation tools for operating companies as well as commercial web and iOS/Android products like Angler IQ.",
       },
       {
         question:
@@ -284,7 +284,7 @@ const CITY_DETAILS: Record<
     summary:
       "Practical, durable custom software and workflow automation built for Northeast Texas businesses that want their operations running in one reliable system.",
     localContext:
-      "Businesses in Hughes Springs and across Cass and Morris County—spanning regional contractors, timber/industrial services, outdoor recreation, and equipment operations—need straightforward, dependable software that eliminates paperwork without enterprise complexity.",
+      "Businesses in Hughes Springs and across Cass and Morris County, including regional contractors, timber/industrial services, outdoor recreation, and equipment operations, need straightforward websites and dependable software without enterprise complexity.",
     industriesServed: [
       "Regional Trade Contractors & Field Services",
       "Industrial, Equipment & Fleet Operations",
@@ -413,7 +413,7 @@ const CITY_DETAILS: Record<
         question:
           "What makes Studio Sozo different from a standard web design agency?",
         answer:
-          "Standard agencies build static brochure sites. Studio Sozo is a software engineering partner—we build the actual operational engine behind your business: custom CRMs, automated booking/quoting, AI workflows, and integrated databases.",
+          "We handle everything from fast $800-$1,000 custom business websites to the full operational apps behind your business, including online booking, custom CRMs, and QuickBooks/Stripe integrations, all owned 100% by you.",
       },
       {
         question:
@@ -433,7 +433,7 @@ const CITY_DETAILS: Record<
     summary:
       "Bespoke operational software, custom CRMs, AI automation, and systems integration for Kansas City companies replacing fragmented SaaS stacks with software they own.",
     localContext:
-      "Across the Kansas City metro—from logistics, construction, solar, and home-service leaders to B2B enterprises—operations teams are consolidating sprawling software subscriptions into unified, proprietary platforms built around their exact competitive process.",
+      "Across the Kansas City metro, from logistics, construction, solar, and home-service leaders to growing B2B companies, teams are replacing rented websites and sprawling SaaS subscriptions with custom websites and applications they own outright.",
     industriesServed: [
       "Solar, HVAC, Roofing & Specialty Construction",
       "Logistics, Distribution & Field Operations",
@@ -464,7 +464,7 @@ const CITY_DETAILS: Record<
         question:
           "How does Studio Sozo collaborate with Kansas City, MO clients?",
         answer:
-          "We work directly with Kansas City leadership and operations teams through structured discovery, live interactive prototypes, and weekly production releases—combining regional alignment with fast remote engineering execution.",
+          "We work directly with Kansas City business owners and operations teams through a quick kickoff call, live clickable previews, and fast weekly progress updates.",
       },
       {
         question:

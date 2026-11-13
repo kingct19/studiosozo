@@ -165,7 +165,7 @@ export async function submitProjectInquiry(
   return {
     ok: true,
     message: confirmationSent
-      ? `Thank you — your project brief has been sent directly to Chandler King, and a confirmation copy has been emailed to ${inquiry.email}.`
-      : "Thank you — your project brief has been delivered directly to Chandler King. We will review your details and follow up shortly.",
+      ? `Thank you! Your project inquiry has been sent directly to Chandler King, and a confirmation copy has been emailed to ${inquiry.email}.`
+      : "Thank you! Your project inquiry has been delivered directly to Chandler King. We will review your details and follow up shortly.",
   };
 }

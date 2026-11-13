@@ -44,12 +44,12 @@ export default function WorkPage() {
       <PageHeader
         breadcrumbs={breadcrumbs}
         eyebrow="PROVEN IN PRODUCTION // CASE STUDIES"
-        headline="Real Operational Systems We Have"
-        highlightWord="Shipped"
-        leadBold="Every platform below started with a concrete business pain point—"
-        leadBody="from fragmented solar sales pipelines and manual phone reservations to scattered field data. Explore how we engineered each custom solution."
-        primaryCta={{ text: "Discuss Your Project", href: "/contact" }}
-        secondaryCta={{ text: "Explore Capabilities", href: "/services" }}
+        headline="Websites & Applications We Have"
+        highlightWord="Built"
+        leadBold="Every project below started with a real business goal,"
+        leadBody="from online booking and storefront conversions to solar sales pipelines and AI mobile apps. Explore how we designed and built each one."
+        primaryCta={{ text: "Start Your Project", href: "/contact" }}
+        secondaryCta={{ text: "See Pricing ($800+)", href: "/pricing" }}
       />
 
       <section className="relative border-b border-[#e3e8ee] bg-[#f6f9fc] py-20 md:py-28">
@@ -81,7 +81,7 @@ export default function WorkPage() {
                       <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
                         <span className="text-brand text-xs font-bold tracking-widest uppercase">
                           <MeshInk>
-                            CASE STUDY // 0{index + 1} — {study.industry}
+                            CASE STUDY // 0{index + 1} • {study.industry}
                           </MeshInk>
                         </span>
                       </div>

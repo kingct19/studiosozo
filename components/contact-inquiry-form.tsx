@@ -182,64 +182,45 @@ export function ContactInquiryForm() {
     const pkg = params.get("package")?.toLowerCase();
     const svc = params.get("service")?.toLowerCase();
 
+    let nextSoftwareType: string | null = null;
+    let nextBudget: string | null = null;
+
     if (pkg === "website" || svc === "custom-websites") {
-      setValue("softwareType", "Custom Websites & Redesigns", {
-        shouldDirty: true,
-      });
-      setValue("estimatedBudget", "$800 – $1,000 (Website Build / Update)", {
-        shouldDirty: true,
-      });
-      setActiveStep("workflow");
-      return;
-    }
-    if (
+      nextSoftwareType = "Custom Websites & Redesigns";
+      nextBudget = "$800 - $1,000 (Website Build / Update)";
+    } else if (
       pkg === "automation" ||
       svc === "ai-and-automation" ||
       svc === "systems-integration"
     ) {
-      setValue("softwareType", "Custom CRMs & AI Automation", {
-        shouldDirty: true,
-      });
-      setValue("estimatedBudget", "$2,000 – $5,000", { shouldDirty: true });
-      setActiveStep("workflow");
-      return;
-    }
-    if (pkg === "app" || svc === "web-applications") {
-      setValue("softwareType", "Web Apps & Customer Portals", {
-        shouldDirty: true,
-      });
-      setValue("estimatedBudget", "$5,000 – $10,000", { shouldDirty: true });
-      setActiveStep("workflow");
-      return;
-    }
-    if (svc === "mobile-app-development") {
-      setValue("softwareType", "Mobile Apps (iOS & Android)", {
-        shouldDirty: true,
-      });
-      setValue("estimatedBudget", "$5,000 – $10,000", { shouldDirty: true });
-      setActiveStep("workflow");
-      return;
-    }
-    if (
+      nextSoftwareType = "Custom CRMs & AI Automation";
+      nextBudget = "$2,000 - $5,000";
+    } else if (pkg === "app" || svc === "web-applications") {
+      nextSoftwareType = "Web Apps & Customer Portals";
+      nextBudget = "$5,000 - $10,000";
+    } else if (svc === "mobile-app-development") {
+      nextSoftwareType = "Mobile Apps (iOS & Android)";
+      nextBudget = "$5,000 - $10,000";
+    } else if (
       svc === "crm-and-business-systems" ||
       svc === "custom-software-development"
     ) {
-      setValue("softwareType", "Custom CRMs & AI Automation", {
-        shouldDirty: true,
-      });
-      setValue("estimatedBudget", "$5,000 – $10,000", { shouldDirty: true });
-      setActiveStep("workflow");
-      return;
+      nextSoftwareType = "Custom CRMs & AI Automation";
+      nextBudget = "$5,000 - $10,000";
+    } else if (pkg === "custom") {
+      nextSoftwareType = "Not Sure / Multiple Things";
+      nextBudget = "$25,000+ / Custom Scope";
     }
-    if (pkg === "custom") {
-      setValue("softwareType", "Not Sure / Multiple Things", {
-        shouldDirty: true,
-      });
-      setValue("estimatedBudget", "$25,000+ / Custom Scope", {
-        shouldDirty: true,
-      });
+
+    if (!nextSoftwareType || !nextBudget) return;
+
+    const frameId = window.requestAnimationFrame(() => {
+      setValue("softwareType", nextSoftwareType, { shouldDirty: true });
+      setValue("estimatedBudget", nextBudget, { shouldDirty: true });
       setActiveStep("workflow");
-    }
+    });
+
+    return () => window.cancelAnimationFrame(frameId);
   }, [setValue]);
   const currentStepIndex = WIZARD_STEPS.findIndex((s) => s.id === activeStep);
   const currentStepMeta = WIZARD_STEPS[currentStepIndex] ?? WIZARD_STEPS[0];
@@ -676,9 +657,9 @@ export function ContactInquiryForm() {
                                   className={cn(
                                     "flex items-center justify-between border px-3.5 py-2.5 text-left font-mono text-xs transition-colors",
                                     (option ===
-                                      "$800 – $1,000 (Website Build / Update)" ||
+                                      "$800 - $1,000 (Website Build / Update)" ||
                                       option ===
-                                        "Not sure yet — help me scope it") &&
+                                        "Not sure yet (help me scope it)") &&
                                       "sm:col-span-2",
                                     isSelected
                                       ? "border-[#635bff] bg-[#635bff]/8 font-bold text-[#0a2540]"

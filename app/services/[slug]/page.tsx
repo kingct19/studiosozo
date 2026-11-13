@@ -19,7 +19,11 @@ import Heading from "@/components/watermelon/templates/landing-01/landing/headin
 import Navbar from "@/components/watermelon/templates/landing-01/landing/navbar";
 import { caseStudiesData } from "@/lib/case-studies";
 import { flatServiceLocations } from "@/lib/locations";
-import { getServiceBySlug, servicesData } from "@/lib/services";
+import {
+  getServiceBySlug,
+  primaryServicesData,
+  servicesData,
+} from "@/lib/services";
 import { siteConfig } from "@/lib/site";
 
 export function generateStaticParams() {
@@ -70,7 +74,19 @@ export default async function ServiceDetailPage({
     service.relatedCaseStudies.includes(study.slug),
   );
 
-  const otherServices = servicesData.filter((s) => s.slug !== service.slug);
+  const otherServices = primaryServicesData.filter(
+    (s) => s.slug !== service.slug,
+  );
+  const primaryCta =
+    service.slug === "custom-websites"
+      ? {
+          text: "Start My Website ($800–$1k)",
+          href: "/contact?package=website",
+        }
+      : {
+          text: `Start a ${service.shortTitle} Project`,
+          href: `/contact?service=${service.slug}`,
+        };
 
   return (
     <main className="min-h-screen overflow-x-hidden bg-white font-mono text-[#0a2540]">
@@ -94,8 +110,8 @@ export default async function ServiceDetailPage({
         highlightWord={service.highlightWord}
         leadBold={service.leadBold}
         leadBody={service.leadBody}
-        primaryCta={{ text: "Discuss Your Project", href: "/contact" }}
-        secondaryCta={{ text: "See All Services", href: "/services" }}
+        primaryCta={primaryCta}
+        secondaryCta={{ text: "See Pricing ($800+)", href: "/pricing" }}
       />
 
       {/* Pain Points We Eliminate */}
@@ -415,17 +431,17 @@ export default async function ServiceDetailPage({
         <Container className="mx-auto">
           <div className="mb-12">
             <div className="text-brand mb-3 text-xs font-bold tracking-widest uppercase">
-              <MeshInk>{"//"} EXPLORE OTHER CAPABILITIES</MeshInk>
+              <MeshInk>{"//"} EXPLORE OTHER CORE SERVICES</MeshInk>
             </div>
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-5">
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {otherServices.map((s) => (
                 <Link
                   key={s.slug}
                   href={`/services/${s.slug}`}
                   className="border border-[#e3e8ee] bg-[#f6f9fc] p-4 transition-colors hover:border-[#635bff] hover:bg-white"
                 >
-                  <span className="block text-[10px] font-bold tracking-widest text-[#6b7c93] uppercase">
-                    CAPABILITY // {s.number}
+                  <span className="block text-[10px] font-bold tracking-widest text-[#635bff] uppercase">
+                    {s.priceBadge}
                   </span>
                   <span className="mt-1 block font-sans text-sm font-bold text-[#0a2540]">
                     {s.title}
@@ -442,7 +458,7 @@ export default async function ServiceDetailPage({
                   <MeshInk>{"//"} START YOUR PROJECT</MeshInk>
                 </div>
                 <h2 className="font-sans text-2xl font-bold text-[#0a2540] md:text-4xl">
-                  Ready to build your {service.shortTitle.toLowerCase()} platform?
+                  Ready to build your {service.shortTitle.toLowerCase()}?
                 </h2>
                 <p className="mt-2 max-w-2xl font-sans text-sm text-[#425466] md:text-base">
                   Available for businesses across{" "}
@@ -451,10 +467,10 @@ export default async function ServiceDetailPage({
                 </p>
               </div>
               <LitUpButton
-                href="/contact"
+                href={primaryCta.href}
                 className="w-fit shrink-0 text-xs font-bold tracking-widest uppercase"
               >
-                Discuss Your Project <ArrowUpRight01Icon className="h-4 w-4" />
+                {primaryCta.text} <ArrowUpRight01Icon className="h-4 w-4" />
               </LitUpButton>
             </div>
           </div>

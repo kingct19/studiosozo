@@ -75,7 +75,7 @@ export const SERVICE_PAIN_DIAGNOSTICS = [
     code: "PROBLEM // 04",
     bottleneck: "Rising Per-User Software Bills",
     symptom:
-      "Off-the-shelf CRMs and SaaS tools charge hundreds or thousands every month—and raise the bill every time you hire.",
+      "Off-the-shelf CRMs and SaaS tools charge hundreds or thousands every month and raise the bill every time you hire.",
     solution:
       "Custom software built once around your exact workflow, with $0 per-seat fees forever and 100% ownership.",
   },
@@ -88,19 +88,19 @@ export const servicesData: ServiceDetail[] = [
     title: "Custom Websites & Redesigns",
     shortTitle: "Custom Websites",
     priceBadge: "$800 – $1,000 • 1–2 Weeks",
-    eyebrow: "SERVICE // 01 — CUSTOM WEBSITES & UPDATES ($800–$1,000)",
+    eyebrow: "SERVICE // 01 : CUSTOM WEBSITES & UPDATES ($800-$1,000)",
     headline: "Fast, Modern Business Websites You",
     highlightWord: "Own",
     seoTitle:
-      "Custom Business Websites & Redesigns ($800–$1,000) | Ditch Wix & WordPress",
+      "Custom Business Websites & Redesigns ($800-$1,000) | Ditch Wix & WordPress",
     seoDescription:
-      "Get a custom 1–5 page business website or Wix/WordPress redesign built in 1–2 weeks for $800–$1,000. Mobile-first, local Google SEO, direct lead forms, and $0 monthly platform fees.",
+      "Get a custom 1-5 page business website or Wix/WordPress redesign built in 1-2 weeks for $800-$1,000. Mobile-first, local Google SEO, direct lead forms, and $0 monthly platform fees.",
     summary:
-      "Fast, modern 1–5 page business websites or Wix/WordPress redesigns built to bring in leads—with $0 monthly platform fees.",
+      "Fast, modern 1-5 page business websites or Wix/WordPress redesigns built to bring in leads with $0 monthly platform fees.",
     leadBold:
       "You shouldn't have to pay monthly website rent forever or settle for a slow, cookie-cutter template.",
     leadBody:
-      "Whether you need a brand-new 1–5 page website or want to replace an outdated Wix, WordPress, or Squarespace site, we design and build a sharp, mobile-first website in 1–2 weeks for $800–$1,000—and you own 100% of it.",
+      "Whether you need a brand-new 1-5 page website or want to replace an outdated Wix, WordPress, or Squarespace site, we design and build a sharp, mobile-first website in 1-2 weeks for $800-$1,000, and you own 100% of it.",
     idealFor: [
       "Local service businesses, contractors, clinics, and professional firms",
       "Companies replacing an outdated, slow Wix, WordPress, or Squarespace site",
@@ -112,7 +112,7 @@ export const servicesData: ServiceDetail[] = [
         code: "PROBLEM // 01",
         title: "Paying Monthly Rent for a Site You Don't Own",
         symptom:
-          "Website builders and agency retainers charge you every single month—and if you ever cancel, your entire website disappears.",
+          "Website builders and agency retainers charge you every single month, and if you ever cancel, your entire website disappears.",
         rootCause:
           "Hosted page builders lock your design and content inside their proprietary subscription.",
       },
@@ -143,7 +143,7 @@ export const servicesData: ServiceDetail[] = [
       ],
       afterTitle: "AFTER // $800–$1,000 STUDIO SOZO WEBSITE",
       afterSteps: [
-        "One-time $800–$1,000 build—you own 100% of your code and website forever",
+        "One-time $800-$1,000 build where you own 100% of your code and website forever",
         "Instant-loading mobile-first pages engineered for strong Google rankings",
         "Custom design tailored to your brand, services, photos, and service areas",
         "Direct lead & quote form wired straight to your inbox with instant confirmation",
@@ -176,9 +176,9 @@ export const servicesData: ServiceDetail[] = [
       },
     ],
     architectureHighlights: [
-      "$800 – $1,000 flat one-time package (50% kickoff / 50% at launch)",
-      "Fast 1 – 2 week turnaround from kickoff to live domain",
-      "Built on clean Next.js & TypeScript—easy to expand into a web app later",
+      "$800 - $1,000 flat one-time package (50% kickoff / 50% at launch)",
+      "Fast 1 - 2 week turnaround from kickoff to live domain",
+      "Built on clean Next.js & TypeScript so it can easily expand into a web app later",
       "100% client ownership with $0 monthly Studio Sozo platform fees",
     ],
     relatedCaseStudies: ["hr-hvac", "serene-commerce", "elevate-solar"],
@@ -186,7 +186,7 @@ export const servicesData: ServiceDetail[] = [
       {
         question: "What determines whether my website is $800 or $1,000?",
         answer:
-          "A focused 1–2 page launch or straightforward refresh is $800, while a full 4–5 page custom website with dedicated service/gallery pages and full copy polish is $1,000. You get an exact flat number before we start—never surprise hourly bills.",
+          "A focused 1-2 page launch or straightforward refresh is $800, while a full 4-5 page custom website with dedicated service/gallery pages and full copy polish is $1,000. You get an exact flat number before we start, with zero surprise hourly bills.",
       },
       {
         question: "Can you redesign my existing website and keep my current domain name?",
@@ -196,7 +196,7 @@ export const servicesData: ServiceDetail[] = [
       {
         question: "What if I want to add online booking, logins, or a customer portal later?",
         answer:
-          "Because we build your website on the exact same modern Next.js foundation we use for full web applications, we never have to throw your site away—we can bolt on booking, payments, or a client portal anytime your business is ready.",
+          "Because we build your website on the exact same modern Next.js foundation we use for full web applications, we never have to throw your site away. We can add booking, payments, or a client portal anytime your business is ready.",
       },
     ],
   },
@@ -206,19 +206,19 @@ export const servicesData: ServiceDetail[] = [
     title: "Web Apps & Customer Portals",
     shortTitle: "Web Apps & Portals",
     priceBadge: "Custom Portals • Booking • SaaS",
-    eyebrow: "SERVICE // 02 — WEB APPLICATIONS & PORTALS",
+    eyebrow: "SERVICE // 02 : WEB APPLICATIONS & PORTALS",
     headline: "Custom Web Apps & Portals That Run Your",
     highlightWord: "Business",
     seoTitle:
       "Custom Web Application Development | Booking Engines, Client Portals & SaaS",
     seoDescription:
-      "Modern, fast web applications built by Studio Sozo—from online booking and checkout flows to customer login portals and SaaS products.",
+      "Modern, fast web applications built by Studio Sozo, from online booking and checkout flows to customer login portals and SaaS products.",
     summary:
       "Online booking, custom quoting, checkout flows, and client login portals tailored to how your business runs.",
     leadBold:
-      "When your business needs more than a brochure site—like live booking, payments, or customer logins—templates fall apart.",
+      "When your business needs live booking, payments, or customer logins instead of a basic brochure site, templates fall apart.",
     leadBody:
-      "We design and build fast, mobile-friendly web applications where customers can book, get instant quotes, sign waivers, pay invoices, or log into their own portal—all connected directly to your team.",
+      "We design and build fast, mobile-friendly web applications where customers can book, get instant quotes, sign waivers, pay invoices, or log into their own portal, all connected directly to your team.",
     idealFor: [
       "Businesses needing custom online booking, scheduling, or rental checkout",
       "Companies launching a client or partner login portal for orders & invoices",
@@ -264,7 +264,7 @@ export const servicesData: ServiceDetail[] = [
         "Fast, custom-branded booking, quoting, or checkout flow built for phones",
         "Live availability, custom add-ons, digital waivers, and Stripe payments in one step",
         "Client login portal with live job status, documents, and one-click invoice pay",
-        "100% owned platform—you keep all your revenue with $0 platform commissions",
+        "100% owned platform where you keep all your revenue with $0 platform commissions",
       ],
     },
     deliverables: [
@@ -297,7 +297,7 @@ export const servicesData: ServiceDetail[] = [
       "Next.js & TypeScript full-stack web application",
       "Direct Stripe payments, deposits, subscriptions, and invoicing",
       "Secure magic-link or password login with role permissions",
-      "100% code and database ownership—zero monthly platform commissions",
+      "100% code and database ownership with zero monthly platform commissions",
     ],
     relatedCaseStudies: ["dash-lake-rentals", "hr-hvac", "serene-commerce"],
     faqs: [
@@ -324,19 +324,19 @@ export const servicesData: ServiceDetail[] = [
     title: "Mobile Apps (iOS & Android)",
     shortTitle: "Mobile Apps",
     priceBadge: "iPhone & Android Apps",
-    eyebrow: "SERVICE // 03 — IPHONE & ANDROID APPS",
+    eyebrow: "SERVICE // 03 : IPHONE & ANDROID APPS",
     headline: "iPhone & Android Apps for Customers &",
     highlightWord: "Crews",
     seoTitle:
       "Mobile App Development (iOS & Android) | Customer & Field Apps You Own",
     seoDescription:
-      "Studio Sozo designs and builds custom iPhone (iOS) and Android mobile apps for businesses, field crews, and startup founders—with 100% ownership.",
+      "Studio Sozo designs and builds custom iPhone (iOS) and Android mobile apps for businesses, field crews, and startup founders with 100% ownership.",
     summary:
-      "Custom iPhone and Android apps for your customers or field crews—complete with photos, push alerts, and live sync.",
+      "Custom iPhone and Android apps for your customers or field crews, complete with photos, push alerts, and live sync.",
     leadBold:
       "Whether your app is for paying customers or technicians in the field, it has to feel fast, simple, and reliable on a phone.",
     leadBody:
-      "We design and build custom iOS and Android apps from one unified codebase—complete with camera uploads, GPS, push notifications, offline support, and App Store + Google Play launch.",
+      "We design and build custom iOS and Android apps from one unified codebase, complete with camera uploads, GPS, push notifications, offline support, and App Store + Google Play launch.",
     idealFor: [
       "Founders and businesses launching a customer-facing iPhone & Android app",
       "Field service, inspection, and installation crews working on job sites",
@@ -422,7 +422,7 @@ export const servicesData: ServiceDetail[] = [
       {
         question: "Do we get both an iPhone app and an Android app?",
         answer:
-          "Yes. We build cross-platform native apps that run smoothly on both iOS and Android from one shared codebase—saving you roughly half the time and cost of building two separate apps.",
+          "Yes. We build cross-platform native apps that run smoothly on both iOS and Android from one shared codebase, saving you roughly half the time and cost of building two separate apps.",
       },
       {
         question: "Does the mobile app sync with a web dashboard for our office?",
@@ -442,19 +442,19 @@ export const servicesData: ServiceDetail[] = [
     title: "Custom CRMs & AI Automation",
     shortTitle: "CRMs & AI Automation",
     priceBadge: "$0 Per-User Fees Forever",
-    eyebrow: "SERVICE // 04 — INTERNAL CRMS, DASHBOARDS & AI",
+    eyebrow: "SERVICE // 04 : INTERNAL CRMS, DASHBOARDS & AI",
     headline: "Custom CRMs & Automations With $0 Per-Seat",
     highlightWord: "Fees",
     seoTitle:
       "Custom CRM Development & AI Workflow Automation | Replace Spreadsheets & SaaS",
     seoDescription:
-      "Custom CRMs, quoting dashboards, QuickBooks/Stripe integrations, and practical AI automations built around how your team actually works—with $0 per-user fees.",
+      "Custom CRMs, quoting dashboards, QuickBooks/Stripe integrations, and practical AI automations built around how your team actually works, with $0 per-user fees.",
     summary:
       "Internal dashboards, lead-to-invoice tracking, Stripe/QuickBooks sync, and AI tools that cut manual busywork.",
     leadBold:
       "Your team shouldn't be fighting 10 spreadsheets or paying $150/seat every month for bloated software nobody likes using.",
     leadBody:
-      "We build clean, custom CRMs, quoting tools, and AI automations designed around your exact steps—connecting leads, estimates, scheduling, field jobs, and QuickBooks/Stripe in one place.",
+      "We build clean, custom CRMs, quoting tools, and AI automations designed around your exact steps, connecting leads, estimates, scheduling, field jobs, and QuickBooks/Stripe in one place.",
     idealFor: [
       "Solar, HVAC, construction, and home-service teams outgrowing spreadsheets",
       "Companies frustrated by HubSpot, Salesforce, Jobber, or ServiceTitan bills",
@@ -530,7 +530,7 @@ export const servicesData: ServiceDetail[] = [
       },
     ],
     architectureHighlights: [
-      "Unlimited team logins—$0 per-seat CRM fees as you grow",
+      "Unlimited team logins with $0 per-seat CRM fees as you grow",
       "Direct integrations with QuickBooks, Stripe, Twilio SMS, and email",
       "Clean migration of your existing contacts, spreadsheets, and history",
       "100% owned code and customer database under your company's control",
@@ -566,13 +566,13 @@ export const servicesData: ServiceDetail[] = [
     seoTitle:
       "Custom Software Development | Business Applications & Platforms You Own 100%",
     seoDescription:
-      "Studio Sozo designs and builds custom websites, web applications, and business software tailored to your workflow—with 100% ownership across Louisiana, Texas, Missouri, and nationwide.",
+      "Studio Sozo designs and builds custom websites, web applications, and business software tailored to your workflow, with 100% ownership across Louisiana, Texas, Missouri, and nationwide.",
     summary:
       "Tailored websites, portals, and operational applications built around your business instead of rigid templates.",
     leadBold:
       "Off-the-shelf software forces your business to bend around someone else's template.",
     leadBody:
-      "We design and build custom software tailored to your exact workflows, pricing rules, and team roles—giving you fast, straightforward tools your company owns 100%.",
+      "We design and build custom software tailored to your exact workflows, pricing rules, and team roles, giving you fast, straightforward tools your company owns 100%.",
     idealFor: [
       "Companies outgrowing spreadsheets and disconnected monthly subscriptions",
       "Service businesses with custom quoting, scheduling, or dispatch steps",
@@ -658,17 +658,17 @@ export const servicesData: ServiceDetail[] = [
       {
         question: "Do we really own 100% of the code?",
         answer:
-          "Yes—100%. We build on clean, industry-standard technologies and hand over the complete GitHub repository, database, and cloud setup to your business.",
+          "Yes, 100%. We build on clean, industry-standard technologies and hand over the complete GitHub repository, database, and cloud setup to your business.",
       },
       {
         question: "How long does a custom software build take?",
         answer:
-          "Standalone websites take 1–2 weeks ($800–$1,000), focused automations take 2–4 weeks ($2,000+), and full custom web/mobile apps or CRMs typically launch in 6–10 weeks.",
+          "Standalone websites take 1-2 weeks ($800-$1,000), focused automations take 2-4 weeks ($2,000+), and full custom web/mobile apps or CRMs typically launch in 6-10 weeks.",
       },
       {
         question: "Can it connect to QuickBooks or Stripe?",
         answer:
-          "Yes. We keep the tools you already love—like Stripe for payments or QuickBooks for accounting—and connect them directly so nobody has to enter data twice.",
+          "Yes. We keep the tools you already love, like Stripe for payments or QuickBooks for accounting, and connect them directly so nobody has to enter data twice.",
       },
     ],
   },
@@ -762,12 +762,12 @@ export const servicesData: ServiceDetail[] = [
         tag: "COPILOTS",
         title: "Private Company Knowledge Assistants",
         description:
-          "Internal AI search grounded strictly in your SOPs, pricing sheets, and database—never training public models.",
+          "Internal AI search grounded strictly in your SOPs, pricing sheets, and database, without ever training public models.",
       },
     ],
     architectureHighlights: [
       "Human-in-the-loop review queues for important approvals",
-      "Private API connections—your company data never trains public AI",
+      "Private API connections so your company data never trains public AI",
       "Automatic retries and alerts so leads or invoices never drop",
       "100% owned code with zero monthly per-Zap markup",
     ],
@@ -806,7 +806,7 @@ export const servicesData: ServiceDetail[] = [
     summary:
       "Connect QuickBooks, Stripe, CRMs, scheduling apps, and databases so everything stays in sync automatically.",
     leadBold:
-      "You don't always need to replace every tool you use—sometimes you just need them to stop acting like islands.",
+      "You don't always need to replace every tool you use. Sometimes you just need them to stop acting like islands.",
     leadBody:
       "We build clean, reliable connections between your website, CRM, scheduling software, Stripe, and QuickBooks so customer records, jobs, and invoices sync automatically without CSV exports.",
     idealFor: [
@@ -894,12 +894,12 @@ export const servicesData: ServiceDetail[] = [
       {
         question: "What happens if QuickBooks or another outside service goes down briefly?",
         answer:
-          "Our sync holds the update safely in a queue and retries automatically once the service is back online—so nothing is ever lost or double-charged.",
+          "Our sync holds the update safely in a queue and retries automatically once the service is back online, so nothing is ever lost or double-charged.",
       },
       {
         question: "Can we connect our current tools first and build a custom app later?",
         answer:
-          "Yes—that's often the fastest win. Connecting your current tools stops manual double-entry in 2–4 weeks, and gives you a clean foundation if you ever decide to replace a tool later.",
+          "Yes, and that is often the fastest win. Connecting your current tools stops manual double-entry in 2-4 weeks and gives you a clean foundation if you ever decide to replace a tool later.",
       },
       {
         question: "Can you connect an older or industry-specific software tool?",

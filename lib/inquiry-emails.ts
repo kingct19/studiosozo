@@ -171,7 +171,7 @@ export function buildClientConfirmationEmail(inquiry: InquiryFormValues): {
   const text = [
     `Hi ${firstName},`,
     ``,
-    `Thank you for reaching out to Studio Sozo. Your project inquiry for ${inquiry.company} has been delivered directly to me — there are no sales reps or account manager layers between us.`,
+    `Thank you for reaching out to Studio Sozo. Your project inquiry for ${inquiry.company} has been delivered directly to me. There are no sales reps or account manager layers between us.`,
     ``,
     `YOUR SUBMITTED PROJECT BRIEF`,
     `----------------------------`,
@@ -239,7 +239,7 @@ export function buildClientConfirmationEmail(inquiry: InquiryFormValues): {
                 Hi ${escapeHtml(firstName)},
               </p>
               <p style="margin:0 0 14px;font-size:15px;line-height:1.65;color:#425466;">
-                Thanks for starting a conversation with <strong>Studio Sozo</strong>. When you work with us, there are no layers of non-technical account managers—you work directly with me from initial architecture and workflow mapping through weekly staging releases and 100% repository handover.
+                Thanks for starting a conversation with <strong>Studio Sozo</strong>. When you work with us, there are no layers of non-technical account managers. You work directly with me from initial kickoff and live previews through launch and 100% repository handover.
               </p>
               <p style="margin:0;font-size:15px;line-height:1.65;color:#425466;">
                 I’m reviewing your details now and will follow up personally within one business day.

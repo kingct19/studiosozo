@@ -88,7 +88,7 @@ const outcomeItems: OutcomeCardItem[] = [
   {
     id: 4,
     content:
-      "Replace messy spreadsheets and expensive per-user CRMs with one clean internal dashboard that connects leads, quotes, scheduling, and QuickBooks—with $0 per-seat fees.",
+      "Replace messy spreadsheets and expensive per-user CRMs with one clean internal dashboard that connects leads, quotes, scheduling, and QuickBooks with $0 per-seat fees.",
     title: "Custom CRMs & Automations",
     subtitle: "PAIN.01 // UNLIMITED TEAM USERS",
     badgeCode: "04",
@@ -97,7 +97,7 @@ const outcomeItems: OutcomeCardItem[] = [
   {
     id: 5,
     content:
-      "Because your $800–$1,000 website is built on modern Next.js & TypeScript, you never have to throw it away—we can add booking, payments, or a portal whenever you grow.",
+      "Because your $800-$1,000 website is built on modern Next.js & TypeScript, you never have to throw it away. We can add booking, payments, or a portal whenever you grow.",
     title: "Grows With Your Business",
     subtitle: "OWN.02 // FUTURE-PROOF STACK",
     badgeCode: "05",
@@ -124,7 +124,7 @@ const outcomeItems: OutcomeCardItem[] = [
   {
     id: 8,
     content:
-      "You work directly with Chandler from first call to launch day—with live preview links every step of the way and zero non-technical account managers.",
+      "You work directly with Chandler from first call to launch day, with live preview links every step of the way and zero non-technical account managers.",
     title: "Direct Founder Communication",
     subtitle: "FAQ.03 // ZERO MIDDLEMEN",
     badgeCode: "08",

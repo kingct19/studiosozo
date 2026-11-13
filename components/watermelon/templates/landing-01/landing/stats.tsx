@@ -196,8 +196,8 @@ export default function Stats() {
               Websites and apps built to{" "}
               <span className="text-brand">
                 <MeshInk>own</MeshInk>
-              </span>{" "}
-              — not rent
+              </span>
+              , not rent
             </Heading>
           </motion.div>
           <motion.p

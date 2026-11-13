@@ -91,9 +91,9 @@ export default async function CaseStudyDetailPage({
         eyebrow={`CASE STUDY // ${study.industry}`}
         headline={study.headline}
         highlightWord={study.highlightWord}
-        leadBold={`${study.title} (${study.clientType}) —`}
+        leadBold={`${study.title} (${study.clientType}):`}
         leadBody={study.summary}
-        primaryCta={{ text: "Build a Similar System", href: "/contact" }}
+        primaryCta={{ text: "Start Your Project", href: "/contact" }}
         secondaryCta={{ text: "All Case Studies", href: "/work" }}
       />
 
@@ -143,7 +143,7 @@ export default async function CaseStudyDetailPage({
             {/* Pain Point */}
             <FadeInItem className="border border-[#e3e8ee] bg-[#f6f9fc] p-8 md:p-10">
               <div className="text-brand mb-4 text-xs font-bold tracking-widest uppercase">
-                <MeshInk>{"//"} 01 — THE OPERATIONAL PAIN POINT</MeshInk>
+                <MeshInk>{"//"} 01 : THE BUSINESS CHALLENGE</MeshInk>
               </div>
               <h2 className="mb-4 font-sans text-2xl font-bold text-[#0a2540] md:text-3xl">
                 {study.painPointTitle}
@@ -174,7 +174,7 @@ export default async function CaseStudyDetailPage({
               <div className="absolute right-0 bottom-0 h-2.5 w-2.5 border-r-2 border-b-2 border-[#635bff]" />
 
               <div className="text-brand mb-4 text-xs font-bold tracking-widest uppercase">
-                <MeshInk>{"//"} 02 — THE STUDIO SOZO SOLUTION</MeshInk>
+                <MeshInk>{"//"} 02 : WHAT STUDIO SOZO BUILT</MeshInk>
               </div>
               <h2 className="mb-4 font-sans text-2xl font-bold text-[#0a2540] md:text-3xl">
                 {study.solutionTitle}

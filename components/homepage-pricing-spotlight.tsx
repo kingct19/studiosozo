@@ -69,7 +69,7 @@ export function HomepagePricingSpotlight() {
               <span className="text-brand">
                 <MeshInk>$800 website</MeshInk>
               </span>{" "}
-              — or build a custom app
+              or build a custom app
             </Heading>
           </motion.div>
 

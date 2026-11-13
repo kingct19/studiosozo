@@ -142,7 +142,7 @@ export const CAPABILITY_BLUEPRINTS: Record<
     code: "SYS-MOB // 03",
     shortTitle: "iOS & Android App",
     tagline:
-      "Custom iPhone and Android apps for your customers or field crews—complete with photos, push alerts, and live sync.",
+      "Custom iPhone and Android apps for your customers or field crews, complete with photos, push alerts, and live sync.",
     deliverableSummary:
       "iPhone & Android native app + offline photo/checklist sync + App Store & Google Play launch",
     architectureNodes: [
@@ -284,8 +284,8 @@ export const CAPABILITY_BLUEPRINTS: Record<
     ],
     promptChips: [
       "Need both a new website and online booking / portal features",
-      "Not sure which package fits — want a straightforward recommendation",
-      "Start with an $800–$1,000 website now and add custom features later",
+      "Not sure which package fits (want a clear recommendation)",
+      "Start with an $800-$1,000 website now and add custom features later",
       "Replacing multiple monthly software subscriptions at once",
     ],
     roles: ["OWNER", "CUSTOMERS", "TEAM"],
@@ -348,7 +348,7 @@ export const WIZARD_STEPS: readonly WizardStepMeta[] = [
     label: "Your Info",
     headline: "Where should Chandler send your quote & plan?",
     subtitle:
-      "You work directly with the founder—no sales reps or account manager layers.",
+      "You work directly with the founder. Zero sales reps or account manager layers.",
   },
 ] as const;
 

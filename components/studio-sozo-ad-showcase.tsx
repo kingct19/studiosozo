@@ -83,7 +83,7 @@ export function StudioSozoAdShowcase() {
 
           <p className="max-w-md font-sans text-sm leading-relaxed font-medium text-[#425466] sm:text-base">
             We build custom websites and software platforms that you own 100%
-            and can sell as a real business asset—with zero third-party monthly
+            and can sell as a real business asset, with zero third-party monthly
             subscriptions and full control.
           </p>
         </div>

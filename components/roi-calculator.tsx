@@ -184,7 +184,7 @@ export function RoiCalculator() {
                 {fmt(estimatedThreeYearSavings)}
               </div>
               <p className="mt-2 font-sans text-xs leading-relaxed text-[#425466]">
-                After a one-time custom platform build (~{fmt(estimatedCustomBuild)}) and ~$95/mo direct cloud hosting—plus you own the asset 100%.
+                After a one-time custom platform build (~{fmt(estimatedCustomBuild)}) and ~$95/mo direct cloud hosting, plus you own the asset 100%.
               </p>
             </div>
           </div>

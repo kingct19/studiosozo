@@ -18,7 +18,7 @@ export default function NotFound() {
         <Container className="relative z-10 mx-auto text-center">
           <div className="mx-auto max-w-2xl border border-[#e3e8ee] bg-white p-10 shadow-[0_12px_40px_rgba(10,37,64,0.06)] md:p-16">
             <div className="text-brand mb-4 text-xs font-bold tracking-widest uppercase">
-              <MeshInk>{"//"} ERROR 404 — ROUTE NOT FOUND</MeshInk>
+              <MeshInk>{"//"} ERROR 404 : PAGE NOT FOUND</MeshInk>
             </div>
 
             <Heading

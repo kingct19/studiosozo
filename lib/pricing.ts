@@ -18,33 +18,33 @@ export interface PricingTier {
 export const PRICING_TIERS: readonly PricingTier[] = [
   {
     id: "website",
-    code: "TIER // 01 — STANDALONE WEBSITE",
+    code: "TIER // 01 : STANDALONE WEBSITE",
     name: "Website Build or Redesign",
     badge: "New • Fast Turnaround",
-    timeline: "1 – 2 Weeks",
-    priceLabel: "$800 – $1,000",
+    timeline: "1-2 Weeks",
+    priceLabel: "$800 - $1,000",
     priceSubtext: "One-time flat investment",
     featured: false,
     highlightAccent: true,
     idealFor:
       "Local businesses, service pros, and founders launching a brand-new website or replacing an outdated, slow Wix, WordPress, or Squarespace site.",
     painPointSolved:
-      "Ditches clunky website builders and $30–$80/mo platform fees for a fast, modern site you actually own.",
+      "Ditches clunky website builders and $30-$80/mo platform fees for a fast, modern site you actually own.",
     includes: [
-      "Custom 1–5 page mobile-first website (new build or full redesign)",
+      "Custom 1-5 page mobile-first website (new build or full redesign)",
       "Direct contact / quote request form wired straight to your inbox",
       "Local Google SEO setup (page titles, metadata, sitemap & fast load speed)",
       "Custom domain, SSL security & fast cloud hosting setup",
       "100% code and design ownership ($0 monthly platform rent)",
     ],
-    ctaText: "Start My Website ($800–$1k)",
+    ctaText: "Start My Website ($800-$1k)",
     ctaHref: "/contact?package=website",
   },
   {
     id: "automation",
-    code: "TIER // 02 — AUTOMATION & SYNC",
+    code: "TIER // 02 : AUTOMATION & SYNC",
     name: "Workflow & Tool Automation",
-    timeline: "2 – 4 Weeks",
+    timeline: "2-4 Weeks",
     priceLabel: "Starting at $2,000",
     priceSubtext: "Fixed-scope milestone build",
     featured: false,
@@ -65,11 +65,11 @@ export const PRICING_TIERS: readonly PricingTier[] = [
   },
   {
     id: "app",
-    code: "TIER // 03 — CUSTOM APP OR CRM",
+    code: "TIER // 03 : CUSTOM APP OR CRM",
     name: "Web App, Mobile App or CRM",
     badge: "Most Popular for Growing Teams",
-    timeline: "6 – 10 Weeks",
-    priceLabel: "$5,000 – $10,000",
+    timeline: "6-10 Weeks",
+    priceLabel: "$5,000 - $10,000",
     priceSubtext: "Milestone-based fixed-scope build",
     featured: true,
     highlightAccent: true,
@@ -89,7 +89,7 @@ export const PRICING_TIERS: readonly PricingTier[] = [
   },
   {
     id: "custom",
-    code: "TIER // 04 — FULL ECOSYSTEM",
+    code: "TIER // 04 : FULL ECOSYSTEM",
     name: "Multi-App Platform / Retainer",
     timeline: "10+ Weeks or Ongoing",
     priceLabel: "Custom Scope",
@@ -115,41 +115,41 @@ export const PRICING_TIERS: readonly PricingTier[] = [
 export const OWNERSHIP_VS_SAAS = [
   {
     dimension: "Website Builders (Wix / Squarespace / Agency Retainers)",
-    rentedSaas: "$35–$150+/mo forever—stop paying and your website disappears",
-    studioSozo: "$800–$1,000 one-time build—you own the code and asset outright",
+    rentedSaas: "$35-$150+/mo forever. Stop paying and your website disappears.",
+    studioSozo: "$800-$1,000 one-time build. You own the code and asset outright.",
   },
   {
     dimension: "Per-User / Per-Seat App Fees",
-    rentedSaas: "$75–$250/user/mo forever—penalizes you every time you hire",
-    studioSozo: "$0 per seat forever—add unlimited reps, techs, and customers",
+    rentedSaas: "$75-$250/user/mo forever, penalizing you every time you hire.",
+    studioSozo: "$0 per seat forever. Add unlimited reps, techs, and customers.",
   },
   {
     dimension: "How It Fits Your Business",
-    rentedSaas: "Cookie-cutter templates that force workarounds and extra plugins",
-    studioSozo: "Designed around your exact services, quoting, booking, and team",
+    rentedSaas: "Cookie-cutter templates that force workarounds and extra plugins.",
+    studioSozo: "Designed around your exact services, quoting, booking, and team.",
   },
   {
     dimension: "Code & Data Ownership",
-    rentedSaas: "Locked inside the vendor's platform—you can't take it with you",
-    studioSozo: "100% yours in your own GitHub & cloud account from day one",
+    rentedSaas: "Locked inside the vendor's platform where you can't take it with you.",
+    studioSozo: "100% yours in your own GitHub and cloud account from day one.",
   },
 ] as const;
 
 export const PRICING_FAQS = [
   {
-    question: "What is included in the $800 – $1,000 standalone website package?",
+    question: "What is included in the $800 - $1,000 standalone website package?",
     answer:
-      "It covers a complete 1–5 page custom business website—either built from scratch or redesigned from an old Wix, WordPress, or Squarespace site. You get mobile-first design, a contact/quote form wired directly to your email, local Google SEO setup, domain/SSL launch setup, and 100% ownership in 1–2 weeks. When a project needs user logins, live database booking, or custom payment flows, it moves into our Web App tiers ($2,000+).",
+      "It covers a complete 1-5 page custom business website, either built from scratch or redesigned from an old Wix, WordPress, or Squarespace site. You get mobile-first design, a contact/quote form wired directly to your email, local Google SEO setup, domain/SSL launch setup, and 100% ownership in 1-2 weeks. When a project needs user logins, live database booking, or custom payment flows, it moves into our Web App tiers ($2,000+).",
   },
   {
     question: "How do payments work during a project?",
     answer:
-      "We never ask for 100% upfront. Standalone websites ($800–$1,000) are split 50% to kick off and 50% at launch. Larger custom apps and automations are split across clear milestones—typically 30% at kickoff, 40% after you approve the live staging preview, and 30% at launch.",
+      "We never ask for 100% upfront. Standalone websites ($800-$1,000) are split 50% to kick off and 50% at launch. Larger custom apps and automations are split across clear milestones: typically 30% at kickoff, 40% after you approve the live staging preview, and 30% at launch.",
   },
   {
     question: "Are there any monthly fees after launch?",
     answer:
-      "Studio Sozo charges $0 in monthly licensing, platform, or per-user fees. Standard 1–5 page business websites can often run on free-tier modern cloud hosting (only paying ~$12–$20/year for your domain name). Larger web/mobile apps with databases typically run $25–$100/month paid directly to your own cloud providers (like Vercel or Supabase).",
+      "Studio Sozo charges $0 in monthly licensing, platform, or per-user fees. Standard 1-5 page business websites can often run on free-tier modern cloud hosting (only paying ~$12-$20/year for your domain name). Larger web/mobile apps with databases typically run $25-$100/month paid directly to your own cloud providers (like Vercel or Supabase).",
   },
   {
     question: "Can you still make updates or add features for us later?",

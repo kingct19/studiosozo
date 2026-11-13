@@ -19,7 +19,7 @@ const SECTIONS = [
   {
     code: "01 // INFORMATION WE COLLECT",
     title: "Project Inquiry & Contact Data",
-    body: "When you submit a project inquiry on studiosozo.dev, we collect the business contact details and project context you voluntarily provide—including your name, company name, work email, phone number, service location, capabilities of interest, budget range, timeline, and workflow description.",
+    body: "When you submit a project inquiry on studiosozo.dev, we collect the business contact details and project context you voluntarily provide, including your name, company name, work email, phone number, service location, capabilities of interest, budget range, timeline, and project description.",
   },
   {
     code: "02 // HOW WE USE YOUR INFORMATION",

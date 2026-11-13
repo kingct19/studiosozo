@@ -11,21 +11,21 @@ import Footer from "@/components/watermelon/templates/landing-01/landing/footer"
 import Heading from "@/components/watermelon/templates/landing-01/landing/heading";
 import Navbar from "@/components/watermelon/templates/landing-01/landing/navbar";
 import { flatServiceLocations, serviceLocations } from "@/lib/locations";
-import { servicesData } from "@/lib/services";
+import { primaryServicesData } from "@/lib/services";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
   title:
-    "Service Locations | Custom Software Development in Louisiana, Texas & Missouri",
+    "Service Locations | Custom Websites & Apps in Louisiana, Texas & Missouri",
   description:
-    "Studio Sozo serves businesses across Shreveport & Benton (LA), Austin, Marble Falls, Longview, Hughes Springs & Commerce (TX), Kansas City (MO), and remote nationwide.",
+    "Studio Sozo builds custom websites ($800-$1,000), web apps, mobile apps, and CRMs for businesses across Shreveport & Benton (LA), Austin, Marble Falls, Longview, Hughes Springs & Commerce (TX), Kansas City (MO), and remote nationwide.",
   alternates: {
     canonical: "/locations",
   },
   openGraph: {
     title: `Service Areas & Regional Coverage | ${siteConfig.name}`,
     description:
-      "Custom software development, CRM platforms, and AI workflow automation across Louisiana, Texas, Missouri, and remote nationwide.",
+      "Custom websites, web applications, mobile apps, and CRMs across Louisiana, Texas, Missouri, and remote nationwide.",
     url: `${siteConfig.url}/locations`,
   },
 };
@@ -44,12 +44,12 @@ export default function LocationsPage() {
       <PageHeader
         breadcrumbs={breadcrumbs}
         eyebrow="REGIONAL COVERAGE // LA • TX • MO • REMOTE US"
-        headline="Custom Software Engineering Where You"
+        headline="Custom Websites & Apps Where You"
         highlightWord="Operate"
-        leadBold="We partner with businesses across Louisiana, Texas, and Missouri—plus remote teams nationwide—"
-        leadBody="to replace manual spreadsheets and disconnected SaaS tools with custom CRMs, AI automations, and web/mobile platforms you own outright."
-        primaryCta={{ text: "Discuss Your Project", href: "/contact" }}
-        secondaryCta={{ text: "Explore Services", href: "/services" }}
+        leadBold="We partner with businesses across Louisiana, Texas, and Missouri, plus remote teams nationwide."
+        leadBody="From $800-$1,000 business websites and redesigns to custom web apps, mobile apps, and internal CRMs that you own 100%."
+        primaryCta={{ text: "Start Your Project", href: "/contact" }}
+        secondaryCta={{ text: "See Pricing ($800+)", href: "/pricing" }}
       />
 
       {/* State & City Directory */}
@@ -154,15 +154,15 @@ export default function LocationsPage() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {servicesData.map((service) => (
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+            {primaryServicesData.map((service) => (
               <Link
                 key={service.slug}
                 href={`/services/${service.slug}`}
                 className="group border border-[#e3e8ee] bg-[#f6f9fc] p-6 transition-all hover:border-[#635bff] hover:bg-white"
               >
                 <div className="text-brand mb-2 text-xs font-bold tracking-widest uppercase">
-                  <MeshInk>CAPABILITY // {service.number}</MeshInk>
+                  <MeshInk>{service.priceBadge}</MeshInk>
                 </div>
                 <h3 className="mb-2 font-sans text-xl font-bold text-[#0a2540] group-hover:text-[#635bff]">
                   {service.title}

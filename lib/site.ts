@@ -9,9 +9,9 @@ export const siteConfig = {
     email: "chandler@studiosozo.dev",
     avatar: "/chandler-king.jpg",
   },
-  headline: "Custom Websites & Apps Built for Your Business — Owned 100% by You.",
+  headline: "Custom Websites & Apps Built for Your Business. Owned 100% by You.",
   description:
-    "Studio Sozo designs and builds custom business websites ($800–$1,000), web applications, mobile apps, and internal CRMs & automations—with 100% code ownership and $0 monthly platform fees.",
+    "Studio Sozo designs and builds custom business websites ($800-$1,000), web applications, mobile apps, and internal CRMs with 100% code ownership and $0 monthly platform fees.",
   shortDescription:
     "Custom business websites, web applications & portals, iOS & Android mobile apps, and custom CRMs & AI automation.",
   ctas: {
@@ -36,9 +36,9 @@ export const siteConfig = {
     {
       slug: "custom-websites",
       title: "Custom Websites & Redesigns",
-      badge: "$800 – $1,000 • 1–2 Weeks",
+      badge: "$800-$1,000 • 1-2 Weeks",
       description:
-        "Fast, modern 1–5 page business websites or Wix/WordPress redesigns built to bring in leads—with $0 monthly platform fees.",
+        "Fast, modern 1-5 page business websites or Wix/WordPress redesigns built to bring in leads with $0 monthly platform fees.",
     },
     {
       slug: "web-applications",
@@ -52,7 +52,7 @@ export const siteConfig = {
       title: "Mobile Apps (iOS & Android)",
       badge: "iPhone & Android",
       description:
-        "Custom iPhone and Android apps for your customers or field crews—complete with photos, push alerts, and live sync.",
+        "Custom iPhone and Android apps for your customers or field crews, complete with photos, push alerts, and live sync.",
     },
     {
       slug: "crm-and-business-systems",

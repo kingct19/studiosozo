@@ -42,11 +42,11 @@ export const caseStudiesData: CaseStudy[] = [
     seoTitle:
       "Sozo CRM Case Study | Custom Solar Sales, Pipeline & Commission Platform",
     seoDescription:
-      "How Studio Sozo engineered Sozo CRM—a unified sales pipeline, territory management, quoting, and installation handoff platform built for high-velocity solar and field teams.",
+      "How Studio Sozo engineered Sozo CRM, a unified sales pipeline, territory management, quoting, and installation handoff platform built for high-velocity solar and field teams.",
     headline: "Unified Solar Sales, Territory & Pipeline",
     highlightWord: "CRM",
     summary:
-      "A bespoke CRM and operational command center built for solar and field sales organizations—replacing disconnected lead sheets, rep trackers, and install handoff spreadsheets.",
+      "A bespoke CRM and operational command center built for solar and field sales organizations, replacing disconnected lead sheets, rep trackers, and install handoff spreadsheets.",
     painPointTitle: "Leads, Reps, and Install Handoffs Were Split Across 5 Tools",
     painPointSummary:
       "High-volume solar and home-service teams were losing deals in the gap between door-to-door/inbound lead capture, proposal building, utility verification, and installation handoff.",
@@ -58,7 +58,7 @@ export const caseStudiesData: CaseStudy[] = [
     ],
     solutionTitle: "One Purpose-Built Pipeline From First Knock to Installed System",
     solutionSummary:
-      "Studio Sozo engineered Sozo CRM from the ground up around the real solar sales-to-install lifecycle—combining fast mobile-ready lead capture, required stage gates, document checklists, and live commission & pipeline analytics.",
+      "Studio Sozo engineered Sozo CRM from the ground up around the real solar sales-to-install lifecycle, combining fast mobile-ready lead capture, required stage gates, document checklists, and live commission & pipeline analytics.",
     capabilitiesDelivered: [
       {
         tag: "PIPELINE ENGINE",
@@ -106,14 +106,14 @@ export const caseStudiesData: CaseStudy[] = [
     seoTitle:
       "Angler IQ Case Study | AI Co-Angler Mobile & Web Platform Engineered by Studio Sozo",
     seoDescription:
-      "See how Studio Sozo built Angler IQ—an AI-powered mobile and web platform combining live weather/water telemetry, catch logging, and intelligent fishing recommendations.",
+      "See how Studio Sozo built Angler IQ, an AI-powered mobile and web platform combining live weather/water telemetry, catch logging, and intelligent fishing recommendations.",
     headline: "Your AI Co-Angler on the",
     highlightWord: "Water",
     summary:
       "An AI-powered mobile and web platform that synthesizes live weather, barometric pressure, water conditions, and historical catch data into actionable real-time patterns for anglers.",
-    painPointTitle: "Anglers Had to Stitch Together Weather Apps, Maps, andScattered Notes",
+    painPointTitle: "Anglers Had to Stitch Together Weather Apps, Maps, and Scattered Notes",
     painPointSummary:
-      "Before hitting the water, anglers were bouncing between wind forecasts, solunar tables, lake level gauges, and old photo rolls—with no intelligent way to connect conditions to what actually worked.",
+      "Before hitting the water, anglers were bouncing between wind forecasts, solunar tables, lake level gauges, and old photo rolls, with no intelligent way to connect conditions to what actually worked.",
     painPoints: [
       "Environmental telemetry (wind, pressure trends, water temperature, clarity, moon phase) lived in 6 separate apps.",
       "Catch logs in standard apps were tedious to fill out on the boat, so anglers rarely recorded full condition context.",
@@ -121,7 +121,7 @@ export const caseStudiesData: CaseStudy[] = [
     ],
     solutionTitle: "Real-Time Telemetry + Fast Catch Logging + Domain-Tuned AI",
     solutionSummary:
-      "Studio Sozo designed and engineered Angler IQ across mobile and web—automatically snapping environmental telemetry on every log and powering an AI Co-Angler that recommends lures, depths, and structures based on live conditions.",
+      "Studio Sozo designed and engineered Angler IQ across mobile and web, automatically snapping environmental telemetry on every log and powering an AI Co-Angler that recommends lures, depths, and structures based on live conditions.",
     capabilitiesDelivered: [
       {
         tag: "AI CO-ANGLER",
@@ -239,7 +239,7 @@ export const caseStudiesData: CaseStudy[] = [
       "A modern service booking and dispatch web application for HR Heating & Cooling that turns emergency AC/heating searches into triaged, scheduled service calls without phone tag.",
     painPointTitle: "Peak-Season Phone Bottlenecks Cost Emergency Service Jobs",
     painPointSummary:
-      "During summer heatwaves and winter freezes, homeowners with broken HVAC systems want immediate confirmation—if a phone line is busy or a form goes unanswered, they call the next contractor on Google.",
+      "During summer heatwaves and winter freezes, homeowners with broken HVAC systems want immediate confirmation. If a phone line is busy or a form goes unanswered, they call the next contractor on Google.",
     painPoints: [
       "Office staff were overwhelmed fielding repetitive phone questions during peak weather spikes.",
       "Standard contact forms didn't distinguish between an urgent no-cool emergency, a routine tune-up, or a full system replacement quote.",
@@ -296,7 +296,7 @@ export const caseStudiesData: CaseStudy[] = [
     seoTitle:
       "Dash Lake Rentals Case Study | On-Demand Watercraft Booking & Fleet Management",
     seoDescription:
-      "How Studio Sozo engineered Dash Lake Rentals—an on-demand watercraft reservation, fleet availability, digital waiver, and checkout platform.",
+      "How Studio Sozo engineered Dash Lake Rentals, an on-demand watercraft reservation, fleet availability, digital waiver, and checkout platform.",
     headline: "On-Demand Watercraft Fleet Booking &",
     highlightWord: "Checkout",
     summary:
@@ -311,7 +311,7 @@ export const caseStudiesData: CaseStudy[] = [
     ],
     solutionTitle: "Live Fleet Inventory, Digital Waivers, and Zero-Commission Checkout",
     solutionSummary:
-      "Studio Sozo built a custom reservation and fleet management web application where guests select dates, watercraft, and add-ons with instant checkout—while staff manage launches and returns from a live dock dashboard.",
+      "Studio Sozo built a custom reservation and fleet management web application where guests select dates, watercraft, and add-ons with instant checkout, while staff manage launches and returns from a live dock dashboard.",
     capabilitiesDelivered: [
       {
         tag: "RESERVATIONS",
@@ -360,7 +360,7 @@ export const caseStudiesData: CaseStudy[] = [
     seoTitle:
       "Serene Case Study | Custom Headless Digital Commerce & Brand Experience",
     seoDescription:
-      "How Studio Sozo designed and engineered Serene—a fast, editorial digital commerce platform built for storytelling and conversion.",
+      "How Studio Sozo designed and engineered Serene, a fast, editorial digital commerce platform built for storytelling and conversion.",
     headline: "Editorial Digital Commerce Built to",
     highlightWord: "Convert",
     summary:

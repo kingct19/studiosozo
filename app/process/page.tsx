@@ -19,16 +19,16 @@ import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
   title:
-    "Our Software Engineering Process | From Workflow Discovery to Full Ownership",
+    "How It Works | Website & Custom App Build Process at Studio Sozo",
   description:
-    "See how Studio Sozo takes you from disconnected spreadsheets and SaaS bottlenecks to a custom, production-ready platform you own 100% in 4 structured phases.",
+    "See how Studio Sozo takes your website ($800-$1,000 in 1-2 weeks) or custom application (4-10 weeks) from a quick discovery call to launch with 100% ownership.",
   alternates: {
     canonical: "/process",
   },
   openGraph: {
-    title: `Development Process & Methodology | ${siteConfig.name}`,
+    title: `Our 4-Step Build Process | ${siteConfig.name}`,
     description:
-      "A transparent, milestone-driven engineering process built around your real operational workflows.",
+      "A clear, straightforward 4-step process for custom websites and business applications.",
     url: `${siteConfig.url}/process`,
   },
 };
@@ -36,112 +36,112 @@ export const metadata: Metadata = {
 const PROCESS_PHASES = [
   {
     number: "01",
-    code: "PHASE // 01 — WEEK 1–2",
-    title: "Operational Discovery & Workflow Mapping",
-    subtitle: "Diagnose the Bottleneck Before Writing Code",
+    code: "STEP // 01 : DAY 1-2",
+    title: "Quick Call & Upfront Quote",
+    subtitle: "Clear Scope and Flat Pricing Before Work Starts",
     problemSolved:
-      "Most software projects fail because developers build from a vague feature wish-list instead of shadowing how work actually moves through your business.",
+      "Most agencies hide behind vague hourly estimates or jargon-filled proposals that drag on for weeks.",
     summary:
-      "We sit down with your operators, sales reps, dispatchers, and leadership to map every intake source, spreadsheet, approval gate, and handoff that currently slows you down.",
+      "Tell us what you need built or updated. Whether it is an $800-$1,000 business website refresh or a custom app for your team, we map the pages or features and give you an exact upfront quote.",
     deliverables: [
-      "End-to-end current-state vs. target-state workflow blueprint",
-      "PostgreSQL domain data model (entities, statuses, permissions)",
-      "Interactive clickable wireframe prototype of core operator screens",
-      "Fixed milestone roadmap and priority release schedule",
+      "Clear breakdown of pages, features, and project scope",
+      "Exact flat price ($800-$1,000 for websites) or milestone schedule",
+      "Target launch timeline (1-2 weeks for websites, 4-10 weeks for apps)",
+      "Direct communication setup with Chandler from day one",
     ],
   },
   {
     number: "02",
-    code: "PHASE // 02 — WEEK 2–4",
-    title: "System Architecture & Interactive Prototyping",
-    subtitle: "Lock In Rules, Roles, and Data Integrity",
+    code: "STEP // 02 : WEEK 1",
+    title: "Design & Live Clickable Preview",
+    subtitle: "See It Working on Your Phone and Laptop Early",
     problemSolved:
-      "Discovering missing fields or permission edge cases after launch causes expensive rework and frustrates your team.",
+      "Waiting weeks to see static mockups leads to surprises and wasted time.",
     summary:
-      "We engineer the foundational database schema, authentication/role boundaries, and API contracts while putting live staging screens in your hands early for real-world feedback.",
+      "We put a live preview link in your hands early so you can test the layout, wording, mobile responsiveness, and user flow on real devices and request tweaks right away.",
     deliverables: [
-      "Production database schema with audit trails and row-level security",
-      "Role-based workspaces for admins, reps, field crews, and customers",
-      "Validated business rules for pricing, quoting, and stage transitions",
-      "Live staging URL updated continuously for stakeholder review",
+      "Mobile-first visual layout tailored to your brand and customers",
+      "Live private staging link you can open on your phone anytime",
+      "Clear customer calls-to-action, quote forms, or app screens",
+      "Fast feedback loop directly with the engineer building it",
     ],
   },
   {
     number: "03",
-    code: "PHASE // 03 — WEEK 4–8+",
-    title: "Custom Engineering, AI & Systems Integration",
-    subtitle: "Weekly Shipped Milestones with Zero Black Boxes",
+    code: "STEP // 03 : BUILD & WIRE UP",
+    title: "Fast Engineering, SEO & Tool Connections",
+    subtitle: "1-2 Weeks for Websites • Weekly Releases for Custom Apps",
     problemSolved:
-      "Traditional agencies disappear for months and return with something that doesn't connect to your real tools.",
+      "Traditional shops disappear into a black box and hand back something slow or disconnected from your real business.",
     summary:
-      "We build your application in focused weekly sprints—connecting Stripe, QuickBooks, Twilio, AI extraction pipelines, and mobile views so your data flows automatically from end to end.",
+      "For standalone websites, we wire up your direct inbox lead forms, local Google SEO, and fast page speed. For custom apps and CRMs, we build your database, logins, Stripe payments, and QuickBooks/SMS connections in clear weekly sprints.",
     deliverables: [
-      "Full-stack web and/or iOS & Android mobile application",
-      "Two-way API & webhook integrations (QuickBooks, Stripe, SMS, calendars)",
-      "Deterministic & AI-powered document/workflow automation pipelines",
-      "Historical data migration scripts from legacy CRMs or spreadsheets",
+      "Production-ready website or full-stack web & mobile application",
+      "Direct email/SMS notifications, booking flows, or payment checkout",
+      "Local Google SEO titles, sitemap, and fast mobile speed optimization",
+      "Clean import of your existing photos, copy, or spreadsheet data",
     ],
   },
   {
     number: "04",
-    code: "PHASE // 04 — LAUNCH & HANDOVER",
-    title: "Deployment, Team Onboarding & 100% Ownership",
-    subtitle: "Your Cloud, Your Code, Zero Per-Seat Ransoms",
+    code: "STEP // 04 : LAUNCH & HANDOVER",
+    title: "Go Live With 100% Ownership",
+    subtitle: "Your Domain, Your Code, $0 Monthly Platform Rent",
     problemSolved:
-      "SaaS vendors and proprietary agencies trap your data and charge you more every time you hire.",
+      "Website builders and SaaS vendors lock your business inside monthly subscriptions forever.",
     summary:
-      "We deploy to your own production cloud environment, train your team with role-specific walkthroughs, monitor live cutover, and hand over full repository and infrastructure ownership.",
+      "We connect your custom domain, verify SSL security and email delivery, walk you through everything, and hand over full ownership of your code and accounts.",
     deliverables: [
-      "Zero-downtime production launch & historical data cutover",
-      "100% GitHub repository, database, and cloud account ownership",
-      "Automated backups, error monitoring, and CI/CD deployment pipeline",
-      "Optional ongoing engineering retainer for phase-2 expansion",
+      "Zero-downtime launch on your custom domain (.com, .dev, etc.)",
+      "100% source code, GitHub repository, and cloud account ownership",
+      "Post-launch support window included at no extra charge",
+      "Optional flat-rate updates or phase-2 features whenever you grow",
     ],
   },
 ] as const;
 
 const COLLABORATION_STANDARDS = [
   {
-    tag: "CADENCE",
-    title: "Weekly Live Staging Demos",
+    tag: "LIVE PREVIEWS",
+    title: "See Real Progress Every Step",
     description:
-      "You never wonder where your project stands. Every week you click through real, working software in a live staging environment.",
+      "You never have to guess how your project is going. You get a live preview link to click through real pages and screens as they come together.",
   },
   {
     tag: "DIRECT ACCESS",
-    title: "Direct Engineer Communication",
+    title: "Work Directly With Chandler",
     description:
-      "No game of telephone through layers of non-technical account managers. You work directly with the engineers building your system.",
+      "No game of telephone through salespeople or non-technical account managers. You talk straight to the founder building your site or app.",
   },
   {
-    tag: "DATA SAFETY",
-    title: "Safe Parallel Cutover",
+    tag: "FAST TURNAROUND",
+    title: "1-2 Weeks for Websites, Clear Sprints for Apps",
     description:
-      "We run migrations and side-by-side verification before switching your team over, so daily operations never miss a beat.",
+      "Standalone 1-5 page business websites launch in 1-2 weeks. Custom web and mobile applications ship in structured weekly milestones.",
   },
   {
-    tag: "OWNERSHIP",
-    title: "Clean, Standard TypeScript Stack",
+    tag: "FULL OWNERSHIP",
+    title: "Built on Clean, Modern Tech",
     description:
-      "Built on Next.js, React, TypeScript, and PostgreSQL—industry-standard technologies any senior engineer can maintain.",
+      "Everything is built on Next.js, React, and TypeScript so your site loads fast today and can easily add booking or portal features later.",
   },
 ] as const;
 
 const PROCESS_FAQS = [
   {
-    question: "Do we need a technical specification before reaching out?",
+    question: "Do I need a technical spec or wireframes before reaching out?",
     answer:
-      "No. You only need to know what operational bottlenecks, spreadsheets, or disconnected tools are slowing your business down. Phase 01 of our process turns your business goals into a complete technical blueprint.",
+      "Not at all. Just share your current website link (if you have one) or describe what your business does and what you want built. Step 01 turns your goals into a clear, plain-English plan.",
   },
   {
-    question: "How involved does our team need to be during the build?",
+    question: "How much of my time will this take during the build?",
     answer:
-      "We respect your time. After 1–2 focused workflow mapping sessions in Week 1, we only need 30 minutes a week to review live staging progress and validate edge cases.",
+      "Very little. After a short 20-30 minute kickoff call to gather your goals, photos, and service details, you just review the live preview link on your schedule and tell us any tweaks you want.",
   },
   {
-    question: "Can we launch a core v1 first and add modules over time?",
+    question: "Can I start with an $800-$1,000 website now and add custom app features later?",
     answer:
-      "Yes—and we strongly recommend it. Launching the highest-impact core workflow first gets your team out of spreadsheet chaos in weeks, and the modular architecture makes adding phase-2 features straightforward.",
+      "Yes, and many clients do exactly that. Because we build standalone websites on the same modern Next.js foundation as our custom web apps, we can add online booking, payments, or a customer portal later without rebuilding your site.",
   },
 ];
 
@@ -163,13 +163,13 @@ export default function ProcessPage() {
 
       <PageHeader
         breadcrumbs={breadcrumbs}
-        eyebrow="ENGINEERING METHODOLOGY // 04 PHASES"
-        headline="How We Engineer Software You"
-        highlightWord="Own"
-        leadBold="No mystery timelines, no six-month black boxes, and no generic templates."
-        leadBody="We follow a disciplined 4-phase engineering process that maps your real operational bottlenecks, ships working software every week, and transfers 100% ownership to your business."
-        primaryCta={{ text: "Discuss Your Project", href: "/contact" }}
-        secondaryCta={{ text: "View Pricing & Investment", href: "/pricing" }}
+        eyebrow="HOW IT WORKS // 04 SIMPLE STEPS"
+        headline="From First Call to Live Launch Without the"
+        highlightWord="Headache"
+        leadBold="No confusing tech jargon, no mystery timelines, and no six-month black boxes."
+        leadBody="Whether we are launching your $800-$1,000 website in two weeks or building a custom application for your team, here is how we take your project live."
+        primaryCta={{ text: "Start Your Project", href: "/contact" }}
+        secondaryCta={{ text: "See Pricing ($800+)", href: "/pricing" }}
       >
         <div className="mx-auto max-w-4xl">
           <TaskStream />
@@ -181,7 +181,7 @@ export default function ProcessPage() {
         <Container className="relative z-10 mx-auto">
           <FadeInSection className="mb-14 max-w-3xl">
             <FadeInItem className="text-brand mb-4 text-xs font-bold tracking-widest uppercase">
-              <MeshInk>{"//"} STEP-BY-STEP EXECUTION</MeshInk>
+              <MeshInk>{"//"} STEP-BY-STEP PROCESS</MeshInk>
             </FadeInItem>
             <FadeInItem>
               <Heading
@@ -189,9 +189,9 @@ export default function ProcessPage() {
                 variant="big"
                 className="text-foreground font-sans text-balance"
               >
-                Four phases from bottleneck to{" "}
+                Four clear steps from idea to{" "}
                 <span className="text-brand">
-                  <MeshInk>production</MeshInk>
+                  <MeshInk>launch</MeshInk>
                 </span>
               </Heading>
             </FadeInItem>
@@ -234,7 +234,7 @@ export default function ProcessPage() {
 
                 <div className="flex flex-col justify-center border-t border-[#e3e8ee] pt-6 lg:col-span-5 lg:border-t-0 lg:border-l lg:pt-0 lg:pl-8">
                   <div className="text-brand mb-4 text-xs font-bold tracking-widest uppercase">
-                    <MeshInk>{"//"} PHASE {phase.number} DELIVERABLES</MeshInk>
+                    <MeshInk>{"//"} STEP {phase.number} DELIVERABLES</MeshInk>
                   </div>
                   <ul className="space-y-3">
                     {phase.deliverables.map((item) => (
@@ -269,9 +269,9 @@ export default function ProcessPage() {
                 variant="big"
                 className="text-foreground font-sans text-balance"
               >
-                Built for high-trust{" "}
+                Simple, direct{" "}
                 <span className="text-brand">
-                  <MeshInk>execution</MeshInk>
+                  <MeshInk>communication</MeshInk>
                 </span>
               </Heading>
             </FadeInItem>
@@ -317,7 +317,7 @@ export default function ProcessPage() {
             >
               What to expect when we{" "}
               <span className="text-brand">
-                <MeshInk>partner</MeshInk>
+                <MeshInk>work together</MeshInk>
               </span>
             </Heading>
 
@@ -352,13 +352,14 @@ export default function ProcessPage() {
             <div className="flex flex-col items-start justify-between gap-6 lg:flex-row lg:items-center">
               <div>
                 <div className="text-brand mb-2 text-xs font-bold tracking-widest uppercase">
-                  <MeshInk>{"//"} START WITH PHASE 01 DISCOVERY</MeshInk>
+                  <MeshInk>{"//"} READY TO KICK OFF?</MeshInk>
                 </div>
                 <h2 className="font-sans text-2xl font-bold text-[#0a2540] md:text-4xl">
-                  Ready to map your workflow and see a clear plan?
+                  Ready to get a clear plan and upfront quote?
                 </h2>
                 <p className="mt-2 max-w-2xl font-sans text-sm text-[#425466] md:text-base">
-                  Review our transparent pricing tiers or book a discovery call to walk through your current bottlenecks.
+                  Check out our transparent pricing tiers or send us a quick
+                  note about your website or app project.
                 </p>
               </div>
               <div className="flex flex-wrap items-center gap-4">
@@ -366,13 +367,13 @@ export default function ProcessPage() {
                   href="/pricing"
                   className="border border-[#e3e8ee] bg-white px-6 py-3 text-xs font-bold tracking-widest text-[#0a2540] uppercase transition-colors hover:border-[#635bff]"
                 >
-                  View Pricing
+                  See Pricing ($800+)
                 </Link>
                 <LitUpButton
                   href="/contact"
                   className="w-fit text-xs font-bold tracking-widest uppercase"
                 >
-                  Discuss Your Project <ArrowUpRight01Icon className="h-4 w-4" />
+                  Start Your Project <ArrowUpRight01Icon className="h-4 w-4" />
                 </LitUpButton>
               </div>
             </div>
