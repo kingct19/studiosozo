@@ -10,16 +10,33 @@ import {
 } from "hugeicons-react";
 import { motion, type Variants } from "motion/react";
 import { MeshInk } from "@/components/brand-mesh";
+import LiniqoHelpDeskTicketQueue from "@/components/illustrations/help-desk-ticket-queue";
+import LiniqoLandingPageHero from "@/components/illustrations/landing-page-hero";
+import LiniqoLaptopDashboard from "@/components/illustrations/laptop-dashboard";
+import LiniqoSmartphone from "@/components/illustrations/smartphone";
 import Container from "./container";
 import Heading from "./heading";
-import {
-  PremiumComponent,
-  ThemingComponent,
-  OpenSourceComponent,
-  ProductionReadyComponent,
-} from "./feature-visuals";
 import { cn } from "@/lib/utils";
 import { siteConfig } from "@/lib/site";
+
+const FEATURE_ILLUSTRATIONS = [
+  {
+    Component: LiniqoLandingPageHero,
+    label: "Custom business website and redesign",
+  },
+  {
+    Component: LiniqoLaptopDashboard,
+    label: "Web app and customer portal dashboard",
+  },
+  {
+    Component: LiniqoSmartphone,
+    label: "iPhone and Android mobile app",
+  },
+  {
+    Component: LiniqoHelpDeskTicketQueue,
+    label: "Custom CRM and business automation",
+  },
+] as const;
 
 function FeatureCard({
   href,
@@ -27,19 +44,21 @@ function FeatureCard({
   title,
   description,
   icon: Icon,
+  illustration,
   variants,
   className,
-  children,
 }: {
   href: string;
   badge: string;
   title: string;
   description: React.ReactNode;
   icon: React.ElementType;
+  illustration: (typeof FEATURE_ILLUSTRATIONS)[number];
   variants: Variants;
   className?: string;
-  children?: React.ReactNode;
 }) {
+  const Illustration = illustration.Component;
+
   return (
     <motion.div variants={variants} className={cn("h-full w-full", className)}>
       <Link
@@ -52,7 +71,7 @@ function FeatureCard({
         <div className="absolute bottom-0 left-0 h-2 w-2 border-b border-l border-[#635bff]/35" />
         <div className="absolute right-0 bottom-0 h-2 w-2 border-r border-b border-[#635bff]/35" />
 
-        <div className="relative z-10 flex h-full w-full flex-col items-start justify-between overflow-hidden p-8 md:p-9">
+        <div className="relative z-10 flex h-full w-full flex-col items-start overflow-hidden p-6 md:p-8">
           <div className="flex w-full items-center justify-between gap-2">
             <div className="flex items-center gap-3">
               <div className="opacity-85 transition-transform duration-300 group-hover:scale-110">
@@ -67,7 +86,15 @@ function FeatureCard({
             </span>
           </div>
 
-          <div className="mt-8 max-w-md">
+          <div className="mx-auto my-5 flex h-48 w-48 shrink-0 items-center justify-center sm:my-6 sm:h-56 sm:w-56">
+            <Illustration
+              accent="#3b5bff"
+              label={illustration.label}
+              className="h-full w-full select-none"
+            />
+          </div>
+
+          <div className="mt-auto max-w-md">
             <h3 className="text-foreground mb-2.5 font-sans text-2xl font-bold tracking-tight group-hover:text-[#635bff]">
               {title}
             </h3>
@@ -75,7 +102,6 @@ function FeatureCard({
               {description}
             </p>
           </div>
-          {children}
         </div>
       </Link>
     </motion.div>
@@ -102,6 +128,13 @@ export default function Features() {
       transition: { duration: 0.8, ease: [0.2, 0, 0, 1] },
     },
   };
+
+  const featureIcons = [
+    Layout01Icon,
+    CodeIcon,
+    PaintBoardIcon,
+    MagicWand01Icon,
+  ] as const;
 
   return (
     <section
@@ -134,7 +167,11 @@ export default function Features() {
               variant="big"
               className="text-foreground font-sans text-balance"
             >
-              What <span className="text-brand"><MeshInk>Studio Sozo</MeshInk></span> Builds
+              What{" "}
+              <span className="text-brand">
+                <MeshInk>Studio Sozo</MeshInk>
+              </span>{" "}
+              Builds
             </Heading>
           </motion.div>
           <motion.p
@@ -150,59 +187,24 @@ export default function Features() {
         </motion.div>
 
         <motion.div
-          className="grid auto-rows-[300px] grid-cols-1 gap-6 md:grid-cols-2"
+          className="grid grid-cols-1 gap-6 md:grid-cols-2"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-50px" }}
         >
-          {/* 1. Custom Websites & Redesigns */}
-          <FeatureCard
-            href={`/services/${siteConfig.services[0].slug}`}
-            variants={itemVariants}
-            icon={Layout01Icon}
-            badge={siteConfig.services[0].badge}
-            title={siteConfig.services[0].title}
-            description={siteConfig.services[0].description}
-          >
-            <ProductionReadyComponent />
-          </FeatureCard>
-
-          {/* 2. Web Apps & Customer Portals */}
-          <FeatureCard
-            href={`/services/${siteConfig.services[1].slug}`}
-            variants={itemVariants}
-            icon={CodeIcon}
-            badge={siteConfig.services[1].badge}
-            title={siteConfig.services[1].title}
-            description={siteConfig.services[1].description}
-          >
-            <OpenSourceComponent />
-          </FeatureCard>
-
-          {/* 3. Mobile Apps (iOS & Android) */}
-          <FeatureCard
-            href={`/services/${siteConfig.services[2].slug}`}
-            variants={itemVariants}
-            icon={PaintBoardIcon}
-            badge={siteConfig.services[2].badge}
-            title={siteConfig.services[2].title}
-            description={siteConfig.services[2].description}
-          >
-            <ThemingComponent />
-          </FeatureCard>
-
-          {/* 4. Custom CRMs & AI Automation */}
-          <FeatureCard
-            href={`/services/${siteConfig.services[3].slug}`}
-            variants={itemVariants}
-            icon={MagicWand01Icon}
-            badge={siteConfig.services[3].badge}
-            title={siteConfig.services[3].title}
-            description={siteConfig.services[3].description}
-          >
-            <PremiumComponent />
-          </FeatureCard>
+          {siteConfig.services.map((service, index) => (
+            <FeatureCard
+              key={service.slug}
+              href={`/services/${service.slug}`}
+              variants={itemVariants}
+              icon={featureIcons[index]}
+              badge={service.badge}
+              title={service.title}
+              description={service.description}
+              illustration={FEATURE_ILLUSTRATIONS[index]}
+            />
+          ))}
         </motion.div>
       </Container>
     </section>

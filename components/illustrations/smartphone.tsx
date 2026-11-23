@@ -1,0 +1,44 @@
+// iPhone and Android mobile app (Liniqo, liniqo.com). Licensed for use in your projects, not for redistribution.
+import type { CSSProperties, SVGProps } from "react";
+
+const ART = `<title>Smartphone</title><defs><pattern id="smartphone__hatch" width="2.6" height="2.6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="2.6" stroke="var(--hl-grid,#6b7c93)" stroke-width="0.9"/></pattern><style>.f-ink{fill:var(--hl-ink,#0a2540)}.s-ink{stroke:var(--hl-ink,#0a2540)}.f-graphite{fill:var(--hl-graphite,#2c3e50)}.s-graphite{stroke:var(--hl-graphite,#2c3e50)}.f-mute{fill:var(--hl-mute,#5a6a7a)}.s-mute{stroke:var(--hl-mute,#5a6a7a)}.f-grid{fill:var(--hl-grid,#6b7c93)}.s-grid{stroke:var(--hl-grid,#6b7c93)}.f-surface-3{fill:var(--hl-surface-3,#dcdce1)}.s-surface-3{stroke:var(--hl-surface-3,#dcdce1)}.f-surface-2{fill:var(--hl-surface-2,#e6e6ea)}.s-surface-2{stroke:var(--hl-surface-2,#e6e6ea)}.f-surface-1{fill:var(--hl-surface-1,#f2f2f4)}.s-surface-1{stroke:var(--hl-surface-1,#f2f2f4)}.f-surface-0{fill:var(--hl-surface-0,#ffffff)}.s-surface-0{stroke:var(--hl-surface-0,#ffffff)}.f-accent{fill:var(--hl-accent,#3b5bff)}.s-accent{stroke:var(--hl-accent,#3b5bff)}.f-accent-tint{fill:var(--hl-accent-tint,#ebefff)}.s-accent-tint{stroke:var(--hl-accent-tint,#ebefff)}@keyframes hl-draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}@keyframes hl-fade{from{opacity:0}to{opacity:var(--o,1)}}.hl-d{stroke-dasharray:1;stroke-dashoffset:1;animation:hl-draw .6s ease-out var(--d) both,hl-fade .3s ease-out var(--d) both}.hl-a{animation:hl-fade .33s ease-out var(--d) both}@media (prefers-reduced-motion:reduce){.hl-d,.hl-a{animation:none;stroke-dasharray:none;stroke-dashoffset:0}}@keyframes hl-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-16px)}}#smartphone__float{animation:hl-float 2.8s ease-in-out 1.2s infinite}@media (prefers-reduced-motion:reduce){#smartphone__float{animation:none}}</style></defs><g id="smartphone__illustration"><g fill="none" stroke-linejoin="round" stroke-linecap="round"><path class="s-mute hl-a" d="M481.6,641.2 L225.5,769.3 M772.7,786.8 L516.6,914.8 M318.6,641.2 L772.7,868.3 M225.5,687.8 L679.6,914.8" stroke-width="2.1" stroke-dasharray="3 9" data-role="decor" style="--d:0.000s"/><g id="smartphone__float"><path class="f-surface-0 s-graphite hl-a" d="M376.9,215.3 L378.6,202.9 L383.5,193.4 L391.3,187.8 L414.5,176.2 L424.3,175 L435.1,178.3 L586.4,254 L597.2,261.5 L606.9,272.4 L614.7,285.7 L619.6,300.2 L621.4,314.2 L621.4,784.7 L619.6,797.1 L614.7,806.5 L606.9,812.1 L583.7,823.8 L573.9,825 L563.1,821.7 L411.8,746 L401,738.5 L391.3,727.6 L383.5,714.3 L378.6,699.8 L376.9,685.8 Z" stroke-width="2.1" style="--d:0.233s"/><path class="s-grid hl-d" d="M598.1,325.8 L596.4,311.8 L591.4,297.4 L583.7,284 L573.9,273.1 L563.1,265.6 L411.8,189.9 L401,186.7 L391.3,187.8 L383.5,193.4 L378.6,202.9 L376.9,215.3 L376.9,685.8 L378.6,699.8 L383.5,714.3 L391.3,727.6 L401,738.5 L411.8,746 L563.1,821.7 L573.9,825 L583.7,823.8 L591.4,818.2 L596.4,808.7 L598.1,796.4 Z" stroke-width="2.1" pathLength="1" style="--d:0.433s"/><path class="s-grid hl-d" d="M580.6,324.3 L579.4,314.9 L576.2,305.2 L571,296.4 L564.5,289.1 L557.3,284.1 L417.6,214.2 L410.4,212 L403.9,212.9 L398.8,216.6 L395.5,222.9 L394.3,231.1 L394.3,687.4 L395.5,696.8 L398.8,706.4 L403.9,715.2 L410.4,722.5 L417.6,727.5 L557.3,797.4 L564.5,799.6 L571,798.8 L576.2,795 L579.4,788.8 L580.6,780.5 Z" stroke-width="2.1" pathLength="1" style="--d:0.633s"/><path class="s-mute hl-d" d="M516.3,295.9 L515.9,292.4 L514.6,288.8 L512.7,285.5 L510.2,282.8 L507.5,280.9 L466.8,260.5 L464.1,259.7 L461.7,260 L459.7,261.4 L458.5,263.7 L458.1,266.9 L458.1,266.9 L458.5,270.4 L459.7,273.9 L461.7,277.3 L464.1,280 L466.8,281.9 L507.5,302.3 L510.2,303.1 L512.7,302.8 L514.6,301.4 L515.9,299 L516.3,295.9 Z" stroke-width="2.1" pathLength="1" style="--d:0.833s"/><path class="f-surface-0 s-accent hl-a" d="M605.6,422.7 L605.9,422 L606.8,421.3 L612.6,418.4 L614,417.9 L615.5,417.8 L617.1,417.9 L618.4,418.4 L621.9,420.1 L622.8,420.8 L623.1,421.6 L623.1,507.1 L622.8,507.9 L621.9,508.6 L616.1,511.5 L614.8,512 L613.2,512.1 L611.6,512 L610.3,511.5 L606.8,509.8 L605.9,509.1 L605.6,508.3 Z" stroke-width="2.1" style="--d:1.033s"/><path class="s-grid hl-d" d="M620.3,421.6 L620.1,422.1 L619.6,422.5 L614.9,424.8 L614.1,425.1 L613.2,425.1 L612.2,425.1 L611.5,424.8 L609.1,423.6 L608.6,423.2 L608.4,422.7" stroke-width="2.1" pathLength="1" style="--d:1.233s"/><path class="f-surface-0 s-graphite hl-a" d="M605.6,536.8 L605.9,536 L606.8,535.4 L612.6,532.5 L614,532 L615.5,531.8 L617.1,532 L618.4,532.5 L621.9,534.2 L622.8,534.9 L623.1,535.7 L623.1,578.4 L622.8,579.2 L621.9,579.9 L616.1,582.8 L614.8,583.2 L613.2,583.4 L611.6,583.2 L610.3,582.8 L606.8,581 L605.9,580.4 L605.6,579.6 Z" stroke-width="2.1" style="--d:1.433s"/><path class="s-grid hl-d" d="M620.3,535.7 L620.1,536.1 L619.6,536.5 L614.9,538.8 L614.1,539.1 L613.2,539.2 L612.2,539.1 L611.5,538.8 L609.1,537.7 L608.6,537.3 L608.4,536.8" stroke-width="2.1" pathLength="1" style="--d:1.633s"/></g></g></g>`;
+
+type Props = SVGProps<SVGSVGElement> & {
+  accent?: string;
+  label?: string;
+};
+
+export function LiniqoSmartphone({
+  accent = "#3b5bff",
+  label = "iPhone and Android mobile app",
+  className,
+  style,
+  ...props
+}: Props) {
+  const toneStyle = {
+    width: "100%",
+    height: "auto",
+    ["--hl-accent"]: accent,
+    ["--hl-ink"]: "#0a2540",
+    ["--hl-graphite"]: "#2c3e50",
+    ["--hl-mute"]: "#5a6a7a",
+    ["--hl-grid"]: "#6b7c93",
+    ...style,
+  } as CSSProperties;
+
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1000 1000"
+      role={label ? "img" : undefined}
+      aria-label={label || undefined}
+      aria-hidden={label ? undefined : true}
+      className={className}
+      style={toneStyle}
+      {...props}
+      dangerouslySetInnerHTML={{ __html: ART }}
+    />
+  );
+}
+
+export default LiniqoSmartphone;

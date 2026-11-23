@@ -1,0 +1,44 @@
+// Web app and customer portal dashboard (Liniqo, liniqo.com). Licensed for use in your projects, not for redistribution.
+import type { CSSProperties, SVGProps } from "react";
+
+const ART = `<title>Laptop dashboard</title><defs><pattern id="laptop-dashboard__hatch" width="2.6" height="2.6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="2.6" stroke="var(--hl-grid,#6b7c93)" stroke-width="0.9"/></pattern><style>.f-ink{fill:var(--hl-ink,#0a2540)}.s-ink{stroke:var(--hl-ink,#0a2540)}.f-graphite{fill:var(--hl-graphite,#2c3e50)}.s-graphite{stroke:var(--hl-graphite,#2c3e50)}.f-mute{fill:var(--hl-mute,#5a6a7a)}.s-mute{stroke:var(--hl-mute,#5a6a7a)}.f-grid{fill:var(--hl-grid,#6b7c93)}.s-grid{stroke:var(--hl-grid,#6b7c93)}.f-surface-3{fill:var(--hl-surface-3,#dcdce1)}.s-surface-3{stroke:var(--hl-surface-3,#dcdce1)}.f-surface-2{fill:var(--hl-surface-2,#e6e6ea)}.s-surface-2{stroke:var(--hl-surface-2,#e6e6ea)}.f-surface-1{fill:var(--hl-surface-1,#f2f2f4)}.s-surface-1{stroke:var(--hl-surface-1,#f2f2f4)}.f-surface-0{fill:var(--hl-surface-0,#ffffff)}.s-surface-0{stroke:var(--hl-surface-0,#ffffff)}.f-accent{fill:var(--hl-accent,#3b5bff)}.s-accent{stroke:var(--hl-accent,#3b5bff)}.f-accent-tint{fill:var(--hl-accent-tint,#ebefff)}.s-accent-tint{stroke:var(--hl-accent-tint,#ebefff)}@keyframes hl-draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}@keyframes hl-fade{from{opacity:0}to{opacity:var(--o,1)}}.hl-d{stroke-dasharray:1;stroke-dashoffset:1;animation:hl-draw .6s ease-out var(--d) both,hl-fade .3s ease-out var(--d) both}.hl-a{animation:hl-fade .33s ease-out var(--d) both}@media (prefers-reduced-motion:reduce){.hl-d,.hl-a{animation:none;stroke-dasharray:none;stroke-dashoffset:0}}@keyframes hl-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-16px)}}#laptop-dashboard__float{animation:hl-float 2.8s ease-in-out 1.2s infinite}@media (prefers-reduced-motion:reduce){#laptop-dashboard__float{animation:none}}</style></defs><g id="laptop-dashboard__illustration"><g fill="none" stroke-linejoin="round" stroke-linecap="round"><path class="s-mute hl-a" d="M636.7,435.7 L87.3,710.3 M968.4,601.5 L419,876.2 M491.6,435.7 L968.4,674.1 M87.3,637.8 L564.2,876.2" stroke-width="2.1" stroke-dasharray="3 9" data-role="decor" style="--d:0.000s"/><g id="laptop-dashboard__float"><path class="f-surface-0 s-graphite hl-a" d="M154.7,356.4 L517.5,175 L533.1,182.8 L579.7,491.7 L216.9,673.1 L201.4,665.4 Z" stroke-width="2.1" style="--d:0.233s"/><path class="s-grid hl-d" d="M557.8,478.7 L236.5,639.4 L196.4,373.6 L517.7,213 Z" stroke-width="2.1" pathLength="1" style="--d:0.379s"/><path class="s-grid hl-d" d="M491.9,485.1 L466,498 L456.8,437.5 L482.8,424.5 Z" stroke-width="2.1" pathLength="1" style="--d:0.524s"/><path class="s-grid hl-d" d="M445.3,508.4 L419.3,521.3 L405,426.2 L430.9,413.2 Z" stroke-width="2.1" pathLength="1" style="--d:0.670s"/><path class="s-grid hl-d" d="M398.6,531.7 L372.7,544.7 L360.9,466.8 L386.9,453.8 Z" stroke-width="2.1" pathLength="1" style="--d:0.815s"/><path class="s-grid hl-d" d="M352,555.1 L326,568 L305.8,433.9 L331.7,420.9 Z" stroke-width="2.1" pathLength="1" style="--d:0.961s"/><path class="f-surface-0 s-accent hl-a" d="M305.3,578.4 L279.4,591.3 L253.9,422.6 L279.9,409.7 Z" stroke-width="2.1" style="--d:1.106s"/><path class="f-surface-0 s-graphite hl-a" d="M210.5,665.4 L212.1,661.2 L216.9,657.6 L548.6,491.7 L555.7,489.4 L564.2,488.5 L572.6,489.4 L579.7,491.7 L838.9,621.3 L843.6,624.9 L845.3,629.1 L845.3,648.1 L843.6,652.3 L838.9,655.9 L507.2,821.8 L500,824.2 L491.6,825 L483.2,824.2 L476.1,821.8 L216.9,692.2 L212.1,688.6 L210.5,684.4 Z" stroke-width="2.1" style="--d:1.252s"/><path class="s-grid hl-d" d="M837.2,629.1 L836.2,631.8 L833.2,634 L501.4,799.9 L496.9,801.4 L491.6,801.9 L486.3,801.4 L481.8,799.9 L222.6,670.3 L219.6,668 L218.5,665.4" stroke-width="2.1" pathLength="1" style="--d:1.397s"/><path class="s-grid hl-d" d="M574.5,530.6 L294.6,670.6 M605.6,546.2 L325.7,686.1 M636.7,561.7 L356.8,701.7 M667.8,577.3 L387.9,717.2" stroke-width="2.1" pathLength="1" style="--d:1.542s"/><path class="s-grid hl-d" d="M592.7,728.9 L589.9,729.9 L586.6,730.4 L583.2,730.4 L579.9,729.9 L577.1,728.9 L540.8,710.7 L538.8,709.3 L537.8,707.7 L537.8,706 L538.8,704.3 L540.8,703 L639.3,653.7 L642.1,652.7 L645.4,652.2 L648.8,652.2 L652.1,652.7 L654.9,653.7 L691.1,671.9 L693.2,673.3 L694.2,674.9 L694.2,676.6 L693.2,678.3 L691.1,679.6 Z" stroke-width="2.1" pathLength="1" style="--d:1.688s"/></g></g></g>`;
+
+type Props = SVGProps<SVGSVGElement> & {
+  accent?: string;
+  label?: string;
+};
+
+export function LiniqoLaptopDashboard({
+  accent = "#3b5bff",
+  label = "Web app and customer portal dashboard",
+  className,
+  style,
+  ...props
+}: Props) {
+  const toneStyle = {
+    width: "100%",
+    height: "auto",
+    ["--hl-accent"]: accent,
+    ["--hl-ink"]: "#0a2540",
+    ["--hl-graphite"]: "#2c3e50",
+    ["--hl-mute"]: "#5a6a7a",
+    ["--hl-grid"]: "#6b7c93",
+    ...style,
+  } as CSSProperties;
+
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1000 1000"
+      role={label ? "img" : undefined}
+      aria-label={label || undefined}
+      aria-hidden={label ? undefined : true}
+      className={className}
+      style={toneStyle}
+      {...props}
+      dangerouslySetInnerHTML={{ __html: ART }}
+    />
+  );
+}
+
+export default LiniqoLaptopDashboard;
